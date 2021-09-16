@@ -1,0 +1,201 @@
+{
+    "settings": {
+        "showCollisions": true,
+        "showConnections": true,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 100,
+        "customColorsWhite": "E8F8E0",
+        "customColorsLight": "B0F088",
+        "customColorsDark": "509878",
+        "customColorsBlack": "202850",
+        "startX": 0,
+        "startY": 0,
+        "startDirection": "down",
+        "startSceneId": "466d9b0c-bfe9-4dc3-b94c-63791e3cbdca",
+        "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+        "customColorsEnabled": true,
+        "gbcFastCPUEnabled": false
+    },
+    "scenes": [
+        {
+            "name": "Select character",
+            "backgroundId": "a5e32909-3348-4a07-b135-32c4dd2e2b48",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "id": "466d9b0c-bfe9-4dc3-b94c-63791e3cbdca",
+            "x": 71,
+            "y": 133,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Scene 2",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "101db243-7341-400f-bd72-f57c88295e4f",
+            "x": 629,
+            "y": 490,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Scene 3",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "4f3f8ca9-74b8-4f56-b131-16f8c8bc7c89",
+            "x": 621,
+            "y": 190,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Scene 4",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "c146cf87-2171-4577-a03b-61d8a062f3e0",
+            "x": 851,
+            "y": 312,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Scene 5",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "c7d27263-aeec-4961-9c07-f3d01395c607",
+            "x": 1025,
+            "y": 138,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Scene 6",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "id": "0e4ac1e7-1b3f-427e-a34c-e85ac65e82c9",
+            "x": 357,
+            "y": 319,
+            "actors": [],
+            "triggers": []
+        }
+    ],
+    "_version": "1.2.0",
+    "author": "Y Duong",
+    "name": "Game Design Challenge 1",
+    "variables": [],
+    "backgrounds": [
+        {
+            "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "name": "placeholder",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "placeholder.png",
+            "_v": 1631750985701
+        },
+        {
+            "id": "a5e32909-3348-4a07-b135-32c4dd2e2b48",
+            "name": "playerselect",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "playerselect.png",
+            "_v": 1631754321954
+        }
+    ],
+    "spriteSheets": [
+        {
+            "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+            "name": "actor",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "actor.png",
+            "_v": 1631750985701
+        },
+        {
+            "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+            "name": "actor_animated",
+            "numFrames": 6,
+            "type": "actor_animated",
+            "filename": "actor_animated.png",
+            "_v": 1631750985701
+        },
+        {
+            "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
+            "name": "static",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "static.png",
+            "_v": 1631750985701
+        }
+    ],
+    "music": [
+        {
+            "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
+            "name": "template",
+            "filename": "template.mod",
+            "_v": 1631750985688
+        }
+    ],
+    "customEvents": []
+}
