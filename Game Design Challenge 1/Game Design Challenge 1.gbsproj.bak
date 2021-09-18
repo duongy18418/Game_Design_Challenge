@@ -477,7 +477,7 @@
                                 ],
                                 "persist": false,
                                 "__scriptTabs": "press",
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -2402,18 +2402,68 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "35d90c42-31de-4e23-8553-286675d33a34",
-                            "command": "EVENT_TEXT",
+                            "id": "453ffa6d-fc9b-4854-8856-84a9e43e0275",
+                            "command": "EVENT_INC_VALUE",
                             "args": {
-                                "text": [
-                                    "If only I could\nfind my potion\ningrediants...",
-                                    "If only someone\nwould help me...",
-                                    "Anyone? Anyone?",
-                                    "Look if you want\nout of here, you\ngot to help, ok?",
-                                    "First, gather 1\norange, 4\nblueberries, and 3",
-                                    "apples."
+                                "variable": "9"
+                            }
+                        },
+                        {
+                            "id": "f4eb119e-4bff-4081-968c-d27b39de2552",
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "9",
+                                "operator": "==",
+                                "comparator": 1,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "819d6ba5-4658-4fbd-8218-a40974b5c7f8",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "5"
+                                        }
+                                    },
+                                    {
+                                        "id": "35d90c42-31de-4e23-8553-286675d33a34",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "If only I could\nfind my potion\ningrediants...",
+                                                "If only someone\nwould help me...",
+                                                "Anyone? Anyone?",
+                                                "Look if you want\nout of here, you\ngot to help, ok?",
+                                                "First, gather 1\norange, 4\nblueberries, and 3",
+                                                "apples."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "e6c4e8f3-304e-4f8f-a0d7-7c7bb0c6b666",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
+                                "false": [
+                                    {
+                                        "id": "cf67e553-7379-4d06-85d4-a44d21db56b2",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Wait are you\nwaiting for?",
+                                                "Go find the next\ningrediants!"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "67dfe08d-0c36-4fa2-aab2-b3449cc3debb",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -2457,13 +2507,32 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "YAYYY!!! You did\nit!!",
-                                                "Why didn't I do\nthat myself you\nask?",
-                                                "Uh..well... that's\nnot the point!",
-                                                "Your next task\nis...fish 10 fish!"
+                                                "YAYYY!!! You did\nit!!"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
+                                        }
+                                    },
+                                    {
+                                        "id": "9580cba6-8174-4956-89ec-43187af0afd0",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "player",
+                                            "emoteId": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "4abd656a-da37-48e8-a053-da1c133c6673",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Why didn't I do\nthat myself you\nask?",
+                                                "Uh..well...that's\nnot the point!",
+                                                "Your next task\nis...fish 10 fish!",
+                                                "I've had such a\nhard time catching\nany.",
+                                                "I wonder why..."
+                                            ],
+                                            "avatarId": ""
                                         }
                                     },
                                     {
@@ -2619,7 +2688,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You found all the\napples!"
+                                                "You collected all\nthe\napples!"
                                             ],
                                             "avatarId": ""
                                         }
@@ -2635,7 +2704,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You have found $64$\napples! Now, find\nthe rest!"
+                                                "You have $64$\napples! Collect\nsome more!"
                                             ],
                                             "avatarId": ""
                                         }
@@ -2747,7 +2816,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You found all the\nblueberries!"
+                                                "You collected all\nthe\nblueberries!"
                                             ],
                                             "avatarId": ""
                                         }
@@ -2763,7 +2832,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You have found $63$\nblueberries!\nNow, find the rest"
+                                                "You have $63$\nblueberries!\nCollect some more!"
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -2841,6 +2910,427 @@
                     "x": 6,
                     "y": 14,
                     "paletteId": "f9f41276-271b-47c1-ac19-73fcc44982e1"
+                },
+                {
+                    "name": "Fish Post",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "b5b0d9d4-fa7a-49ff-a92a-1300dec32277",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "83ece558-128c-4cd0-ac46-848f6a93ca17",
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "10",
+                                "operator": ">=",
+                                "comparator": 8,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "c16b5bfa-f098-4220-959c-7c61fb999ef8",
+                                        "command": "EVENT_VARIABLE_MATH",
+                                        "args": {
+                                            "vectorX": "8",
+                                            "operation": "set",
+                                            "other": "rnd",
+                                            "vectorY": "L0",
+                                            "value": "1",
+                                            "minValue": 1,
+                                            "maxValue": 8,
+                                            "clamp": false
+                                        }
+                                    },
+                                    {
+                                        "id": "a45ec2b8-77f3-43f2-afcd-2fb9f9e5ff68",
+                                        "command": "EVENT_SWITCH",
+                                        "args": {
+                                            "variable": "8",
+                                            "choices": 10,
+                                            "__collapseCase0": false,
+                                            "value0": 1,
+                                            "__collapseCase1": false,
+                                            "value1": 2,
+                                            "__collapseCase2": false,
+                                            "value2": 3,
+                                            "__collapseCase3": false,
+                                            "value3": 4,
+                                            "__collapseCase4": false,
+                                            "value4": 5,
+                                            "__collapseCase5": false,
+                                            "value5": 6,
+                                            "__collapseCase6": false,
+                                            "value6": 7,
+                                            "__collapseCase7": false,
+                                            "value7": 8,
+                                            "__collapseCase8": false,
+                                            "value8": 9,
+                                            "__collapseCase9": false,
+                                            "value9": 10,
+                                            "__collapseCase10": false,
+                                            "value10": 11,
+                                            "__collapseCase11": false,
+                                            "value11": 12,
+                                            "__collapseCase12": false,
+                                            "value12": 13,
+                                            "__collapseCase13": false,
+                                            "value13": 14,
+                                            "__collapseCase14": false,
+                                            "value14": 15,
+                                            "__collapseCase15": false,
+                                            "value15": 16,
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true0": [
+                                                {
+                                                    "id": "d4bcb611-73cf-4ff6-98a4-faaf447c52f8",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Ahhhhh, that's a\nshark!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "9f5c3943-aff9-4e5d-9823-1a4434d56178",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "player",
+                                                        "emoteId": 0
+                                                    }
+                                                },
+                                                {
+                                                    "id": "bd749158-8760-4292-b201-d70b42dc3193",
+                                                    "command": "EVENT_CAMERA_SHAKE",
+                                                    "args": {
+                                                        "time": 0.5,
+                                                        "shakeDirection": "horizontal"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "7932f19b-42b0-4648-9964-73dfc7676b23",
+                                                    "command": "EVENT_ACTOR_SET_POSITION",
+                                                    "args": {
+                                                        "actorId": "player",
+                                                        "x": {
+                                                            "type": "number",
+                                                            "value": 18
+                                                        },
+                                                        "y": {
+                                                            "type": "number",
+                                                            "value": 31
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "id": "2dbd11a1-5c7a-456e-b101-ab1bb6fb9f6f",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true1": [
+                                                {
+                                                    "id": "d8e744e1-9f25-46b1-abfd-d41b33776165",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Wow, you caught\ntrash! What\nskills!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "651be3a1-f068-4ac5-bf93-bb6252983ea0",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true2": [
+                                                {
+                                                    "id": "d358d2ce-4748-4ad0-8a8f-d2582918b3a1",
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "197d361e-8f32-49ee-9f60-5dcb2b3c69dc",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Great job! You\nhave $07$ fish so\nfar."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "eb35237c-6d5e-4e3f-9f29-a3a7c4f94e45",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true3": [
+                                                {
+                                                    "id": "c31904dd-8b7e-4f42-9b0c-4df9fe2adac7",
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "f31ea3c1-3f65-41bd-8ec6-4d4b2d8336f4",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Great job! You\nhave $07$ fish so\nfar."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b6441a24-e487-4bb0-a866-f58c94048cc1",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true4": [
+                                                {
+                                                    "id": "c2a249a3-3d2b-481b-9ebd-311a407ae136",
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "1b825daf-e0ff-411b-b345-1e6cd146cf87",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Great job! You\nhave $07$ fish so\nfar.",
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "d08b7285-aeda-4135-8d2e-8096d4168ec8",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true5": [
+                                                {
+                                                    "id": "e36f7a52-7cd1-4c0b-b381-365a02b48a0a",
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "dbed9bf4-4d4d-49b5-83e3-88346b4103fe",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Great job! You\nhave $07$ fish so\nfar.",
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b4325f9a-0b68-43f1-92fe-5828ae755eb5",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true6": [
+                                                {
+                                                    "id": "035661d3-cad6-47d5-a2ae-acf93e9f8f22",
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "3da51120-e6ef-4029-b795-1849bae0593b",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Great job! You\nhave $07$ fish so\nfar.",
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "9e87f448-e848-415c-b3c2-3db0bac11578",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true7": [
+                                                {
+                                                    "id": "3bba4fd1-e2fd-483c-9900-de125efc2010",
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "fd68004d-ec07-4933-b183-30755749f7df",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Great job! You\nhave $07$ fish so\nfar.",
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "ad32d895-5b62-4ada-9167-9ad751c10524",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true8": [
+                                                {
+                                                    "id": "804f3a79-30e5-4e11-88eb-bd69007a36c6",
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "658aed7a-f8f0-45e0-a1b6-ee77c008dd61",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Great job! You\nhave $07$ fish so\nfar.",
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "6967f56d-295a-4c38-a17f-a2d5acff3f7f",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true9": [
+                                                {
+                                                    "id": "0597e7de-e70e-4f97-82e3-4bcd4dc2b27d",
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "0b974260-d1f2-4e84-be90-405d58e0d99b",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": "Great job! You\nhave $07$ fish so\nfar.",
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "23695c59-0968-49e7-a9f4-591c25e224cc",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true10": [
+                                                {
+                                                    "id": "fb3bac02-11ef-4044-a5d9-775949f330d2",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true11": [
+                                                {
+                                                    "id": "b79a3010-e50d-439e-83d9-887fbf38e245",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true12": [
+                                                {
+                                                    "id": "0ac3fcec-dd34-4f42-9489-74e3bacdf879",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true13": [
+                                                {
+                                                    "id": "487decab-3301-4d5b-abd7-823f5be9241c",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true14": [
+                                                {
+                                                    "id": "416aaece-532f-4554-be25-21904aeeb773",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "true15": [
+                                                {
+                                                    "id": "af35417e-08c7-415b-a869-63c20f69b2b5",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "78761216-e2f6-41a1-bfee-12c7515c7eab",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "21916219-4d39-4012-b036-5ec0e69ffc97",
+                                        "command": "EVENT_IF_VALUE",
+                                        "args": {
+                                            "variable": "7",
+                                            "operator": "==",
+                                            "comparator": 10,
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "f60789bc-6f1a-4797-936e-1f4c4a5bbdd6",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You've caught all\nthe fish in the\npond!"
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "6cee6aea-587b-469a-af68-6ccf22fc9db2",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "1744e3fb-7b5b-471c-afae-4426d81ddefe",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "8ccbe0ab-453d-409c-94ed-1fcde83c64d2",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "cca77359-53a6-4705-9c97-7b896e18e445",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "e3a53648-3108-4165-924d-fd19b45f3b65",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [
+                        {
+                            "id": "17affedf-2bd6-4972-8db9-68b54cbc85ac",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "560ca464-b807-41be-bee5-b29138e069f3",
+                    "x": 15,
+                    "y": 9
                 }
             ],
             "triggers": [],
@@ -6465,9 +6955,9 @@
                             "id": "bef59952-5604-479c-a8db-3411ba525022",
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "c146cf87-2171-4577-a03b-61d8a062f3e0",
-                                "x": 16,
-                                "y": 31,
+                                "sceneId": "0e4ac1e7-1b3f-427e-a34c-e85ac65e82c9",
+                                "x": 12,
+                                "y": 15,
                                 "direction": "up",
                                 "fadeSpeed": "2"
                             }
@@ -6656,7 +7146,7 @@
             "imageHeight": 256,
             "filename": "Scavenger Hunt Room.png",
             "inode": "281474976774162",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "21136ea2-c226-4a90-a65e-6da0c50e5739",
@@ -6667,7 +7157,7 @@
             "imageHeight": 144,
             "filename": "grizlogo.png",
             "inode": "281474976774109",
-            "_v": 1631921410379
+            "_v": 1631930485848
         },
         {
             "id": "dc0ce0d2-04bc-45de-bd13-74f9949b3738",
@@ -6678,7 +7168,7 @@
             "imageHeight": 144,
             "filename": "map1.png",
             "inode": "281474976774110",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "c6bdb51d-6186-4a42-907a-aea4557df295",
@@ -6689,7 +7179,7 @@
             "imageHeight": 176,
             "filename": "map2.png",
             "inode": "281474976774111",
-            "_v": 1631921410379
+            "_v": 1631930485848
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -6700,7 +7190,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "281474976774112",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "a5e32909-3348-4a07-b135-32c4dd2e2b48",
@@ -6711,7 +7201,7 @@
             "imageHeight": 144,
             "filename": "playerselect.png",
             "inode": "281474976774113",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "d607f7a6-bd79-490b-9d60-8d21cb3f3143",
@@ -6722,7 +7212,7 @@
             "imageHeight": 144,
             "filename": "titlescreen.png",
             "inode": "281474976774114",
-            "_v": 1631921410379
+            "_v": 1631930485849
         }
     ],
     "spriteSheets": [
@@ -6733,7 +7223,7 @@
             "type": "actor_animated",
             "filename": "04a.png",
             "inode": "281474976774119",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "e6f98930-2478-4699-8906-1e919902e50d",
@@ -6742,7 +7232,7 @@
             "type": "actor_animated",
             "filename": "Bat.png",
             "inode": "281474976774120",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "1ad83462-123a-4ab3-99fd-3c4df66662b3",
@@ -6751,7 +7241,7 @@
             "type": "actor_animated",
             "filename": "Playergirl.png",
             "inode": "281474976774121",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "8c2e3b79-8868-4571-87bf-902bad3f9628",
@@ -6760,7 +7250,7 @@
             "type": "actor_animated",
             "filename": "Rat.png",
             "inode": "281474976774122",
-            "_v": 1631921410384
+            "_v": 1631930485849
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -6769,7 +7259,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "281474976774123",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -6778,7 +7268,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "281474976774124",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "7023aa5a-14d9-488e-8817-74df3346e379",
@@ -6787,7 +7277,7 @@
             "type": "static",
             "filename": "apple.png",
             "inode": "281474976774170",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "f0fc383f-e003-4dd9-aab6-ad10d6c55836",
@@ -6796,7 +7286,7 @@
             "type": "static",
             "filename": "blueberry.png",
             "inode": "281474976774171",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "05c693d5-7397-4bdb-b9f5-92b7353c3fde",
@@ -6805,7 +7295,7 @@
             "type": "animated",
             "filename": "chest.png",
             "inode": "281474976774125",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "3aba9dbe-215a-4027-861b-2d60294501c8",
@@ -6814,7 +7304,7 @@
             "type": "actor",
             "filename": "npc001.png",
             "inode": "281474976774126",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "e7da65ab-f765-434f-b477-905122c8600c",
@@ -6823,7 +7313,7 @@
             "type": "static",
             "filename": "orange.png",
             "inode": "281474976774169",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "c3ee6662-da31-4663-8665-1cc786505d7c",
@@ -6832,7 +7322,7 @@
             "type": "actor_animated",
             "filename": "playerboy.png",
             "inode": "281474976774127",
-            "_v": 1631921410379
+            "_v": 1631930485849
         },
         {
             "id": "02b7775b-ab11-4ae7-a998-3ac6b3e5e210",
@@ -6841,7 +7331,7 @@
             "type": "static",
             "filename": "rock.png",
             "inode": "281474976774128",
-            "_v": 1631921410379
+            "_v": 1631930485862
         },
         {
             "id": "b5b0d9d4-fa7a-49ff-a92a-1300dec32277",
@@ -6850,7 +7340,7 @@
             "type": "static",
             "filename": "signpost.png",
             "inode": "281474976774129",
-            "_v": 1631921410379
+            "_v": 1631930485852
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -6859,7 +7349,7 @@
             "type": "static",
             "filename": "static.png",
             "inode": "281474976774130",
-            "_v": 1631921410379
+            "_v": 1631930485852
         },
         {
             "id": "74e3f16f-c2da-4295-9285-3f9e64aa998b",
@@ -6868,7 +7358,7 @@
             "type": "actor",
             "filename": "sword.png",
             "inode": "281474976774131",
-            "_v": 1631921410379
+            "_v": 1631930485849
         }
     ],
     "palettes": [
@@ -7543,7 +8033,7 @@
             "filename": "Rulz_UndergroundCave.mod",
             "settings": {},
             "inode": "281474976774116",
-            "_v": 1631921410362
+            "_v": 1631930485720
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
@@ -7551,10 +8041,34 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "281474976774117",
-            "_v": 1631921410362
+            "_v": 1631930485720
         }
     ],
     "variables": [
+        {
+            "id": "10",
+            "name": "FruitCounter"
+        },
+        {
+            "id": "11",
+            "name": "BlueberryDone"
+        },
+        {
+            "id": "12",
+            "name": "AppleDone"
+        },
+        {
+            "id": "62",
+            "name": "OrangeCounter"
+        },
+        {
+            "id": "63",
+            "name": "BlueberryCounter"
+        },
+        {
+            "id": "64",
+            "name": "AppleCounter"
+        },
         {
             "id": "ef3278e6-5689-467a-9dbd-abdf97131b53__L0",
             "name": "Player girl"
@@ -7572,28 +8086,20 @@
             "name": "AppleCounter"
         },
         {
-            "id": "62",
-            "name": "OrangeCounter"
+            "id": "9",
+            "name": "WizardTalkCount"
         },
         {
-            "id": "63",
-            "name": "BlueberryCounter"
+            "id": "8",
+            "name": "Fish Type"
         },
         {
-            "id": "64",
-            "name": "AppleCounter"
+            "id": "7",
+            "name": "FishCounter"
         },
         {
-            "id": "11",
-            "name": "BlueberryDone"
-        },
-        {
-            "id": "12",
-            "name": "AppleDone"
-        },
-        {
-            "id": "10",
-            "name": "FruitCounter"
+            "id": "560ca464-b807-41be-bee5-b29138e069f3__L0",
+            "name": "Local 0"
         }
     ],
     "settings": {
@@ -7602,9 +8108,9 @@
         "startY": 0,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2917.60009765625,
-        "worldScrollY": 2064.800048828125,
-        "zoom": 400,
+        "worldScrollX": 0,
+        "worldScrollY": 148,
+        "zoom": 100,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
