@@ -451,7 +451,7 @@
                                         "command": "EVENT_PLAYER_SET_SPRITE",
                                         "args": {
                                             "spriteSheetId": "c3ee6662-da31-4663-8665-1cc786505d7c",
-                                            "persist": false
+                                            "persist": true
                                         }
                                     },
                                     {
@@ -500,7 +500,7 @@
                                         "command": "EVENT_PLAYER_SET_SPRITE",
                                         "args": {
                                             "spriteSheetId": "1ad83462-123a-4ab3-99fd-3c4df66662b3",
-                                            "persist": false
+                                            "persist": true
                                         }
                                     },
                                     {
@@ -546,7 +546,7 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "e92206ab-c589-45a9-abfc-7bc817757cfb",
-                                            "x": 3,
+                                            "x": 4,
                                             "y": 8,
                                             "direction": "up",
                                             "fadeSpeed": "2"
@@ -13637,8 +13637,8 @@
         "startY": 29,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 778.4000244140625,
-        "worldScrollY": 52,
+        "worldScrollX": 0,
+        "worldScrollY": 8,
         "zoom": 174.7603907473349,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
@@ -13657,7 +13657,7 @@
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
         "startDirection": "right",
-        "playerSpriteSheetId": "c3ee6662-da31-4663-8665-1cc786505d7c",
+        "playerSpriteSheetId": "1ad83462-123a-4ab3-99fd-3c4df66662b3",
         "gbcFastCPUEnabled": false
     }
 }
