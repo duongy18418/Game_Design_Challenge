@@ -12487,8 +12487,13 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Dungeon.png",
+<<<<<<< HEAD
             "inode": "562949953677939",
             "_v": 1632168909514
+=======
+            "inode": "281474976774385",
+            "_v": 1632175488540
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "323b24a6-db71-4028-9a59-e3521cc3c0f9",
@@ -12498,8 +12503,13 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Main room.png",
+<<<<<<< HEAD
             "inode": "562949953677940",
             "_v": 1632168909514
+=======
+            "inode": "562949953485042",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "3a1b4318-2e20-4d7f-bd93-58ef243453c3",
@@ -12509,8 +12519,13 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Number Puzzle.png",
+<<<<<<< HEAD
             "inode": "281474977218126",
             "_v": 1632168909514
+=======
+            "inode": "844424930195643",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "57078f15-f092-4cf7-a07a-39fc0389b13c",
@@ -12520,8 +12535,13 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Scavenger Hunt Room.png",
+<<<<<<< HEAD
             "inode": "1125899907096045",
             "_v": 1632168909514
+=======
+            "inode": "281474976774162",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "21136ea2-c226-4a90-a65e-6da0c50e5739",
@@ -12531,8 +12551,13 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "grizlogo.png",
+<<<<<<< HEAD
             "inode": "844424930385392",
             "_v": 1632168909514
+=======
+            "inode": "281474976774109",
+            "_v": 1632175488540
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "dc0ce0d2-04bc-45de-bd13-74f9949b3738",
@@ -12542,8 +12567,13 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "map1.png",
+<<<<<<< HEAD
             "inode": "844424930385393",
             "_v": 1632168909514
+=======
+            "inode": "281474976774110",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "c6bdb51d-6186-4a42-907a-aea4557df295",
@@ -12553,8 +12583,13 @@
             "imageWidth": 176,
             "imageHeight": 176,
             "filename": "map2.png",
+<<<<<<< HEAD
             "inode": "1970324837228026",
             "_v": 1632168909514
+=======
+            "inode": "281474976774111",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -12564,8 +12599,13 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
+<<<<<<< HEAD
             "inode": "2251799813938691",
             "_v": 1632168909514
+=======
+            "inode": "281474976774112",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "a5e32909-3348-4a07-b135-32c4dd2e2b48",
@@ -12575,8 +12615,13 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "playerselect.png",
+<<<<<<< HEAD
             "inode": "844424930385417",
             "_v": 1632168909514
+=======
+            "inode": "281474976774113",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "1f143181-889f-42bc-b592-74a3b35c2a11",
@@ -12586,8 +12631,13 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "room_background3.png",
+<<<<<<< HEAD
             "inode": "844424930385421",
             "_v": 1632168909514
+=======
+            "inode": "281474976774237",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "d607f7a6-bd79-490b-9d60-8d21cb3f3143",
@@ -12597,8 +12647,13 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
+<<<<<<< HEAD
             "inode": "1125899907096081",
             "_v": 1632168909514
+=======
+            "inode": "281474976774114",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "10d459bd-3774-49ec-9d81-b947b17c3483",
@@ -12608,8 +12663,13 @@
             "imageWidth": 192,
             "imageHeight": 192,
             "filename": "untitled.png",
+<<<<<<< HEAD
             "inode": "844424930385430",
             "_v": 1632168909514
+=======
+            "inode": "281474976774185",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         }
     ],
     "spriteSheets": [
@@ -12619,8 +12679,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "04a.png",
+<<<<<<< HEAD
             "inode": "844424930385439",
             "_v": 1632168909514
+=======
+            "inode": "281474976774119",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "e6f98930-2478-4699-8906-1e919902e50d",
@@ -12628,8 +12693,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Bat.png",
+<<<<<<< HEAD
             "inode": "844424930385442",
             "_v": 1632168909514
+=======
+            "inode": "281474976774120",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "88aa8964-bf5d-4fa4-9e2a-c08387caf275",
@@ -12637,8 +12707,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Coyote.png",
+<<<<<<< HEAD
             "inode": "281474977218128",
             "_v": 1632168909514
+=======
+            "inode": "844424930195551",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "92b92fe5-2cd0-44c1-a007-42eb28fa5a11",
@@ -12646,8 +12721,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Dog.png",
+<<<<<<< HEAD
             "inode": "281474977218129",
             "_v": 1632168909514
+=======
+            "inode": "844424930195552",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "2618d10d-24cd-4a06-a048-a8b56a76bec6",
@@ -12655,8 +12735,13 @@
             "numFrames": 1.125,
             "type": "animated",
             "filename": "Lion.png",
+<<<<<<< HEAD
             "inode": "281474977218130",
             "_v": 1632168909514
+=======
+            "inode": "2251799813748833",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "e7536bdb-263c-4e60-999e-11b1656260e4",
@@ -12664,8 +12749,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Mole.png",
+<<<<<<< HEAD
             "inode": "281474977218131",
             "_v": 1632168909514
+=======
+            "inode": "562949953484898",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "1ad83462-123a-4ab3-99fd-3c4df66662b3",
@@ -12673,8 +12763,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Playergirl.png",
+<<<<<<< HEAD
             "inode": "844424930385448",
             "_v": 1632168909514
+=======
+            "inode": "281474976774121",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "904219f5-d26a-4410-a9f0-a8b79ce21d68",
@@ -12682,8 +12777,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Raccoon.png",
+<<<<<<< HEAD
             "inode": "281474977218132",
             "_v": 1632168909514
+=======
+            "inode": "1407374883616867",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "8c2e3b79-8868-4571-87bf-902bad3f9628",
@@ -12691,8 +12791,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Rat.png",
+<<<<<<< HEAD
             "inode": "844424930385449",
             "_v": 1632168909514
+=======
+            "inode": "281474976774122",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "870c1bd2-1d05-4ec9-828b-1c22fe872261",
@@ -12700,8 +12805,13 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Viking.png",
+<<<<<<< HEAD
             "inode": "562949953677941",
             "_v": 1632168909514
+=======
+            "inode": "281474976774387",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -12709,8 +12819,13 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
+<<<<<<< HEAD
             "inode": "844424930385450",
             "_v": 1632168909514
+=======
+            "inode": "281474976774123",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -12718,8 +12833,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
+<<<<<<< HEAD
             "inode": "844424930385451",
             "_v": 1632168909514
+=======
+            "inode": "281474976774124",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "7023aa5a-14d9-488e-8817-74df3346e379",
@@ -12727,8 +12847,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "apple.png",
+<<<<<<< HEAD
             "inode": "844424930385452",
             "_v": 1632168909514
+=======
+            "inode": "281474976774170",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "f0fc383f-e003-4dd9-aab6-ad10d6c55836",
@@ -12736,8 +12861,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "blueberry.png",
+<<<<<<< HEAD
             "inode": "844424930385454",
             "_v": 1632168909514
+=======
+            "inode": "281474976774171",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "05c693d5-7397-4bdb-b9f5-92b7353c3fde",
@@ -12745,8 +12875,13 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "chest.png",
+<<<<<<< HEAD
             "inode": "844424930385455",
             "_v": 1632168909514
+=======
+            "inode": "281474976774125",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "3aba9dbe-215a-4027-861b-2d60294501c8",
@@ -12754,8 +12889,13 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
+<<<<<<< HEAD
             "inode": "1407374883806768",
             "_v": 1632168909514
+=======
+            "inode": "281474976774126",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "e7da65ab-f765-434f-b477-905122c8600c",
@@ -12763,8 +12903,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "orange.png",
+<<<<<<< HEAD
             "inode": "844424930385465",
             "_v": 1632168909514
+=======
+            "inode": "281474976774169",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "c3ee6662-da31-4663-8665-1cc786505d7c",
@@ -12772,8 +12917,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "playerboy.png",
+<<<<<<< HEAD
             "inode": "844424930385468",
             "_v": 1632168909514
+=======
+            "inode": "281474976774127",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "02b7775b-ab11-4ae7-a998-3ac6b3e5e210",
@@ -12781,8 +12931,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
+<<<<<<< HEAD
             "inode": "844424930385469",
             "_v": 1632168909514
+=======
+            "inode": "281474976774128",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "b5b0d9d4-fa7a-49ff-a92a-1300dec32277",
@@ -12790,8 +12945,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
+<<<<<<< HEAD
             "inode": "844424930385470",
             "_v": 1632168909514
+=======
+            "inode": "281474976774129",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -12799,8 +12959,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
+<<<<<<< HEAD
             "inode": "844424930385471",
             "_v": 1632168909514
+=======
+            "inode": "281474976774130",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "74e3f16f-c2da-4295-9285-3f9e64aa998b",
@@ -12808,8 +12973,13 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "sword.png",
+<<<<<<< HEAD
             "inode": "844424930385473",
             "_v": 1632168909514
+=======
+            "inode": "281474976774131",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "f36284ed-a8ff-42eb-8d6c-b4154dbddc93",
@@ -12817,8 +12987,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "wizard.png",
+<<<<<<< HEAD
             "inode": "281474977218133",
             "_v": 1632168909514
+=======
+            "inode": "562949953484942",
+            "_v": 1632175488541
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         }
     ],
     "palettes": [
@@ -13520,16 +13695,26 @@
             "name": "Rulz_UndergroundCave",
             "filename": "Rulz_UndergroundCave.mod",
             "settings": {},
+<<<<<<< HEAD
             "inode": "4785074604334619",
             "_v": 1632168909498
+=======
+            "inode": "281474976774116",
+            "_v": 1632175488488
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
             "settings": {},
+<<<<<<< HEAD
             "inode": "844424930385437",
             "_v": 1632168909498
+=======
+            "inode": "281474976774117",
+            "_v": 1632175488488
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         }
     ],
     "variables": [
@@ -13644,6 +13829,13 @@
         {
             "id": "74561f84-d0ec-43ff-80c5-4a759f2ff952__L3",
             "name": "PlayerY"
+<<<<<<< HEAD
+=======
+        },
+        {
+            "id": "24",
+            "name": "Player Girl"
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         }
     ],
     "settings": {
@@ -13652,9 +13844,15 @@
         "startY": 29,
         "showCollisions": true,
         "showConnections": true,
+<<<<<<< HEAD
         "worldScrollX": 734.4000244140625,
         "worldScrollY": 204,
         "zoom": 132.1503239460253,
+=======
+        "worldScrollX": 0,
+        "worldScrollY": 8,
+        "zoom": 174.7603907473349,
+>>>>>>> parent of b861431 (Connect Rooms and Intro)
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
