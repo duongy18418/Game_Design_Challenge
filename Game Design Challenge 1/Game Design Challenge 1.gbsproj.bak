@@ -13633,15 +13633,9 @@
         "startY": 29,
         "showCollisions": true,
         "showConnections": true,
-<<<<<<< HEAD
         "worldScrollX": 464.79998779296875,
         "worldScrollY": 0,
         "zoom": 132.1503239460253,
-=======
-        "worldScrollX": 778.4000244140625,
-        "worldScrollY": 52,
-        "zoom": 174.7603907473349,
->>>>>>> parent of b861431 (Connect Rooms and Intro)
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
@@ -13659,11 +13653,7 @@
         "customColorsDark": "509878",
         "customColorsBlack": "202850",
         "startDirection": "right",
-<<<<<<< HEAD
         "playerSpriteSheetId": "870c1bd2-1d05-4ec9-828b-1c22fe872261",
-=======
-        "playerSpriteSheetId": "c3ee6662-da31-4663-8665-1cc786505d7c",
->>>>>>> parent of b861431 (Connect Rooms and Intro)
         "gbcFastCPUEnabled": false
     }
 }
