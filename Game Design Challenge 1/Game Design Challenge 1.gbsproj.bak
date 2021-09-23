@@ -13243,7 +13243,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "I get it!!"
+                                                "I get the key!!"
                                             ],
                                             "avatarId": ""
                                         }
@@ -15034,8 +15034,8 @@
         "startY": 29,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 562.4000244140625,
-        "worldScrollY": 170.39999389648438,
+        "worldScrollX": 1588,
+        "worldScrollY": 400,
         "zoom": 174.7603907473349,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
