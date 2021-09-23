@@ -13658,7 +13658,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Here is your\nreword..",
+                                                            "Here is your\nreward..",
                                                             "The password."
                                                         ],
                                                         "avatarId": ""
