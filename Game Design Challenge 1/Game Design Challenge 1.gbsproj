@@ -10110,7 +10110,20 @@
                 0
             ],
             "tileColors": [],
-            "script": [],
+            "script": [
+                {
+                    "id": "2c568839-4261-4899-b6a4-f3330ea5583d",
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "dda7fa8e-16d4-4283-8477-e9456b910e4e",
+                        "loop": true
+                    }
+                },
+                {
+                    "id": "bad962ee-0ec2-48b7-9794-82d53dcaa1fa",
+                    "command": "EVENT_END"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -10210,38 +10223,269 @@
                     "trigger": "walk",
                     "script": [
                         {
-                            "id": "6d484b0d-c69c-4dc7-b46b-321538b3f35f",
-                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "id": "c2cb9959-eb9d-4e51-a57d-fc3d2296f42b",
+                            "command": "EVENT_TEXT",
                             "args": {
-                                "customEventId": "b3578e1a-1897-44cd-8af9-0b1729d1b97d",
-                                "__name": "Viking Speech"
+                                "text": [
+                                    "Who are you!!",
+                                    "How dare you enter\nmy chambers!",
+                                    "If you wish to\nleave, you must\nanswer 3 questions",
+                                    "Fail, and you will\nbe sent back where\nyou came from!",
+                                    "Now, for your\nfirst question...."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "6882882a-4efd-4812-90cd-4030ea1a607b",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "What is the school\nwe are at right\nnow???"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "7b8af916-2d06-4ebf-b868-7631453893f5",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Oakland",
+                                "falseText": "Rochester"
+                            }
+                        },
+                        {
+                            "id": "e1f4e27e-2f19-4a27-981f-3e231d6edbed",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
                             },
                             "children": {
-                                "script": [
+                                "true": [
                                     {
-                                        "id": "b3b626b6-d167-4f45-9033-b9ff0b66e1c8",
-                                        "command": "EVENT_COMMENT",
+                                        "id": "a76044cc-195c-43ed-bafd-2bfa7f28a48f",
+                                        "command": "EVENT_TEXT",
                                         "args": {
-                                            "text": "How dare you enter my chambers! If you wish to pass, thy must answer 3 of my questions in a row. Fail, and thou must go back where you came from!"
+                                            "text": [
+                                                "That is correct..."
+                                            ],
+                                            "avatarId": ""
                                         }
                                     },
                                     {
-                                        "id": "9c736ff2-128d-468c-8078-39d3e313b7bd",
+                                        "id": "0d146f20-8e2d-4ec6-a20a-cc34468dd97a",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "e0f8778f-b978-483b-8de2-fe30191ec97d",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "YOU ARE WRONG!!!"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "80394ae2-0346-4832-96ca-4108588388fc",
+                                        "command": "EVENT_SCENE_POP_STATE",
+                                        "args": {
+                                            "fadeSpeed": "2"
+                                        }
+                                    },
+                                    {
+                                        "id": "108312bb-f01a-41c2-8093-256f4c489a20",
                                         "command": "EVENT_END"
                                     }
                                 ]
                             }
                         },
                         {
-                            "id": "8926bebe-8791-49bf-99e8-973040f66ffd",
+                            "id": "4e3b6fec-6ca0-4004-bf5e-604d0d379c76",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Next Question..."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "2963f0b4-5b04-43ba-b9f4-be9dd4a9b83f",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "What class are we\nin right now???"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "f320ed06-b2c2-412d-995c-5713f60a372d",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Game Theory",
+                                "falseText": "Game Design"
+                            }
+                        },
+                        {
+                            "id": "f3b6ff98-2caf-4035-887b-26bacf999dc8",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "23762580-3b0b-419c-bd73-40b3f3127cd6",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "That is correct..."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "0b519a6e-2fc2-43d0-bc16-2c0a818a42d5",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "dee6fd9f-f779-4d4d-9a82-2b441743ad8e",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "YOU ARE WRONG!!!"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "b8867093-7a0c-4814-a6a2-58b821e0aa57",
+                                        "command": "EVENT_SCENE_POP_STATE",
+                                        "args": {
+                                            "fadeSpeed": "2"
+                                        }
+                                    },
+                                    {
+                                        "id": "314285df-ad8b-47b1-83be-6a1d2d030bb7",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "0f3b21e6-6a0e-417b-b9b2-6a959e2cdfe7",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Onto your final\nquestion..."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "251fdfe4-44b0-46a1-8d69-22a266dd9e6e",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "What is the name\nof this game???"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "8b388d81-e1c4-4a7f-b149-a23d97a21f8d",
+                            "command": "EVENT_CHOICE",
+                            "args": {
+                                "variable": "L0",
+                                "trueText": "Dreamy Dungeon",
+                                "falseText": "Sleepy Dungeon"
+                            }
+                        },
+                        {
+                            "id": "a1e10bc5-3194-4950-b4ce-83a64e42f56c",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "daa19895-c2bf-43a5-a73f-b9c3d1a2dee9",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You have won, now\nget out of here!"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "e6ddeec7-eddf-4ee2-b104-1eda28430330",
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "101db243-7341-400f-bd72-f57c88295e4f",
+                                            "x": 1,
+                                            "y": 9,
+                                            "direction": "",
+                                            "fadeSpeed": "2"
+                                        }
+                                    },
+                                    {
+                                        "id": "be1d7f8b-e773-4961-9a20-fc51f49367aa",
+                                        "command": "EVENT_MUSIC_STOP",
+                                        "args": {}
+                                    },
+                                    {
+                                        "id": "c2a8f113-0c57-4a63-8e57-66f7cfdc2fb1",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "b8087620-c24d-4b08-9f31-f4c2953625d3",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "YOU ARE WRONG!!!"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "5c09f94e-4ee9-4fec-91ba-ed01b8b2f330",
+                                        "command": "EVENT_SCENE_POP_STATE",
+                                        "args": {
+                                            "fadeSpeed": "2"
+                                        }
+                                    },
+                                    {
+                                        "id": "5ef19c48-562f-4c27-bbeb-788319e62ef7",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "a79c4f29-00d1-48e0-97c3-9a4ac19b88f7",
                             "command": "EVENT_END"
                         }
                     ],
-                    "id": "431b370f-75b3-4ec2-9853-dc12c02072ba",
-                    "x": 11,
+                    "id": "c32d1825-f1e8-4aff-9411-c7423bfc50a9",
+                    "x": 15,
                     "y": 11,
-                    "width": 10,
-                    "height": 2
+                    "width": 2,
+                    "height": 1
                 }
             ],
             "paletteIds": [
@@ -13703,6 +13947,209 @@
                     "height": 1
                 }
             ]
+<<<<<<< Updated upstream
+=======
+        }
+    ],
+    "backgrounds": [
+        {
+            "id": "f5cfa70c-5e13-43b0-a915-36c24be9d77c",
+            "name": "2",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "2.png",
+            "inode": "281474977399535",
+            "_v": 1632432251150
+        },
+        {
+            "id": "792e6ca5-737a-4d4d-aa81-2017b414160c",
+            "name": "AQm9bg",
+            "width": 255,
+            "height": 180,
+            "imageWidth": 2080,
+            "imageHeight": 1440,
+            "filename": "AQm9bg.png",
+            "inode": "281474977399536",
+            "_v": 1632432251150
+        },
+        {
+            "id": "269a4e8a-68ac-47e5-889b-f430316e3a85",
+            "name": "Complete tileset",
+            "width": 30,
+            "height": 24,
+            "imageWidth": 240,
+            "imageHeight": 192,
+            "filename": "Complete tileset.png",
+            "inode": "281474977399537",
+            "_v": 1632432251150
+        },
+        {
+            "id": "bf0bf992-f290-4da7-a5b4-5879af8345de",
+            "name": "Dungeon",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Dungeon.png",
+            "inode": "281474977399538",
+            "_v": 1632432251150
+        },
+        {
+            "id": "0b385836-e88d-4a52-b54e-b8450e0763e7",
+            "name": "EBtI6uLW4AAbNiE (1)",
+            "width": 60,
+            "height": 43,
+            "imageWidth": 480,
+            "imageHeight": 344,
+            "filename": "EBtI6uLW4AAbNiE (1).png",
+            "inode": "281474977399539",
+            "_v": 1632432251150
+        },
+        {
+            "id": "323b24a6-db71-4028-9a59-e3521cc3c0f9",
+            "name": "Main room",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Main room.png",
+            "inode": "281474977399540",
+            "_v": 1632432251150
+        },
+        {
+            "id": "3a1b4318-2e20-4d7f-bd93-58ef243453c3",
+            "name": "Number Puzzle",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Number Puzzle.png",
+            "inode": "281474977399541",
+            "_v": 1632432251150
+        },
+        {
+            "id": "57078f15-f092-4cf7-a07a-39fc0389b13c",
+            "name": "Scavenger Hunt Room",
+            "width": 32,
+            "height": 32,
+            "imageWidth": 256,
+            "imageHeight": 256,
+            "filename": "Scavenger Hunt Room.png",
+            "inode": "281474977399542",
+            "_v": 1632432251150
+        },
+        {
+            "id": "fda46701-c8ed-4dec-b289-8e9b67ea1c22",
+            "name": "StarsPan",
+            "width": 20,
+            "height": 32,
+            "imageWidth": 160,
+            "imageHeight": 256,
+            "filename": "StarsPan.png",
+            "inode": "281474977399544",
+            "_v": 1632432251150
+        },
+        {
+            "id": "1695f28e-b4a7-4d60-8cf9-8668c7818ae3",
+            "name": "Tilemap",
+            "width": 32,
+            "height": 24,
+            "imageWidth": 256,
+            "imageHeight": 192,
+            "filename": "Tilemap.png",
+            "inode": "281474977399545",
+            "_v": 1632432251150
+        },
+        {
+            "id": "e51ca009-e049-473c-b1ac-b786c2e23f73",
+            "name": "WVL6xK",
+            "width": 255,
+            "height": 180,
+            "imageWidth": 2080,
+            "imageHeight": 1440,
+            "filename": "WVL6xK.png",
+            "inode": "281474977399546",
+            "_v": 1632432251150
+        },
+        {
+            "id": "a48ae797-321f-49da-ae0e-781cad5a4f69",
+            "name": "boss2",
+            "width": 20,
+            "height": 32,
+            "imageWidth": 160,
+            "imageHeight": 256,
+            "filename": "boss2.png",
+            "inode": "281474977399547",
+            "_v": 1632432251150
+        },
+        {
+            "id": "21136ea2-c226-4a90-a65e-6da0c50e5739",
+            "name": "grizlogo",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "grizlogo.png",
+            "inode": "281474977399548",
+            "_v": 1632432251150
+        },
+        {
+            "id": "255c3c39-c5c2-47f1-b53d-dcb0bebf5bb6",
+            "name": "i88bq5xfplp41",
+            "width": 150,
+            "height": 129,
+            "imageWidth": 1206,
+            "imageHeight": 1035,
+            "filename": "i88bq5xfplp41.png",
+            "inode": "281474977399549",
+            "_v": 1632432251150
+        },
+        {
+            "id": "dc0ce0d2-04bc-45de-bd13-74f9949b3738",
+            "name": "map1",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "map1.png",
+            "inode": "281474977399550",
+            "_v": 1632432251150
+        },
+        {
+            "id": "c6bdb51d-6186-4a42-907a-aea4557df295",
+            "name": "map2",
+            "width": 22,
+            "height": 22,
+            "imageWidth": 176,
+            "imageHeight": 176,
+            "filename": "map2.png",
+            "inode": "281474977399551",
+            "_v": 1632432251150
+        },
+        {
+            "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "name": "placeholder",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "placeholder.png",
+            "inode": "281474977399552",
+            "_v": 1632432251150
+        },
+        {
+            "id": "a5e32909-3348-4a07-b135-32c4dd2e2b48",
+            "name": "playerselect",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "playerselect.png",
+            "inode": "281474977399553",
+            "_v": 1632432251150
+>>>>>>> Stashed changes
         },
         {
             "name": "Scavenger Side Room",
@@ -16612,8 +17059,13 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "room_background3.png",
+<<<<<<< Updated upstream
             "inode": "281474976774237",
             "_v": 1632439137995
+=======
+            "inode": "281474977399554",
+            "_v": 1632432251150
+>>>>>>> Stashed changes
         },
         {
             "id": "018cb7fb-862e-4616-97b8-137e162113d6",
@@ -16623,8 +17075,13 @@
             "imageWidth": 256,
             "imageHeight": 192,
             "filename": "sprite sheet one.png",
+<<<<<<< Updated upstream
             "inode": "281474976775128",
             "_v": 1632439137995
+=======
+            "inode": "281474977399555",
+            "_v": 1632432251150
+>>>>>>> Stashed changes
         },
         {
             "id": "d607f7a6-bd79-490b-9d60-8d21cb3f3143",
@@ -16634,8 +17091,13 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
+<<<<<<< Updated upstream
             "inode": "281474976774114",
             "_v": 1632439137995
+=======
+            "inode": "281474977399556",
+            "_v": 1632432251150
+>>>>>>> Stashed changes
         },
         {
             "id": "10d459bd-3774-49ec-9d81-b947b17c3483",
@@ -16645,8 +17107,13 @@
             "imageWidth": 192,
             "imageHeight": 192,
             "filename": "untitled.png",
+<<<<<<< Updated upstream
             "inode": "281474976774185",
             "_v": 1632439137995
+=======
+            "inode": "281474977399557",
+            "_v": 1632432251150
+>>>>>>> Stashed changes
         }
     ],
     "spriteSheets": [
@@ -16656,8 +17123,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "04a.png",
+<<<<<<< Updated upstream
             "inode": "281474976774119",
             "_v": 1632439137995
+=======
+            "inode": "281474977399562",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "e6f98930-2478-4699-8906-1e919902e50d",
@@ -16665,8 +17137,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Bat.png",
+<<<<<<< Updated upstream
             "inode": "281474976774120",
             "_v": 1632439137996
+=======
+            "inode": "281474977399563",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "88aa8964-bf5d-4fa4-9e2a-c08387caf275",
@@ -16674,8 +17151,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Coyote.png",
+<<<<<<< Updated upstream
             "inode": "844424930195551",
             "_v": 1632439137996
+=======
+            "inode": "281474977399564",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "92b92fe5-2cd0-44c1-a007-42eb28fa5a11",
@@ -16683,8 +17165,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Dog.png",
+<<<<<<< Updated upstream
             "inode": "844424930195552",
             "_v": 1632439137996
+=======
+            "inode": "281474977399565",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "2618d10d-24cd-4a06-a048-a8b56a76bec6",
@@ -16692,8 +17179,13 @@
             "numFrames": 1.125,
             "type": "animated",
             "filename": "Lion.png",
+<<<<<<< Updated upstream
             "inode": "2251799813748833",
             "_v": 1632439137996
+=======
+            "inode": "281474977399566",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "e7536bdb-263c-4e60-999e-11b1656260e4",
@@ -16701,8 +17193,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Mole.png",
+<<<<<<< Updated upstream
             "inode": "562949953484898",
             "_v": 1632439137996
+=======
+            "inode": "281474977399567",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "1ad83462-123a-4ab3-99fd-3c4df66662b3",
@@ -16710,8 +17207,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Playergirl.png",
+<<<<<<< Updated upstream
             "inode": "281474976774121",
             "_v": 1632439137996
+=======
+            "inode": "281474977399568",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "904219f5-d26a-4410-a9f0-a8b79ce21d68",
@@ -16719,8 +17221,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Raccoon.png",
+<<<<<<< Updated upstream
             "inode": "1407374883616867",
             "_v": 1632439137996
+=======
+            "inode": "281474977399569",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "8c2e3b79-8868-4571-87bf-902bad3f9628",
@@ -16728,8 +17235,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Rat.png",
+<<<<<<< Updated upstream
             "inode": "281474976774122",
             "_v": 1632439137996
+=======
+            "inode": "281474977399570",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "870c1bd2-1d05-4ec9-828b-1c22fe872261",
@@ -16737,8 +17249,13 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "Viking.png",
+<<<<<<< Updated upstream
             "inode": "281474976774387",
             "_v": 1632439137996
+=======
+            "inode": "281474977399571",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -16746,8 +17263,13 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
+<<<<<<< Updated upstream
             "inode": "281474976774123",
             "_v": 1632439137996
+=======
+            "inode": "281474977399572",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -16755,8 +17277,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
+<<<<<<< Updated upstream
             "inode": "281474976774124",
             "_v": 1632439137995
+=======
+            "inode": "281474977399573",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "7023aa5a-14d9-488e-8817-74df3346e379",
@@ -16764,8 +17291,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "apple.png",
+<<<<<<< Updated upstream
             "inode": "281474976774170",
             "_v": 1632439137996
+=======
+            "inode": "281474977399574",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "f0fc383f-e003-4dd9-aab6-ad10d6c55836",
@@ -16773,8 +17305,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "blueberry.png",
+<<<<<<< Updated upstream
             "inode": "281474976774171",
             "_v": 1632439137996
+=======
+            "inode": "281474977399575",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "05c693d5-7397-4bdb-b9f5-92b7353c3fde",
@@ -16782,8 +17319,13 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "chest.png",
+<<<<<<< Updated upstream
             "inode": "281474976774125",
             "_v": 1632439137996
+=======
+            "inode": "281474977399576",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "3aba9dbe-215a-4027-861b-2d60294501c8",
@@ -16791,8 +17333,13 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
+<<<<<<< Updated upstream
             "inode": "281474976774126",
             "_v": 1632439137996
+=======
+            "inode": "281474977399577",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "e7da65ab-f765-434f-b477-905122c8600c",
@@ -16800,8 +17347,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "orange.png",
+<<<<<<< Updated upstream
             "inode": "281474976774169",
             "_v": 1632439137996
+=======
+            "inode": "281474977399578",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "c3ee6662-da31-4663-8665-1cc786505d7c",
@@ -16809,8 +17361,13 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "playerboy.png",
+<<<<<<< Updated upstream
             "inode": "281474976774127",
             "_v": 1632439137996
+=======
+            "inode": "281474977399579",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "02b7775b-ab11-4ae7-a998-3ac6b3e5e210",
@@ -16818,8 +17375,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
+<<<<<<< Updated upstream
             "inode": "281474976774128",
             "_v": 1632439137996
+=======
+            "inode": "281474977399580",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "b5b0d9d4-fa7a-49ff-a92a-1300dec32277",
@@ -16827,8 +17389,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
+<<<<<<< Updated upstream
             "inode": "281474976774129",
             "_v": 1632439137996
+=======
+            "inode": "281474977399581",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -16836,8 +17403,13 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
+<<<<<<< Updated upstream
             "inode": "281474976774130",
             "_v": 1632439137996
+=======
+            "inode": "281474977399582",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "74e3f16f-c2da-4295-9285-3f9e64aa998b",
@@ -16845,8 +17417,13 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "sword.png",
+<<<<<<< Updated upstream
             "inode": "281474976774131",
             "_v": 1632439137996
+=======
+            "inode": "281474977399583",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         },
         {
             "id": "f36284ed-a8ff-42eb-8d6c-b4154dbddc93",
@@ -16854,8 +17431,13 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "wizard.png",
+<<<<<<< Updated upstream
             "inode": "844424930195598",
             "_v": 1632439137996
+=======
+            "inode": "281474977399584",
+            "_v": 1632432251151
+>>>>>>> Stashed changes
         }
     ],
     "palettes": [
@@ -17539,26 +18121,6 @@
             "variables": {},
             "actors": {},
             "script": []
-        },
-        {
-            "id": "b3578e1a-1897-44cd-8af9-0b1729d1b97d",
-            "name": "Viking Speech",
-            "description": "to invoke the trivia game",
-            "variables": {},
-            "actors": {},
-            "script": [
-                {
-                    "id": "b3b626b6-d167-4f45-9033-b9ff0b66e1c8",
-                    "command": "EVENT_COMMENT",
-                    "args": {
-                        "text": "How dare you enter my chambers! If you wish to pass, thy must answer 3 of my questions in a row. Fail, and thou must go back where you came from!"
-                    }
-                },
-                {
-                    "id": "9c736ff2-128d-468c-8078-39d3e313b7bd",
-                    "command": "EVENT_END"
-                }
-            ]
         }
     ],
     "music": [
@@ -17567,16 +18129,26 @@
             "name": "Rulz_UndergroundCave",
             "filename": "Rulz_UndergroundCave.mod",
             "settings": {},
+<<<<<<< Updated upstream
             "inode": "281474976774116",
             "_v": 1632439137971
+=======
+            "inode": "281474977399559",
+            "_v": 1632432251097
+>>>>>>> Stashed changes
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
             "settings": {},
+<<<<<<< Updated upstream
             "inode": "281474976774117",
             "_v": 1632439137971
+=======
+            "inode": "281474977399560",
+            "_v": 1632432251097
+>>>>>>> Stashed changes
         }
     ],
     "variables": [
@@ -17763,9 +18335,15 @@
         "startY": 29,
         "showCollisions": true,
         "showConnections": true,
+<<<<<<< Updated upstream
         "worldScrollX": 905.5999755859375,
         "worldScrollY": 1561.5999755859375,
         "zoom": 200,
+=======
+        "worldScrollX": 0,
+        "worldScrollY": 668.6666870117188,
+        "zoom": 133.28080220519587,
+>>>>>>> Stashed changes
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
