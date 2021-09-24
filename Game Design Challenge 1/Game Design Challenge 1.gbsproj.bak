@@ -2015,8 +2015,8 @@
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
                                 "sceneId": "c146cf87-2171-4577-a03b-61d8a062f3e0",
-                                "x": 20,
-                                "y": 31,
+                                "x": 15,
+                                "y": 28,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             }
@@ -4798,7 +4798,19 @@
                             "command": "EVENT_END"
                         }
                     ],
-                    "startScript": [],
+                    "startScript": [
+                        {
+                            "id": "446abaa9-c036-44a2-a7c3-032243053e6a",
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            }
+                        },
+                        {
+                            "id": "b22bf4ea-78b0-4339-a162-95466fde7c42",
+                            "command": "EVENT_END"
+                        }
+                    ],
                     "updateScript": [
                         {
                             "id": "0c71d174-2487-4989-b18c-245aad15c581",
@@ -18150,7 +18162,7 @@
             "imageHeight": 256,
             "filename": "2.png",
             "inode": "281474976775119",
-            "_v": 1632439137993
+            "_v": 1632443334788
         },
         {
             "id": "792e6ca5-737a-4d4d-aa81-2017b414160c",
@@ -18161,7 +18173,7 @@
             "imageHeight": 1440,
             "filename": "AQm9bg.png",
             "inode": "281474976775120",
-            "_v": 1632439137994
+            "_v": 1632443334788
         },
         {
             "id": "269a4e8a-68ac-47e5-889b-f430316e3a85",
@@ -18172,7 +18184,7 @@
             "imageHeight": 192,
             "filename": "Complete tileset.png",
             "inode": "281474976775121",
-            "_v": 1632439137994
+            "_v": 1632443334788
         },
         {
             "id": "54128aea-1370-479c-b910-3b6b9b123c85",
@@ -18182,8 +18194,8 @@
             "imageWidth": 192,
             "imageHeight": 192,
             "filename": "Dirt Room.png",
-            "inode": "2814749767171046",
-            "_v": 1632440767176
+            "inode": "1125899906907701",
+            "_v": 1632443334788
         },
         {
             "id": "bf0bf992-f290-4da7-a5b4-5879af8345de",
@@ -18194,7 +18206,7 @@
             "imageHeight": 256,
             "filename": "Dungeon.png",
             "inode": "281474976774385",
-            "_v": 1632439137994
+            "_v": 1632443334788
         },
         {
             "id": "0b385836-e88d-4a52-b54e-b8450e0763e7",
@@ -18205,7 +18217,7 @@
             "imageHeight": 344,
             "filename": "EBtI6uLW4AAbNiE (1).png",
             "inode": "281474976775122",
-            "_v": 1632439137994
+            "_v": 1632443334788
         },
         {
             "id": "5072eaf1-a26b-4e73-a293-bd743f17b6df",
@@ -18216,7 +18228,7 @@
             "imageHeight": 256,
             "filename": "Fruit Room.png",
             "inode": "844424930196452",
-            "_v": 1632440231460
+            "_v": 1632443334788
         },
         {
             "id": "323b24a6-db71-4028-9a59-e3521cc3c0f9",
@@ -18227,7 +18239,7 @@
             "imageHeight": 256,
             "filename": "Main room.png",
             "inode": "844424930195698",
-            "_v": 1632439137994
+            "_v": 1632443334788
         },
         {
             "id": "3a1b4318-2e20-4d7f-bd93-58ef243453c3",
@@ -18238,7 +18250,7 @@
             "imageHeight": 256,
             "filename": "Number Puzzle.png",
             "inode": "844424930195643",
-            "_v": 1632439137995
+            "_v": 1632443334788
         },
         {
             "id": "57078f15-f092-4cf7-a07a-39fc0389b13c",
@@ -18249,7 +18261,7 @@
             "imageHeight": 256,
             "filename": "Scavenger Hunt Room.png",
             "inode": "281474976774162",
-            "_v": 1632439137995
+            "_v": 1632443334788
         },
         {
             "id": "fda46701-c8ed-4dec-b289-8e9b67ea1c22",
@@ -18260,7 +18272,7 @@
             "imageHeight": 256,
             "filename": "StarsPan.png",
             "inode": "281474976775123",
-            "_v": 1632439137995
+            "_v": 1632443334789
         },
         {
             "id": "1695f28e-b4a7-4d60-8cf9-8668c7818ae3",
@@ -18271,7 +18283,7 @@
             "imageHeight": 192,
             "filename": "Tilemap.png",
             "inode": "281474976775124",
-            "_v": 1632439137995
+            "_v": 1632443334789
         },
         {
             "id": "e51ca009-e049-473c-b1ac-b786c2e23f73",
@@ -18282,7 +18294,7 @@
             "imageHeight": 1440,
             "filename": "WVL6xK.png",
             "inode": "281474976775125",
-            "_v": 1632439137995
+            "_v": 1632443334789
         },
         {
             "id": "a48ae797-321f-49da-ae0e-781cad5a4f69",
@@ -18293,7 +18305,7 @@
             "imageHeight": 256,
             "filename": "boss2.png",
             "inode": "281474976775126",
-            "_v": 1632439137994
+            "_v": 1632443334788
         },
         {
             "id": "21136ea2-c226-4a90-a65e-6da0c50e5739",
@@ -18304,7 +18316,7 @@
             "imageHeight": 144,
             "filename": "grizlogo.png",
             "inode": "281474976774109",
-            "_v": 1632439137994
+            "_v": 1632443334788
         },
         {
             "id": "255c3c39-c5c2-47f1-b53d-dcb0bebf5bb6",
@@ -18315,7 +18327,7 @@
             "imageHeight": 1035,
             "filename": "i88bq5xfplp41.png",
             "inode": "281474976775127",
-            "_v": 1632439137994
+            "_v": 1632443334788
         },
         {
             "id": "dc0ce0d2-04bc-45de-bd13-74f9949b3738",
@@ -18326,7 +18338,7 @@
             "imageHeight": 144,
             "filename": "map1.png",
             "inode": "281474976774110",
-            "_v": 1632439137994
+            "_v": 1632443334788
         },
         {
             "id": "c6bdb51d-6186-4a42-907a-aea4557df295",
@@ -18337,7 +18349,7 @@
             "imageHeight": 176,
             "filename": "map2.png",
             "inode": "281474976774111",
-            "_v": 1632439137995
+            "_v": 1632443334788
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -18348,7 +18360,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "281474976774112",
-            "_v": 1632439137995
+            "_v": 1632443334788
         },
         {
             "id": "a5e32909-3348-4a07-b135-32c4dd2e2b48",
@@ -18359,7 +18371,7 @@
             "imageHeight": 144,
             "filename": "playerselect.png",
             "inode": "281474976774113",
-            "_v": 1632439137995
+            "_v": 1632443334788
         },
         {
             "id": "1f143181-889f-42bc-b592-74a3b35c2a11",
@@ -18370,7 +18382,7 @@
             "imageHeight": 256,
             "filename": "room_background3.png",
             "inode": "281474976774237",
-            "_v": 1632439137995
+            "_v": 1632443334788
         },
         {
             "id": "018cb7fb-862e-4616-97b8-137e162113d6",
@@ -18381,7 +18393,7 @@
             "imageHeight": 192,
             "filename": "sprite sheet one.png",
             "inode": "281474976775128",
-            "_v": 1632439137995
+            "_v": 1632443334788
         },
         {
             "id": "d607f7a6-bd79-490b-9d60-8d21cb3f3143",
@@ -18392,7 +18404,7 @@
             "imageHeight": 144,
             "filename": "titlescreen.png",
             "inode": "281474976774114",
-            "_v": 1632439137995
+            "_v": 1632443334789
         },
         {
             "id": "10d459bd-3774-49ec-9d81-b947b17c3483",
@@ -18403,7 +18415,7 @@
             "imageHeight": 192,
             "filename": "untitled.png",
             "inode": "281474976774185",
-            "_v": 1632439137995
+            "_v": 1632443334789
         }
     ],
     "spriteSheets": [
@@ -18414,7 +18426,7 @@
             "type": "actor_animated",
             "filename": "04a.png",
             "inode": "281474976774119",
-            "_v": 1632439137995
+            "_v": 1632443334789
         },
         {
             "id": "e6f98930-2478-4699-8906-1e919902e50d",
@@ -18423,7 +18435,7 @@
             "type": "actor_animated",
             "filename": "Bat.png",
             "inode": "281474976774120",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "88aa8964-bf5d-4fa4-9e2a-c08387caf275",
@@ -18432,7 +18444,7 @@
             "type": "static",
             "filename": "Coyote.png",
             "inode": "844424930195551",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "92b92fe5-2cd0-44c1-a007-42eb28fa5a11",
@@ -18441,7 +18453,7 @@
             "type": "actor_animated",
             "filename": "Dog.png",
             "inode": "844424930195552",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "2618d10d-24cd-4a06-a048-a8b56a76bec6",
@@ -18450,7 +18462,7 @@
             "type": "animated",
             "filename": "Lion.png",
             "inode": "2251799813748833",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "e7536bdb-263c-4e60-999e-11b1656260e4",
@@ -18459,7 +18471,7 @@
             "type": "actor_animated",
             "filename": "Mole.png",
             "inode": "562949953484898",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "1ad83462-123a-4ab3-99fd-3c4df66662b3",
@@ -18468,7 +18480,7 @@
             "type": "actor_animated",
             "filename": "Playergirl.png",
             "inode": "281474976774121",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "904219f5-d26a-4410-a9f0-a8b79ce21d68",
@@ -18477,7 +18489,7 @@
             "type": "static",
             "filename": "Raccoon.png",
             "inode": "1407374883616867",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "8c2e3b79-8868-4571-87bf-902bad3f9628",
@@ -18486,7 +18498,7 @@
             "type": "actor_animated",
             "filename": "Rat.png",
             "inode": "281474976774122",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "870c1bd2-1d05-4ec9-828b-1c22fe872261",
@@ -18495,7 +18507,7 @@
             "type": "actor",
             "filename": "Viking.png",
             "inode": "281474976774387",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -18504,7 +18516,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "281474976774123",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -18513,7 +18525,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "281474976774124",
-            "_v": 1632439137995
+            "_v": 1632443334789
         },
         {
             "id": "7023aa5a-14d9-488e-8817-74df3346e379",
@@ -18522,7 +18534,7 @@
             "type": "static",
             "filename": "apple.png",
             "inode": "281474976774170",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "f0fc383f-e003-4dd9-aab6-ad10d6c55836",
@@ -18531,7 +18543,7 @@
             "type": "static",
             "filename": "blueberry.png",
             "inode": "281474976774171",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "05c693d5-7397-4bdb-b9f5-92b7353c3fde",
@@ -18540,7 +18552,7 @@
             "type": "animated",
             "filename": "chest.png",
             "inode": "281474976774125",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "3aba9dbe-215a-4027-861b-2d60294501c8",
@@ -18549,7 +18561,7 @@
             "type": "actor",
             "filename": "npc001.png",
             "inode": "281474976774126",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "e7da65ab-f765-434f-b477-905122c8600c",
@@ -18558,7 +18570,7 @@
             "type": "static",
             "filename": "orange.png",
             "inode": "281474976774169",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "c3ee6662-da31-4663-8665-1cc786505d7c",
@@ -18567,7 +18579,7 @@
             "type": "actor_animated",
             "filename": "playerboy.png",
             "inode": "281474976774127",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "02b7775b-ab11-4ae7-a998-3ac6b3e5e210",
@@ -18576,7 +18588,7 @@
             "type": "static",
             "filename": "rock.png",
             "inode": "281474976774128",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "b5b0d9d4-fa7a-49ff-a92a-1300dec32277",
@@ -18585,7 +18597,7 @@
             "type": "static",
             "filename": "signpost.png",
             "inode": "281474976774129",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -18594,7 +18606,7 @@
             "type": "static",
             "filename": "static.png",
             "inode": "281474976774130",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "74e3f16f-c2da-4295-9285-3f9e64aa998b",
@@ -18603,7 +18615,7 @@
             "type": "actor",
             "filename": "sword.png",
             "inode": "281474976774131",
-            "_v": 1632439137996
+            "_v": 1632443334789
         },
         {
             "id": "f36284ed-a8ff-42eb-8d6c-b4154dbddc93",
@@ -18612,7 +18624,7 @@
             "type": "actor",
             "filename": "wizard.png",
             "inode": "844424930195598",
-            "_v": 1632439137996
+            "_v": 1632443334789
         }
     ],
     "palettes": [
@@ -19325,7 +19337,7 @@
             "filename": "Rulz_UndergroundCave.mod",
             "settings": {},
             "inode": "281474976774116",
-            "_v": 1632439137971
+            "_v": 1632443334772
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
@@ -19333,7 +19345,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "281474976774117",
-            "_v": 1632439137971
+            "_v": 1632443334772
         }
     ],
     "variables": [
@@ -19544,8 +19556,8 @@
         "startY": 29,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1377.5999755859375,
-        "worldScrollY": 1468.800048828125,
+        "worldScrollX": 1304,
+        "worldScrollY": 1512.800048828125,
         "zoom": 200,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
