@@ -3633,7 +3633,7 @@
                             "command": "EVENT_IF_VALUE",
                             "args": {
                                 "variable": "7",
-                                "operator": "==",
+                                "operator": ">=",
                                 "comparator": 5,
                                 "__collapseElse": false
                             },
@@ -3644,7 +3644,7 @@
                                         "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "38",
-                                            "operator": "==",
+                                            "operator": ">=",
                                             "comparator": 3,
                                             "__collapseElse": false
                                         },
@@ -3885,11 +3885,10 @@
                                         }
                                     },
                                     {
-                                        "id": "16cce387-5218-4b38-95d5-01c38ab68f22",
-                                        "command": "EVENT_SET_TRUE",
+                                        "id": "5c3a7fb0-8c23-44b5-aac0-ae0b1cbe6f7c",
+                                        "command": "EVENT_ACTOR_SHOW",
                                         "args": {
-                                            "variable": "3",
-                                            "__collapse": false
+                                            "actorId": "b17b8424-1afc-4c44-afc7-59056137e684"
                                         }
                                     },
                                     {
@@ -3908,6 +3907,13 @@
                                         "command": "EVENT_SET_FALSE",
                                         "args": {
                                             "variable": "4"
+                                        }
+                                    },
+                                    {
+                                        "id": "83cfedbb-375d-4a31-aa34-f634d010ad2f",
+                                        "command": "EVENT_SET_FALSE",
+                                        "args": {
+                                            "variable": "5"
                                         }
                                     },
                                     {
@@ -5430,7 +5436,7 @@
                             "command": "EVENT_IF_VALUE",
                             "args": {
                                 "variable": "7",
-                                "operator": "==",
+                                "operator": ">=",
                                 "comparator": 5,
                                 "__collapseElse": false
                             },
@@ -5441,7 +5447,7 @@
                                         "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "38",
-                                            "operator": "==",
+                                            "operator": ">=",
                                             "comparator": 3,
                                             "__collapseElse": false
                                         },
@@ -5530,9 +5536,9 @@
                 {
                     "name": "Racoon",
                     "frame": 0,
-                    "animate": false,
+                    "animate": true,
                     "spriteSheetId": "904219f5-d26a-4410-a9f0-a8b79ce21d68",
-                    "spriteType": "static",
+                    "spriteType": "actor",
                     "direction": "down",
                     "moveSpeed": "1",
                     "animSpeed": "3",
@@ -5542,7 +5548,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "*raccoon noise*"
+                                    "*raccoon noise*",
+                                    "Wrong animal!"
                                 ],
                                 "avatarId": ""
                             }
@@ -5605,7 +5612,7 @@
                 {
                     "name": "Lion",
                     "frame": 0,
-                    "animate": false,
+                    "animate": true,
                     "spriteSheetId": "2618d10d-24cd-4a06-a048-a8b56a76bec6",
                     "spriteType": "actor",
                     "direction": "right",
@@ -5631,43 +5638,6 @@
                         }
                     ],
                     "updateScript": [
-                        {
-                            "id": "0c71d174-2487-4989-b18c-245aad15c581",
-                            "command": "EVENT_IF_TRUE",
-                            "args": {
-                                "variable": "3",
-                                "__collapseElse": false,
-                                "__collapse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "81bf677c-bc74-437c-8dce-b67488d324bf",
-                                        "command": "EVENT_ACTOR_SHOW",
-                                        "args": {
-                                            "actorId": "$self$"
-                                        }
-                                    },
-                                    {
-                                        "id": "3a416e18-9ef5-4e2a-b4f1-e92d82a4c996",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "dab461dc-3cd8-41fe-96a8-431f896c75fc",
-                                        "command": "EVENT_ACTOR_HIDE",
-                                        "args": {
-                                            "actorId": "$self$"
-                                        }
-                                    },
-                                    {
-                                        "id": "7a1155a9-c03a-4b9d-ae24-baeb34884598",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
                         {
                             "id": "9be52a2e-338c-4e18-bf6f-51a9bf52d8cf",
                             "command": "EVENT_IF_TRUE",
@@ -5730,7 +5700,7 @@
                         }
                     ],
                     "id": "b17b8424-1afc-4c44-afc7-59056137e684",
-                    "x": 18,
+                    "x": 15,
                     "y": 15,
                     "collisionGroup": "1"
                 },
@@ -17654,10 +17624,10 @@
                 {
                     "name": "",
                     "frame": 0,
-                    "animate": false,
+                    "animate": true,
                     "spriteSheetId": "88aa8964-bf5d-4fa4-9e2a-c08387caf275",
-                    "spriteType": "static",
-                    "direction": "down",
+                    "spriteType": "actor",
+                    "direction": "right",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "script": [
@@ -17666,7 +17636,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "**GRRR**"
+                                    "**GRRR**",
+                                    "Wrong animal!"
                                 ],
                                 "avatarId": ""
                             }
@@ -17694,11 +17665,11 @@
                                 "actorId": "player",
                                 "x": {
                                     "type": "number",
-                                    "value": 16
+                                    "value": 24
                                 },
                                 "y": {
                                     "type": "number",
-                                    "value": 31
+                                    "value": 16
                                 }
                             }
                         },
@@ -17792,6 +17763,16 @@
                             }
                         },
                         {
+                            "id": "c37cb7df-17b6-4782-a022-b1796c2bcd5a",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Good job! Return\nto the wizard."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
                             "id": "35cc92bd-2f6b-49f5-85f6-adba25f508f2",
                             "command": "EVENT_END"
                         }
@@ -17817,7 +17798,7 @@
                                         "command": "EVENT_ACTOR_SHOW",
                                         "args": {
                                             "actorId": "$self$",
-                                            "__collapse": true
+                                            "__collapse": false
                                         }
                                     },
                                     {
@@ -19042,11 +19023,11 @@
                                                                     "actorId": "player",
                                                                     "x": {
                                                                         "type": "number",
-                                                                        "value": 16
+                                                                        "value": 24
                                                                     },
                                                                     "y": {
                                                                         "type": "number",
-                                                                        "value": 28
+                                                                        "value": 16
                                                                     }
                                                                 }
                                                             },
@@ -19366,7 +19347,7 @@
                             "command": "EVENT_IF_VALUE",
                             "args": {
                                 "variable": "7",
-                                "operator": "==",
+                                "operator": ">=",
                                 "comparator": 5,
                                 "__collapseElse": false
                             },
@@ -19377,7 +19358,7 @@
                                         "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "38",
-                                            "operator": "==",
+                                            "operator": ">=",
                                             "comparator": 3,
                                             "__collapseElse": false
                                         },
@@ -20684,7 +20665,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "**mole sounds**"
+                                    "**mole sounds**",
+                                    "Correct! Return to\nthe wizard."
                                 ],
                                 "avatarId": ""
                             }
@@ -21657,11 +21639,11 @@
                                                                     "actorId": "player",
                                                                     "x": {
                                                                         "type": "number",
-                                                                        "value": 16
+                                                                        "value": 12
                                                                     },
                                                                     "y": {
                                                                         "type": "number",
-                                                                        "value": 28
+                                                                        "value": 21
                                                                     }
                                                                 }
                                                             },
@@ -21992,7 +21974,7 @@
                                         "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "38",
-                                            "operator": "==",
+                                            "operator": ">=",
                                             "comparator": 3,
                                             "__collapseElse": false
                                         },
@@ -22003,7 +21985,7 @@
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
                                                         "variable": "31",
-                                                        "operator": "==",
+                                                        "operator": ">=",
                                                         "comparator": 2,
                                                         "__collapseElse": false
                                                     },
@@ -25124,11 +25106,11 @@
         {
             "id": "88aa8964-bf5d-4fa4-9e2a-c08387caf275",
             "name": "Coyote",
-            "numFrames": 1,
-            "type": "static",
+            "numFrames": 6,
+            "type": "actor_animated",
             "filename": "Coyote.png",
-            "inode": "844424930195551",
-            "_v": 1632512654175
+            "inode": "1688849860329123",
+            "_v": 1632517629270
         },
         {
             "id": "92b92fe5-2cd0-44c1-a007-42eb28fa5a11",
@@ -25142,11 +25124,11 @@
         {
             "id": "2618d10d-24cd-4a06-a048-a8b56a76bec6",
             "name": "Lion",
-            "numFrames": 1.125,
-            "type": "animated",
+            "numFrames": 6,
+            "type": "actor_animated",
             "filename": "Lion.png",
-            "inode": "2251799813748833",
-            "_v": 1632512654175
+            "inode": "1688849860327523",
+            "_v": 1632517672509
         },
         {
             "id": "e7536bdb-263c-4e60-999e-11b1656260e4",
@@ -25169,11 +25151,11 @@
         {
             "id": "904219f5-d26a-4410-a9f0-a8b79ce21d68",
             "name": "Raccoon",
-            "numFrames": 1,
-            "type": "static",
+            "numFrames": 6,
+            "type": "actor_animated",
             "filename": "Raccoon.png",
-            "inode": "1407374883616867",
-            "_v": 1632512654176
+            "inode": "1125899906906207",
+            "_v": 1632517653047
         },
         {
             "id": "8c2e3b79-8868-4571-87bf-902bad3f9628",
@@ -26424,8 +26406,8 @@
         "startY": 29,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 708.7999877929688,
-        "worldScrollY": 1515.199951171875,
+        "worldScrollX": 1276,
+        "worldScrollY": 1475.199951171875,
         "zoom": 200,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
