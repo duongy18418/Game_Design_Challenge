@@ -15527,7 +15527,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "I need the\npassword to\nopen the PC."
+                                                            "I need to find the\npassword to\nopen the PC."
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -15681,7 +15681,7 @@
                                                     "args": {
                                                         "text": [
                                                             "Here is your\nreward..",
-                                                            "The password."
+                                                            "The key of the\ndesk."
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -15712,7 +15712,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "I should go to\nthe desk."
+                                                            "I check the desk."
                                                         ],
                                                         "avatarId": ""
                                                     }
