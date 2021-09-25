@@ -3633,7 +3633,7 @@
                             "command": "EVENT_IF_VALUE",
                             "args": {
                                 "variable": "7",
-                                "operator": "==",
+                                "operator": ">=",
                                 "comparator": 5,
                                 "__collapseElse": false
                             },
@@ -3644,7 +3644,7 @@
                                         "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "38",
-                                            "operator": "==",
+                                            "operator": ">=",
                                             "comparator": 3,
                                             "__collapseElse": false
                                         },
@@ -5436,7 +5436,7 @@
                             "command": "EVENT_IF_VALUE",
                             "args": {
                                 "variable": "7",
-                                "operator": "==",
+                                "operator": ">=",
                                 "comparator": 5,
                                 "__collapseElse": false
                             },
@@ -5447,7 +5447,7 @@
                                         "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "38",
-                                            "operator": "==",
+                                            "operator": ">=",
                                             "comparator": 3,
                                             "__collapseElse": false
                                         },
@@ -19347,7 +19347,7 @@
                             "command": "EVENT_IF_VALUE",
                             "args": {
                                 "variable": "7",
-                                "operator": "==",
+                                "operator": ">=",
                                 "comparator": 5,
                                 "__collapseElse": false
                             },
@@ -19358,7 +19358,7 @@
                                         "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "38",
-                                            "operator": "==",
+                                            "operator": ">=",
                                             "comparator": 3,
                                             "__collapseElse": false
                                         },
@@ -20665,7 +20665,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "**mole sounds**"
+                                    "**mole sounds**",
+                                    "Correct! Return to\nthe wizard."
                                 ],
                                 "avatarId": ""
                             }
@@ -21973,7 +21974,7 @@
                                         "command": "EVENT_IF_VALUE",
                                         "args": {
                                             "variable": "38",
-                                            "operator": "==",
+                                            "operator": ">=",
                                             "comparator": 3,
                                             "__collapseElse": false
                                         },
@@ -21984,7 +21985,7 @@
                                                     "command": "EVENT_IF_VALUE",
                                                     "args": {
                                                         "variable": "31",
-                                                        "operator": "==",
+                                                        "operator": ">=",
                                                         "comparator": 2,
                                                         "__collapseElse": false
                                                     },
@@ -26405,8 +26406,8 @@
         "startY": 29,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1260.800048828125,
-        "worldScrollY": 1371.199951171875,
+        "worldScrollX": 1276,
+        "worldScrollY": 1475.199951171875,
         "zoom": 200,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
