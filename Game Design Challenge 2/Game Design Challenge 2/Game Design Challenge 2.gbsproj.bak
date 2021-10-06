@@ -16510,7 +16510,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "I'm just a cat. "
+                                    "I'm just a cat.\nI don't do\nanything."
                                 ],
                                 "avatarId": "1e27bb8e-c805-435a-8b87-05b4f50da4f0"
                             }
@@ -18976,7 +18976,7 @@
                     "args": {
                         "sceneId": "76c8d8ff-92b0-447d-a88a-856fd42c405c",
                         "x": 0,
-                        "y": 0,
+                        "y": 35,
                         "direction": "",
                         "fadeSpeed": "2"
                     }
@@ -20523,7 +20523,7 @@
         "startY": 0,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 442.3999938964844,
+        "worldScrollX": 290.3999938964844,
         "worldScrollY": 461.6000061035156,
         "zoom": 100,
         "customColorsEnabled": true,
