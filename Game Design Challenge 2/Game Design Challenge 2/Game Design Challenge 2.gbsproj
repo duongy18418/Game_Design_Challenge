@@ -433,7 +433,7 @@
         {
             "id": "4912bee2-387a-472f-ae4f-6679b6149517",
             "name": "Title Screen",
-            "backgroundId": "50dbe2d5-93cc-4990-99ce-cfedd22d6aee",
+            "backgroundId": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
             "x": 329.5,
             "y": 60.5,
             "width": 20,
@@ -807,7 +807,7 @@
                     "id": "331c0316-e5a7-4611-bcb9-4f3b215cc246",
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "42cc6f45-0311-4b1e-bd4b-43d9bd368f7f",
+                        "musicId": "91f9b2c5-34ee-4b6f-b938-f04e9374e0c7",
                         "loop": true
                     }
                 },
@@ -836,8 +836,8 @@
                     "args": {
                         "sceneId": "a439b997-2424-4804-a662-a73928066c70",
                         "x": 15,
-                        "y": 15,
-                        "direction": "up",
+                        "y": 16,
+                        "direction": "",
                         "fadeSpeed": "2"
                     }
                 },
@@ -849,9 +849,367 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "tileColors": [],
-            "paletteIds": [
-                "default-bg-2"
+            "tileColors": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                0,
+                0,
+                2,
+                2,
+                2,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                2,
+                2,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
             ]
         },
         {
@@ -3297,7 +3655,7 @@
                                 "sceneId": "16fdca7d-4e1a-4ca6-8608-a1440d36ec55",
                                 "x": 15,
                                 "y": 14,
-                                "direction": "up",
+                                "direction": "",
                                 "fadeSpeed": "2"
                             }
                         },
@@ -3307,8 +3665,7 @@
                         }
                     ],
                     "startScript": [],
-                    "hit2Script": [],
-                    "paletteId": "c1334c10-898e-4f42-843e-391d85c91326"
+                    "hit2Script": []
                 },
                 {
                     "name": "",
@@ -3457,8 +3814,7 @@
                     "id": "3ace3182-8bf6-456c-8922-63d0d481e23d",
                     "x": 31,
                     "y": 0,
-                    "collisionGroup": "1",
-                    "paletteId": "c1334c10-898e-4f42-843e-391d85c91326"
+                    "collisionGroup": "1"
                 },
                 {
                     "name": "",
@@ -3572,8 +3928,7 @@
                     "id": "8905289b-74d3-45c4-8821-9a086c6f62e4",
                     "x": 31,
                     "y": 17,
-                    "collisionGroup": "1",
-                    "paletteId": "c1334c10-898e-4f42-843e-391d85c91326"
+                    "collisionGroup": "1"
                 }
             ],
             "triggers": [],
@@ -6523,7 +6878,7 @@
                                     "sceneId": "a439b997-2424-4804-a662-a73928066c70",
                                     "x": 15,
                                     "y": 15,
-                                    "direction": "up",
+                                    "direction": "",
                                     "fadeSpeed": "2"
                                 }
                             },
@@ -6554,7 +6909,7 @@
                                     "sceneId": "a439b997-2424-4804-a662-a73928066c70",
                                     "x": 15,
                                     "y": 15,
-                                    "direction": "up",
+                                    "direction": "",
                                     "fadeSpeed": "2"
                                 }
                             },
@@ -14988,7 +15343,7 @@
                     "id": "63c0c901-811d-4d29-835a-2b6e03c5c39c",
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "180f6b13-2ccc-4af9-8ebf-3e3931f2e824",
+                        "musicId": "c6a4c1c1-a095-488d-85a4-05e6dd17f87e",
                         "loop": true
                     }
                 },
@@ -14997,9 +15352,9 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "All you have to\ndo is make it to\nthe end..."
+                            "All you have to is\nmake it to the\nend..."
                         ],
-                        "avatarId": "9a0b1985-d545-4be6-a58d-618b8f789920",
+                        "avatarId": "",
                         "__collapse": false
                     }
                 },
@@ -15060,7 +15415,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "grandson could\nfigure it out...\nI'm 120000 years",
+                            "grandson could\nfigure it put...\nI'm 120000 years",
                             "old I have a LOT\nof grandchildren.",
                             "Anyway, good\nluck... Whatever"
                         ],
@@ -15133,74 +15488,19 @@
                             }
                         },
                         {
-                            "id": "b20c15ed-e47c-48ab-90ea-c86290a4258f",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "47",
-                                "operator": "==",
-                                "comparator": 4,
-                                "__collapseElse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "2c82e7d2-5054-4ba6-802e-646e0facc755",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "At last, you\nhave done it!\nAll the stars ",
-                                                "are found!\nThanks for\nfinding the",
-                                                "ammo to my\nships. Can't\nwait to destroy",
-                                                "Earth some more\n:)"
-                                            ],
-                                            "avatarId": "9a0b1985-d545-4be6-a58d-618b8f789920"
-                                        }
-                                    },
-                                    {
-                                        "id": "f918762e-3671-4768-b20b-b28b3b8b9638",
-                                        "command": "EVENT_SWITCH_SCENE",
-                                        "args": {
-                                            "sceneId": "9e9067f4-dbe5-433f-948f-7654dc3abef0",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2",
-                                            "__collapse": true
-                                        }
-                                    },
-                                    {
-                                        "id": "4ce92908-3d77-4a70-9b3c-378d68a37842",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "5b557185-5f2b-4307-8f33-70bee10cf796",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
-                        {
                             "id": "bf67a2c2-2345-47a6-8f5c-fb3b3690fd99",
                             "command": "EVENT_END"
                         }
                     ],
                     "startScript": [],
-                    "updateScript": [
-                        {
-                            "id": "8d947e1d-ac89-4015-9445-01bac0c27d80",
-                            "command": "EVENT_END"
-                        }
-                    ],
+                    "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "87c6a642-d306-47e1-9d46-d837d3896b3e",
                     "x": 9,
                     "y": 19,
-                    "collisionGroup": "1",
-                    "paletteId": "4b8319e1-9d1d-4697-b97c-f9529fe84c50"
+                    "collisionGroup": "1"
                 },
                 {
                     "name": "",
@@ -15217,67 +15517,6 @@
                             "command": "EVENT_INC_VALUE",
                             "args": {
                                 "variable": "47"
-                            }
-                        },
-                        {
-                            "id": "a8bfc411-b4e2-42a1-93c5-b332250ad7a0",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "47",
-                                "operator": "==",
-                                "comparator": 4,
-                                "__collapseElse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "ba84b1b3-9185-45e5-98bf-d7bca51f6706",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "At last, you\nhave done it!\nAll the stars ",
-                                                "are found!\nThanks for\nfinding the",
-                                                "ammo to my\nships. Can't\nwait to destroy",
-                                                "Earth some more\n:)"
-                                            ],
-                                            "avatarId": "9a0b1985-d545-4be6-a58d-618b8f789920"
-                                        }
-                                    },
-                                    {
-                                        "id": "b3eda37f-f434-4f27-aff7-5898e7cc409b",
-                                        "command": "EVENT_SWITCH_SCENE",
-                                        "args": {
-                                            "sceneId": "9e9067f4-dbe5-433f-948f-7654dc3abef0",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2"
-                                        }
-                                    },
-                                    {
-                                        "id": "fcd15357-3b58-4db6-89ef-0b533325782d",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "109120e7-d15c-4896-91e0-85b2e102179c",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "id": "fc41828d-5f69-474b-8ddc-9d858e35716e",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "At last, you\nhave done it!\nAll the stars ",
-                                    "are found!\nThanks for\nfinding the",
-                                    "ammo to my\nships. Can't\nwait to destroy",
-                                    "Earth some more\n:)"
-                                ],
-                                "avatarId": "9a0b1985-d545-4be6-a58d-618b8f789920"
                             }
                         },
                         {
@@ -15308,20 +15547,14 @@
                         }
                     ],
                     "startScript": [],
-                    "updateScript": [
-                        {
-                            "id": "a8fc7bc6-321f-4d60-82c2-d64f5542fca8",
-                            "command": "EVENT_END"
-                        }
-                    ],
+                    "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "f17284cc-61b1-40d3-b286-df857002d482",
-                    "x": 117,
-                    "y": 39,
-                    "collisionGroup": "1",
-                    "paletteId": "4b8319e1-9d1d-4697-b97c-f9529fe84c50"
+                    "x": 140,
+                    "y": 51,
+                    "collisionGroup": "1"
                 },
                 {
                     "name": "",
@@ -15339,54 +15572,6 @@
                             "args": {
                                 "variable": "47",
                                 "__collapse": false
-                            }
-                        },
-                        {
-                            "id": "541fbdab-9df3-4d53-a6df-2821aa0c226b",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "47",
-                                "operator": "==",
-                                "comparator": 4,
-                                "__collapseElse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "93c3b970-e0ef-4db9-a2f9-9bb0970d6268",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "At last, you\nhave done it!\nAll the stars ",
-                                                "are found!\nThanks for\nfinding the",
-                                                "ammo to my\nships. Can't\nwait to destroy",
-                                                "Earth some more\n:)"
-                                            ],
-                                            "avatarId": "9a0b1985-d545-4be6-a58d-618b8f789920"
-                                        }
-                                    },
-                                    {
-                                        "id": "b8f00796-17c7-4a6e-a858-ef7d9d1228e8",
-                                        "command": "EVENT_SWITCH_SCENE",
-                                        "args": {
-                                            "sceneId": "9e9067f4-dbe5-433f-948f-7654dc3abef0",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2"
-                                        }
-                                    },
-                                    {
-                                        "id": "45cd1a18-6279-4488-8d17-443bc9689553",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "02ad9249-d4ee-40e3-a039-52f4aacf95ac",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
                             }
                         },
                         {
@@ -15417,20 +15602,14 @@
                         }
                     ],
                     "startScript": [],
-                    "updateScript": [
-                        {
-                            "id": "3a9d82dd-db44-4179-99a1-25ce6ddc2494",
-                            "command": "EVENT_END"
-                        }
-                    ],
+                    "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "d6765d43-e362-40d9-9c67-1188d9b17d97",
-                    "x": 140,
-                    "y": 51,
-                    "collisionGroup": "1",
-                    "paletteId": "4b8319e1-9d1d-4697-b97c-f9529fe84c50"
+                    "x": 117,
+                    "y": 39,
+                    "collisionGroup": "1"
                 },
                 {
                     "name": "",
@@ -15472,73 +15651,19 @@
                             }
                         },
                         {
-                            "id": "cb4ce8d1-fcbb-4eec-b7b6-6ebeeb799483",
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "47",
-                                "operator": "==",
-                                "comparator": 4,
-                                "__collapseElse": false
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "cf4c7206-da6e-4531-9f2b-20e7416839b3",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "At last, you\nhave done it!\nAll the stars ",
-                                                "are found!\nThanks for\nfinding the",
-                                                "ammo to my\nships. Can't\nwait to destroy",
-                                                "Earth some more\n:)"
-                                            ],
-                                            "avatarId": "9a0b1985-d545-4be6-a58d-618b8f789920"
-                                        }
-                                    },
-                                    {
-                                        "id": "f62df0a0-8f72-481b-834f-90ac0e989e3f",
-                                        "command": "EVENT_SWITCH_SCENE",
-                                        "args": {
-                                            "sceneId": "9e9067f4-dbe5-433f-948f-7654dc3abef0",
-                                            "x": 0,
-                                            "y": 0,
-                                            "direction": "",
-                                            "fadeSpeed": "2"
-                                        }
-                                    },
-                                    {
-                                        "id": "20fdd126-a37c-4c05-b239-a0935029efca",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "907f4cc6-d1e8-420e-803b-21a7cfa025b6",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
-                        {
                             "id": "86f4e197-0beb-4f60-b1ca-defbb8e2057b",
                             "command": "EVENT_END"
                         }
                     ],
                     "startScript": [],
-                    "updateScript": [
-                        {
-                            "id": "cc9179bc-95b2-4648-8ea5-cdb9b0421a4f",
-                            "command": "EVENT_END"
-                        }
-                    ],
+                    "updateScript": [],
                     "hit1Script": [],
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "d9d3ac6c-cce1-4908-94f2-4645307e9333",
                     "x": 18,
                     "y": 9,
-                    "collisionGroup": "1",
-                    "paletteId": "4b8319e1-9d1d-4697-b97c-f9529fe84c50"
+                    "collisionGroup": "1"
                 },
                 {
                     "name": "",
@@ -15550,21 +15675,6 @@
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "script": [
-                        {
-                            "id": "23b5ef1a-78f5-4759-96e7-5e6c4321a171",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "1",
-                                "__collapse": false
-                            }
-                        },
-                        {
-                            "id": "d4b725af-5c90-4c30-bf59-541211b14232",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "17"
-                            }
-                        },
                         {
                             "id": "0ce94cf0-f207-4edf-a7cf-95b0f75555b2",
                             "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -15652,13 +15762,6 @@
                                                         "y": 0,
                                                         "direction": "",
                                                         "fadeSpeed": "2"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "3eb814b6-7464-4bd4-a06e-fc23e97011d7",
-                                                    "command": "EVENT_SET_FALSE",
-                                                    "args": {
-                                                        "variable": "0"
                                                     }
                                                 },
                                                 {
@@ -15841,22 +15944,7 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "7a18b8a1-8605-4b40-bdab-355cb83ecc56",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "1",
-                                "__collapse": false
-                            }
-                        },
-                        {
-                            "id": "cf4eb99c-19b1-41bf-8245-e03e19ab478c",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "17"
-                            }
-                        },
-                        {
-                            "id": "4b09d093-86a9-4306-99b8-2dc026e72dd0",
+                            "id": "e3f469d0-9bc3-428b-ba41-034e7a99812e",
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
                                 "customEventId": "13bf2c9c-99d9-4744-bdda-7e5e081ed8cc",
@@ -15866,7 +15954,7 @@
                             "children": {
                                 "script": [
                                     {
-                                        "id": "cc051282-9451-4c67-a067-353c13c8cdc8",
+                                        "id": "f4ff20f6-c0b2-4f47-a725-01dab8f9cfcd",
                                         "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
                                         "args": {
                                             "actorId": "player",
@@ -15877,7 +15965,7 @@
                                         "children": {
                                             "true": [
                                                 {
-                                                    "id": "9fdc8aac-7c20-4762-8ff5-e47b86220725",
+                                                    "id": "4c1354eb-baac-48eb-ad95-3eba6d698002",
                                                     "command": "EVENT_SET_TRUE",
                                                     "args": {
                                                         "variable": "0",
@@ -15885,48 +15973,48 @@
                                                     }
                                                 },
                                                 {
-                                                    "id": "2b0c2e36-1848-4b23-b2d4-7ab49bc9bfc0",
+                                                    "id": "67da03da-8803-4d6a-a20d-248bc4fc7ef3",
                                                     "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
                                                     "args": {
                                                         "actorId": "0"
                                                     }
                                                 },
                                                 {
-                                                    "id": "5c23489a-148d-418c-a6e2-8a782bba00ca",
+                                                    "id": "689f3777-73e2-4b2d-a665-ca771e70dbf9",
                                                     "command": "EVENT_ACTOR_STOP_UPDATE",
                                                     "args": {
                                                         "actorId": "0"
                                                     }
                                                 },
                                                 {
-                                                    "id": "40907917-30bc-4c7a-b6bd-86cfb4af45a9",
+                                                    "id": "3db7ecfa-2e3e-45ba-9e0b-018a60d8499c",
                                                     "command": "EVENT_PLAYER_BOUNCE",
                                                     "args": {
                                                         "height": "low"
                                                     }
                                                 },
                                                 {
-                                                    "id": "6abaae87-27f0-44d7-8755-47b24a93637d",
+                                                    "id": "13ca81be-06ed-42ea-917c-7c7b55cbdee3",
                                                     "command": "EVENT_WAIT",
                                                     "args": {
                                                         "time": 0.5
                                                     }
                                                 },
                                                 {
-                                                    "id": "e7ae418a-a559-4ede-98b0-6d378c9b38b6",
+                                                    "id": "24ab8559-49a9-43d9-aaeb-5c1571002fc8",
                                                     "command": "EVENT_ACTOR_HIDE",
                                                     "args": {
                                                         "actorId": "0"
                                                     }
                                                 },
                                                 {
-                                                    "id": "3ba0d913-8ccc-4f75-b0c8-66e9e2598d9f",
+                                                    "id": "3039df85-8ea3-4d75-8395-f3cf6a35f163",
                                                     "command": "EVENT_END"
                                                 }
                                             ],
                                             "false": [
                                                 {
-                                                    "id": "5fe96459-3677-4ad8-aa4e-59983b6f01f7",
+                                                    "id": "b58adc55-c7f5-4e80-b03e-7b0cb44f6749",
                                                     "command": "EVENT_CAMERA_SHAKE",
                                                     "args": {
                                                         "time": 0.5,
@@ -15934,7 +16022,7 @@
                                                     }
                                                 },
                                                 {
-                                                    "id": "6ef251e6-906b-449a-97e7-104344dfda85",
+                                                    "id": "c514ee22-9b96-4c47-a44a-4daea54f5f83",
                                                     "command": "EVENT_SWITCH_SCENE",
                                                     "args": {
                                                         "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
@@ -15945,28 +16033,21 @@
                                                     }
                                                 },
                                                 {
-                                                    "id": "d3010370-b642-43b4-abf4-e4c120b00c01",
-                                                    "command": "EVENT_SET_FALSE",
-                                                    "args": {
-                                                        "variable": "0"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "202e8e73-f726-4bfd-af8c-2e20a5c8a9b5",
+                                                    "id": "c9259c2d-5861-47a1-8506-4e9a673253b3",
                                                     "command": "EVENT_END"
                                                 }
                                             ]
                                         }
                                     },
                                     {
-                                        "id": "6ce98591-fc89-429f-a7e7-e82db051f079",
+                                        "id": "da35f60d-0e17-45de-bccd-5f75fd643a5b",
                                         "command": "EVENT_END"
                                     }
                                 ]
                             }
                         },
                         {
-                            "id": "e79c5535-3ea8-4367-a740-4b25dd9b31af",
+                            "id": "23285754-28b1-4bba-91eb-161320a67966",
                             "command": "EVENT_END"
                         }
                     ],
@@ -16131,22 +16212,7 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "3cab15dc-4d05-483a-bde0-a5eaa158bb8b",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "1",
-                                "__collapse": false
-                            }
-                        },
-                        {
-                            "id": "2c80cc94-e6fb-4f54-a780-910a998a24e6",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "17"
-                            }
-                        },
-                        {
-                            "id": "2f27bbc5-3683-464b-b7c8-1dd5bac6d6fa",
+                            "id": "f6b6a6a5-d2a6-4db8-9ad8-111d00f659fd",
                             "command": "EVENT_CALL_CUSTOM_EVENT",
                             "args": {
                                 "customEventId": "13bf2c9c-99d9-4744-bdda-7e5e081ed8cc",
@@ -16156,7 +16222,7 @@
                             "children": {
                                 "script": [
                                     {
-                                        "id": "9caee873-bda7-4312-b9ba-1ea60d9d5cc8",
+                                        "id": "f4ff20f6-c0b2-4f47-a725-01dab8f9cfcd",
                                         "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
                                         "args": {
                                             "actorId": "player",
@@ -16167,7 +16233,7 @@
                                         "children": {
                                             "true": [
                                                 {
-                                                    "id": "d886b7e0-cb18-4d7a-8d3c-f397de15f14e",
+                                                    "id": "4c1354eb-baac-48eb-ad95-3eba6d698002",
                                                     "command": "EVENT_SET_TRUE",
                                                     "args": {
                                                         "variable": "0",
@@ -16175,48 +16241,48 @@
                                                     }
                                                 },
                                                 {
-                                                    "id": "bf9d8ab7-2d18-4925-b351-03813274695a",
+                                                    "id": "67da03da-8803-4d6a-a20d-248bc4fc7ef3",
                                                     "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
                                                     "args": {
                                                         "actorId": "0"
                                                     }
                                                 },
                                                 {
-                                                    "id": "6ede9998-f26a-446f-993a-262f43ac3d4f",
+                                                    "id": "689f3777-73e2-4b2d-a665-ca771e70dbf9",
                                                     "command": "EVENT_ACTOR_STOP_UPDATE",
                                                     "args": {
                                                         "actorId": "0"
                                                     }
                                                 },
                                                 {
-                                                    "id": "76209554-44cf-47bd-a05e-72736745be1c",
+                                                    "id": "3db7ecfa-2e3e-45ba-9e0b-018a60d8499c",
                                                     "command": "EVENT_PLAYER_BOUNCE",
                                                     "args": {
                                                         "height": "low"
                                                     }
                                                 },
                                                 {
-                                                    "id": "f2a9966a-2fa8-40e6-80ba-498749872779",
+                                                    "id": "13ca81be-06ed-42ea-917c-7c7b55cbdee3",
                                                     "command": "EVENT_WAIT",
                                                     "args": {
                                                         "time": 0.5
                                                     }
                                                 },
                                                 {
-                                                    "id": "bd5b3c91-d718-4a61-a846-08be73f42115",
+                                                    "id": "24ab8559-49a9-43d9-aaeb-5c1571002fc8",
                                                     "command": "EVENT_ACTOR_HIDE",
                                                     "args": {
                                                         "actorId": "0"
                                                     }
                                                 },
                                                 {
-                                                    "id": "48649986-5248-4286-a272-e926238afbc4",
+                                                    "id": "3039df85-8ea3-4d75-8395-f3cf6a35f163",
                                                     "command": "EVENT_END"
                                                 }
                                             ],
                                             "false": [
                                                 {
-                                                    "id": "86f32f5f-86da-4003-b8ea-e690847ffd4c",
+                                                    "id": "b58adc55-c7f5-4e80-b03e-7b0cb44f6749",
                                                     "command": "EVENT_CAMERA_SHAKE",
                                                     "args": {
                                                         "time": 0.5,
@@ -16224,7 +16290,7 @@
                                                     }
                                                 },
                                                 {
-                                                    "id": "343292d2-4573-4ea8-bbb4-7dfe663d4adc",
+                                                    "id": "c514ee22-9b96-4c47-a44a-4daea54f5f83",
                                                     "command": "EVENT_SWITCH_SCENE",
                                                     "args": {
                                                         "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
@@ -16235,28 +16301,21 @@
                                                     }
                                                 },
                                                 {
-                                                    "id": "7d668fe9-34a3-4047-8333-5f44333d6ae7",
-                                                    "command": "EVENT_SET_FALSE",
-                                                    "args": {
-                                                        "variable": "0"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "909152a5-6d97-457b-be8a-6fa113b1e2e0",
+                                                    "id": "c9259c2d-5861-47a1-8506-4e9a673253b3",
                                                     "command": "EVENT_END"
                                                 }
                                             ]
                                         }
                                     },
                                     {
-                                        "id": "53689952-df94-4e78-9dc8-1208153702c6",
+                                        "id": "da35f60d-0e17-45de-bccd-5f75fd643a5b",
                                         "command": "EVENT_END"
                                     }
                                 ]
                             }
                         },
                         {
-                            "id": "a8324199-ea06-4577-a23c-85394cf192c9",
+                            "id": "ea13adf7-15b8-4f4f-a4c2-e9b1d60436a6",
                             "command": "EVENT_END"
                         }
                     ],
@@ -16486,20 +16545,6 @@
                     "trigger": "walk",
                     "script": [
                         {
-                            "id": "3f0159fd-d3a9-435b-a744-4df80c0c9f44",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "1"
-                            }
-                        },
-                        {
-                            "id": "656f6628-c75a-45fc-8d6a-38a803240567",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "17"
-                            }
-                        },
-                        {
                             "id": "ff4464b8-c694-49aa-abd0-58a1124ebe73",
                             "command": "EVENT_CAMERA_SHAKE",
                             "args": {
@@ -16542,21 +16587,7 @@
                     "trigger": "walk",
                     "script": [
                         {
-                            "id": "bea7977d-7254-4a73-92a8-a3077fa8dd9e",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "17"
-                            }
-                        },
-                        {
-                            "id": "69e6897c-1797-4230-b8f2-370d477816ca",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "0"
-                            }
-                        },
-                        {
-                            "id": "dc74ae4b-0ba8-4000-a1d0-2747c49b1a15",
+                            "id": "0da8423b-d61f-46c0-914e-3224dfb1514b",
                             "command": "EVENT_CAMERA_SHAKE",
                             "args": {
                                 "time": 0.1,
@@ -16565,25 +16596,25 @@
                             }
                         },
                         {
-                            "id": "ab0cfd9b-a56a-4507-b3c9-15e4a783058d",
+                            "id": "2d7c9455-4a49-4a3d-93e7-909d4578117b",
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 1
+                                "time": 2
                             }
                         },
                         {
-                            "id": "b9d53917-d29b-4459-b127-ccbbc984d3f0",
+                            "id": "2a082c1c-88a5-41e8-aa2e-f65dee4e85db",
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+                                "sceneId": "4912bee2-387a-472f-ae4f-6679b6149517",
                                 "x": 0,
-                                "y": 0,
+                                "y": 35,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             }
                         },
                         {
-                            "id": "7380ba78-0213-481e-8d3b-f2cbd0add212",
+                            "id": "5c0a29a1-7f36-49b7-b81d-fd2a239d2abb",
                             "command": "EVENT_END"
                         }
                     ],
@@ -16598,21 +16629,7 @@
                     "trigger": "walk",
                     "script": [
                         {
-                            "id": "e8023dbd-45d3-4b44-be62-d9c79c04a90e",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "17"
-                            }
-                        },
-                        {
-                            "id": "7bf6cd09-5fd4-4b9a-97f7-9265b2fd0d2d",
-                            "command": "EVENT_SET_FALSE",
-                            "args": {
-                                "variable": "0"
-                            }
-                        },
-                        {
-                            "id": "28340d7d-9eeb-4d0d-88eb-ee7749a882db",
+                            "id": "1310dadc-e3e9-4ce6-9579-2e69d549267a",
                             "command": "EVENT_CAMERA_SHAKE",
                             "args": {
                                 "time": 0.1,
@@ -16621,25 +16638,25 @@
                             }
                         },
                         {
-                            "id": "7278ec78-6478-439a-963e-ce2db67f0568",
+                            "id": "8dd5c1b1-0568-487c-83bd-33f6a85fe22e",
                             "command": "EVENT_WAIT",
                             "args": {
-                                "time": 1
+                                "time": 2
                             }
                         },
                         {
-                            "id": "6d76a72e-a18f-44d4-a7b2-d5e48a606d48",
+                            "id": "a7d5e22d-22cf-4b6f-a663-8b6ceaaedd50",
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "382961a1-e615-4b92-92a7-f1a791b50b7a",
+                                "sceneId": "4912bee2-387a-472f-ae4f-6679b6149517",
                                 "x": 0,
-                                "y": 0,
+                                "y": 35,
                                 "direction": "",
                                 "fadeSpeed": "2"
                             }
                         },
                         {
-                            "id": "ca0989c5-1581-4254-bc0c-55582529f690",
+                            "id": "775aac60-87b1-46dd-b73d-f8bc5123b1a6",
                             "command": "EVENT_END"
                         }
                     ],
@@ -19034,408 +19051,6 @@
                 }
             ],
             "triggers": []
-        },
-        {
-            "name": "End",
-            "backgroundId": "7fbe8a31-2afb-4622-98e1-ca73d223d6f5",
-            "width": 20,
-            "height": 18,
-            "collisions": [
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "tileColors": [],
-            "script": [
-                {
-                    "id": "a15e58b3-bbd7-45ca-883b-9dd42b907072",
-                    "command": "EVENT_MUSIC_PLAY",
-                    "args": {
-                        "musicId": "42cc6f45-0311-4b1e-bd4b-43d9bd368f7f",
-                        "loop": true
-                    }
-                },
-                {
-                    "id": "c89b1f5c-417e-4ce8-992b-a33adce45bc6",
-                    "command": "EVENT_ACTOR_HIDE",
-                    "args": {
-                        "actorId": "$self$"
-                    }
-                },
-                {
-                    "id": "d531320d-2530-4991-bdab-081bbd6800b2",
-                    "command": "EVENT_END"
-                }
-            ],
-            "playerHit1Script": [],
-            "playerHit2Script": [],
-            "playerHit3Script": [],
-            "id": "9e9067f4-dbe5-433f-948f-7654dc3abef0",
-            "x": 1232.275896840208,
-            "y": 146.60968809450202,
-            "actors": [],
-            "triggers": [],
-            "paletteIds": [
-                "default-bg-2",
-                ""
-            ]
         }
     ],
     "backgrounds": [
@@ -19447,8 +19062,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "black.png",
-            "inode": "281474976775960",
-            "_v": 1634091893963
+            "inode": "37154696926003195",
+            "_v": 1633549769547
         },
         {
             "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
@@ -19458,8 +19073,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "cave.png",
-            "inode": "281474976775961",
-            "_v": 1634091893963
+            "inode": "46443371157457432",
+            "_v": 1633549769547
         },
         {
             "id": "f9b8f782-7b69-4cc6-b0ac-c29f34279cdc",
@@ -19469,19 +19084,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "earth.png",
-            "inode": "281474976776043",
-            "_v": 1634091893963
-        },
-        {
-            "id": "7fbe8a31-2afb-4622-98e1-ca73d223d6f5",
-            "name": "endscreen",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "endscreen.png",
-            "inode": "562949953487020",
-            "_v": 1634093173980
+            "inode": "37154696926006032",
+            "_v": 1633549769548
         },
         {
             "id": "4fe50768-0c01-4a69-929b-20f684543395",
@@ -19491,8 +19095,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "grizlogo.png",
-            "inode": "562949953486689",
-            "_v": 1634091893963
+            "inode": "33776997205478778",
+            "_v": 1633549769547
         },
         {
             "id": "481e920a-10b8-4d5b-b6a2-dffa96b57bf0",
@@ -19502,8 +19106,8 @@
             "imageWidth": 256,
             "imageHeight": 144,
             "filename": "hidden_cave.png",
-            "inode": "281474976775962",
-            "_v": 1634091893963
+            "inode": "40813871623248035",
+            "_v": 1633549769547
         },
         {
             "id": "5b192b93-3957-4b76-8c92-423eabbcd285",
@@ -19513,8 +19117,8 @@
             "imageWidth": 256,
             "imageHeight": 144,
             "filename": "house-wide.png",
-            "inode": "281474976775963",
-            "_v": 1634091893963
+            "inode": "28991922601401592",
+            "_v": 1633549769547
         },
         {
             "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
@@ -19524,8 +19128,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "house.png",
-            "inode": "281474976775964",
-            "_v": 1634091893963
+            "inode": "43347146413648614",
+            "_v": 1633549769547
         },
         {
             "id": "00e9b250-b602-4e5d-998c-fe0c8f23c91d",
@@ -19535,8 +19139,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "launch_site.png",
-            "inode": "281474976775965",
-            "_v": 1634091893963
+            "inode": "16607023626138731",
+            "_v": 1633549769547
         },
         {
             "id": "28a8b376-b6c5-4e6d-8d7d-2a409d73cd1b",
@@ -19546,8 +19150,8 @@
             "imageWidth": 2040,
             "imageHeight": 144,
             "filename": "leaving_earth.png",
-            "inode": "281474976775966",
-            "_v": 1634091893963
+            "inode": "17451448556271760",
+            "_v": 1633549769547
         },
         {
             "id": "fd166662-e0b9-48fa-81d4-f826f5accfa5",
@@ -19557,8 +19161,8 @@
             "imageWidth": 504,
             "imageHeight": 144,
             "filename": "leaving_earth_adobespark.png",
-            "inode": "1407374883618661",
-            "_v": 1634091893963
+            "inode": "29836347531568928",
+            "_v": 1633549769547
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -19568,8 +19172,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "inode": "281474976775967",
-            "_v": 1634091893964
+            "inode": "40813871623284566",
+            "_v": 1633549769548
         },
         {
             "id": "7756bba7-3a4d-417f-8457-536dcecf8cbe",
@@ -19579,8 +19183,8 @@
             "imageWidth": 1152,
             "imageHeight": 464,
             "filename": "map3.png",
-            "inode": "281474976776182",
-            "_v": 1634091893964
+            "inode": "9007199255303191",
+            "_v": 1633549769548
         },
         {
             "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
@@ -19590,8 +19194,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
-            "inode": "281474976775968",
-            "_v": 1634091893964
+            "inode": "28991922601503131",
+            "_v": 1633549769548
         },
         {
             "id": "93d8839f-c19c-4eb2-a386-b0bb77068521",
@@ -19601,8 +19205,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu_page1.png",
-            "inode": "281474976775969",
-            "_v": 1634091893964
+            "inode": "21955048183823519",
+            "_v": 1633549769548
         },
         {
             "id": "816231e1-2147-462c-99c6-3f73e8535d25",
@@ -19612,8 +19216,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu_page2.png",
-            "inode": "281474976775970",
-            "_v": 1634091893964
+            "inode": "25895697857774864",
+            "_v": 1633549769548
         },
         {
             "id": "07016701-d5df-4983-8a5a-3930c7f45822",
@@ -19623,8 +19227,8 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "outside.png",
-            "inode": "281474976775971",
-            "_v": 1634091893964
+            "inode": "18295873486590961",
+            "_v": 1633549769548
         },
         {
             "id": "b50cefc6-72dc-44c0-947d-f5d4d533a97a",
@@ -19634,8 +19238,8 @@
             "imageWidth": 1288,
             "imageHeight": 144,
             "filename": "platform_path.png",
-            "inode": "281474976775972",
-            "_v": 1634091893964
+            "inode": "27866022694758731",
+            "_v": 1633549769548
         },
         {
             "id": "0af9ba31-7864-4664-9603-b211dc0f3793",
@@ -19645,8 +19249,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "room.png",
-            "inode": "281474976775973",
-            "_v": 1634091893964
+            "inode": "25051272927654072",
+            "_v": 1633549769548
         },
         {
             "id": "053f83aa-a4e3-413b-98af-1bb0d0818ddc",
@@ -19656,19 +19260,8 @@
             "imageWidth": 448,
             "imageHeight": 448,
             "filename": "sample_town.png",
-            "inode": "281474976775974",
-            "_v": 1634091893964
-        },
-        {
-            "id": "50dbe2d5-93cc-4990-99ce-cfedd22d6aee",
-            "name": "spacetitle",
-            "width": 20,
-            "height": 18,
-            "imageWidth": 160,
-            "imageHeight": 144,
-            "filename": "spacetitle.png",
-            "inode": "3377699720593401",
-            "_v": 1634092046316
+            "inode": "15481123719494247",
+            "_v": 1633549769548
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -19678,8 +19271,8 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
-            "inode": "281474976775975",
-            "_v": 1634091893964
+            "inode": "10977524092127684",
+            "_v": 1633549769548
         },
         {
             "id": "33ae580b-d809-4804-a558-71c08a3ac495",
@@ -19689,8 +19282,8 @@
             "imageWidth": 2040,
             "imageHeight": 144,
             "filename": "stars_wide.png",
-            "inode": "281474976775976",
-            "_v": 1634091893964
+            "inode": "12666373952391663",
+            "_v": 1633549769548
         },
         {
             "id": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
@@ -19700,8 +19293,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "inode": "281474976775977",
-            "_v": 1634091893964
+            "inode": "29273397578323064",
+            "_v": 1633549769548
         },
         {
             "id": "f3102db4-2273-411d-b33f-4d6f65959c60",
@@ -19711,8 +19304,8 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "underground.png",
-            "inode": "281474976775978",
-            "_v": 1634091893964
+            "inode": "9007199255157099",
+            "_v": 1633549769548
         }
     ],
     "spriteSheets": [
@@ -19722,8 +19315,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "ChainsawKiller-animated.png",
-            "inode": "281474976776183",
-            "_v": 1634091893965
+            "inode": "4222124651427815",
+            "_v": 1633549769548
         },
         {
             "id": "53532eb6-0489-4971-9a05-6055d2fee231",
@@ -19731,17 +19324,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ChainsawKiller.png",
-            "inode": "281474976776184",
-            "_v": 1634091893964
-        },
-        {
-            "id": "9a0b1985-d545-4be6-a58d-618b8f789920",
-            "name": "alien profile",
-            "numFrames": 1,
-            "type": "static",
-            "filename": "alien profile.png",
-            "inode": "844424930197674",
-            "_v": 1634092432113
+            "inode": "4503599628138470",
+            "_v": 1633549769548
         },
         {
             "id": "a41be5ff-9ff2-4692-8d89-bba9fa7b58d4",
@@ -19749,8 +19333,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "alien.png",
-            "inode": "562949953486691",
-            "_v": 1634091893964
+            "inode": "5066549581438846",
+            "_v": 1633549769548
         },
         {
             "id": "ec0f660e-c420-43ee-9d1e-6d8e9f320213",
@@ -19758,8 +19342,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "bullet.png",
-            "inode": "281474976775992",
-            "_v": 1634091893964
+            "inode": "13229323906047872",
+            "_v": 1633549769548
         },
         {
             "id": "32c48a4d-6ce6-4aca-a23a-a6300b5c9e3b",
@@ -19767,8 +19351,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "bullet_left.png",
-            "inode": "281474976775993",
-            "_v": 1634091893964
+            "inode": "4222124651307160",
+            "_v": 1633549769548
         },
         {
             "id": "450a3571-cc76-41be-8c95-818d60b83c59",
@@ -19776,8 +19360,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "bullet_right.png",
-            "inode": "281474976775994",
-            "_v": 1634091893964
+            "inode": "4222124651307161",
+            "_v": 1633549769548
         },
         {
             "id": "1e27bb8e-c805-435a-8b87-05b4f50da4f0",
@@ -19785,8 +19369,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
-            "inode": "281474976775995",
-            "_v": 1634091893964
+            "inode": "4222124651307162",
+            "_v": 1633549769548
         },
         {
             "id": "f0c3033d-e82a-407d-9fe2-3d5da4f59c09",
@@ -19794,8 +19378,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "checkbox.png",
-            "inode": "281474976775996",
-            "_v": 1634091893964
+            "inode": "4503599628017819",
+            "_v": 1633549769548
         },
         {
             "id": "d4206af4-4d12-4cfd-a4a8-faa11d4aff34",
@@ -19803,8 +19387,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "chest.png",
-            "inode": "281474976775997",
-            "_v": 1634091893964
+            "inode": "5348024558149799",
+            "_v": 1633549769548
         },
         {
             "id": "a827b612-578f-4cb9-a2bf-fd54b197b83f",
@@ -19812,8 +19396,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "cursor.png",
-            "inode": "281474976775998",
-            "_v": 1634091893964
+            "inode": "4222124651307176",
+            "_v": 1633549769548
         },
         {
             "id": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
@@ -19821,8 +19405,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
-            "inode": "281474976775999",
-            "_v": 1634091893964
+            "inode": "5629499534860457",
+            "_v": 1633549769548
         },
         {
             "id": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
@@ -19830,8 +19414,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
-            "inode": "281474976776000",
-            "_v": 1634091893964
+            "inode": "5629499534860458",
+            "_v": 1633549769548
         },
         {
             "id": "954ffda3-81b7-40ea-a338-3b11ad4b75fb",
@@ -19839,8 +19423,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "enemy_ship.png",
-            "inode": "281474976776001",
-            "_v": 1634091893964
+            "inode": "3940649674596523",
+            "_v": 1633549769548
         },
         {
             "id": "493bdd1e-7e97-4911-b89a-c0677dfdcaaa",
@@ -19848,8 +19432,8 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "explode.png",
-            "inode": "281474976776002",
-            "_v": 1634091893964
+            "inode": "4785074604728626",
+            "_v": 1633549769548
         },
         {
             "id": "f2610e3c-8ff9-42fa-a9bb-d1591031fa17",
@@ -19857,8 +19441,8 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
-            "inode": "281474976776003",
-            "_v": 1634091893964
+            "inode": "3659174697886005",
+            "_v": 1633549769548
         },
         {
             "id": "81b14fe6-2235-480e-bc3b-a5899aa66afe",
@@ -19866,8 +19450,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "hidden_stairs.png",
-            "inode": "281474976776004",
-            "_v": 1634091893964
+            "inode": "7881299348545849",
+            "_v": 1633549769548
         },
         {
             "id": "09ad70c6-3ce5-4b97-9e96-466221418a45",
@@ -19875,8 +19459,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "inode": "281474976776005",
-            "_v": 1634091893964
+            "inode": "6192449488282066",
+            "_v": 1633549769548
         },
         {
             "id": "8cb9c002-1abc-458c-9588-9b55af8efb08",
@@ -19884,8 +19468,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "machine.png",
-            "inode": "281474976776006",
-            "_v": 1634091893964
+            "inode": "9570149208810115",
+            "_v": 1633549769548
         },
         {
             "id": "dfa75239-299d-41fe-a6cd-9e9438da1938",
@@ -19893,8 +19477,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
-            "inode": "281474976776007",
-            "_v": 1634091893964
+            "inode": "5910974511571593",
+            "_v": 1633549769548
         },
         {
             "id": "40dcd163-9f72-4861-8131-b01eb9baa000",
@@ -19902,8 +19486,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
-            "inode": "281474976776008",
-            "_v": 1634091893965
+            "inode": "4503599628018327",
+            "_v": 1633549769548
         },
         {
             "id": "52ad34df-f245-4b2a-b94c-a82af1002871",
@@ -19911,8 +19495,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc003.png",
-            "inode": "281474976776009",
-            "_v": 1634091893964
+            "inode": "4503599628018331",
+            "_v": 1633549769548
         },
         {
             "id": "46a3db76-878e-4896-892b-d1afa7d5e2f0",
@@ -19920,8 +19504,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc004.png",
-            "inode": "281474976776010",
-            "_v": 1634091893965
+            "inode": "7318349395124915",
+            "_v": 1633549769548
         },
         {
             "id": "7a27b229-5f3d-4eaa-b20c-07997673324d",
@@ -19929,8 +19513,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc005.png",
-            "inode": "281474976776011",
-            "_v": 1634091893965
+            "inode": "9570149208810208",
+            "_v": 1633549769548
         },
         {
             "id": "c475c713-9fd8-455a-b9bc-8c62b2b8fd5e",
@@ -19938,8 +19522,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc006.png",
-            "inode": "281474976776012",
-            "_v": 1634091893965
+            "inode": "9288674232099957",
+            "_v": 1633549769548
         },
         {
             "id": "2b18f935-85a3-4f38-9f52-e5c4ea20776a",
@@ -19947,8 +19531,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc007.png",
-            "inode": "281474976776013",
-            "_v": 1634091893965
+            "inode": "12947848929338568",
+            "_v": 1633549769548
         },
         {
             "id": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
@@ -19956,8 +19540,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player.png",
-            "inode": "281474976776014",
-            "_v": 1634091893965
+            "inode": "8725724278678730",
+            "_v": 1633549769548
         },
         {
             "id": "2f2d492c-dba2-434c-93c9-d1301e88d5e9",
@@ -19965,8 +19549,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player_ship.png",
-            "inode": "281474976776015",
-            "_v": 1634091893965
+            "inode": "11258999069074644",
+            "_v": 1633549769548
         },
         {
             "id": "058c0142-0c1e-4762-b5ac-e085d84fc734",
@@ -19974,8 +19558,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "pod_door.png",
-            "inode": "281474976776016",
-            "_v": 1634091893965
+            "inode": "8725724278678743",
+            "_v": 1633549769548
         },
         {
             "id": "94eb6557-0cfc-453e-8e1f-ddb191ac8536",
@@ -19983,8 +19567,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "portal.png",
-            "inode": "281474976776017",
-            "_v": 1634091893965
+            "inode": "5910974511572184",
+            "_v": 1633549769548
         },
         {
             "id": "a0442b6a-634f-44da-9962-77938e3ed839",
@@ -19992,8 +19576,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "inode": "281474976776018",
-            "_v": 1634091893965
+            "inode": "8162774325257678",
+            "_v": 1633549769548
         },
         {
             "id": "3939e8d2-3987-4a22-953e-f1d82134eccf",
@@ -20001,8 +19585,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "inode": "281474976776019",
-            "_v": 1634091893965
+            "inode": "9288674232100332",
+            "_v": 1633549769548
         },
         {
             "id": "e20ce140-53a5-4b1b-9964-138ba0c86925",
@@ -20010,8 +19594,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
-            "inode": "281474976776020",
-            "_v": 1634091893965
+            "inode": "7881299348547137",
+            "_v": 1633549769548
         },
         {
             "id": "000a6dde-cb60-436e-b357-30a529daa139",
@@ -20019,8 +19603,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
-            "inode": "281474976776021",
-            "_v": 1634091893965
+            "inode": "8725724278679177",
+            "_v": 1633549769548
         },
         {
             "id": "c4e28299-a4ac-418e-ae7a-6283151a52b5",
@@ -20028,8 +19612,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "shooting star.png",
-            "inode": "281474976776038",
-            "_v": 1634091893965
+            "inode": "8725724278679932",
+            "_v": 1633549769548
         },
         {
             "id": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
@@ -20037,8 +19621,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "inode": "281474976776022",
-            "_v": 1634091893965
+            "inode": "5066549581441410",
+            "_v": 1633549769548
         },
         {
             "id": "b4845aec-11e3-475b-8a9a-0a01b920c710",
@@ -20046,8 +19630,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "space_mine.png",
-            "inode": "281474976776023",
-            "_v": 1634091893965
+            "inode": "6192449488284072",
+            "_v": 1633549769548
         },
         {
             "id": "9f93ca9a-3486-40d6-8520-b2f3b2a08bc3",
@@ -20055,8 +19639,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "sword.png",
-            "inode": "281474976776039",
-            "_v": 1634091893965
+            "inode": "9007199255390686",
+            "_v": 1633549769548
         },
         {
             "id": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
@@ -20064,8 +19648,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
-            "inode": "281474976776024",
-            "_v": 1634091893965
+            "inode": "14636698789603808",
+            "_v": 1633549769548
         },
         {
             "id": "f88eea80-c5b4-4e10-b49f-7a8aa8bd477e",
@@ -20073,8 +19657,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "turnip.png",
-            "inode": "281474976776025",
-            "_v": 1634091893979
+            "inode": "7036874418416099",
+            "_v": 1633549769548
         },
         {
             "id": "6f1e5757-a472-4531-8a65-aee22751e917",
@@ -20082,8 +19666,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "turnip_squash.png",
-            "inode": "281474976776026",
-            "_v": 1634091893979
+            "inode": "7318349395126758",
+            "_v": 1633549769548
         },
         {
             "id": "bfb616fd-0241-4b5f-be09-378e9520fab5",
@@ -20091,8 +19675,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ufo.png",
-            "inode": "562949953486690",
-            "_v": 1634091893965
+            "inode": "7036874418416105",
+            "_v": 1633549769548
         },
         {
             "id": "735c26e5-eee4-43ad-a668-a2ab93f84bd8",
@@ -20100,8 +19684,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ui_weapon.png",
-            "inode": "281474976776027",
-            "_v": 1634091893979
+            "inode": "13792273859471850",
+            "_v": 1633549769548
         }
     ],
     "palettes": [
@@ -20370,26 +19954,6 @@
                 "F8D000",
                 "F82800"
             ]
-        },
-        {
-            "id": "c1334c10-898e-4f42-843e-391d85c91326",
-            "name": "UFO",
-            "colors": [
-                "B0F8D0",
-                "B8B8B8",
-                "505858",
-                "182040"
-            ]
-        },
-        {
-            "id": "4b8319e1-9d1d-4697-b97c-f9529fe84c50",
-            "name": "star",
-            "colors": [
-                "E0F878",
-                "F0E840",
-                "F8B038",
-                "603828"
-            ]
         }
     ],
     "customEvents": [
@@ -20628,13 +20192,6 @@
                                 }
                             },
                             {
-                                "id": "3eb814b6-7464-4bd4-a06e-fc23e97011d7",
-                                "command": "EVENT_SET_FALSE",
-                                "args": {
-                                    "variable": "0"
-                                }
-                            },
-                            {
                                 "id": "c9259c2d-5861-47a1-8506-4e9a673253b3",
                                 "command": "EVENT_END"
                             }
@@ -20654,216 +20211,216 @@
             "name": "Boss fight2",
             "filename": "Boss fight2.mod",
             "settings": {},
-            "inode": "281474976776049",
-            "_v": 1634091893745
+            "inode": "14355223812713322",
+            "_v": 1633549769453
         },
         {
             "id": "6343a531-087a-4364-b207-8d5cbf534977",
             "name": "Dancing and Infiltrating",
             "filename": "Dancing and Infiltrating.mod",
             "settings": {},
-            "inode": "281474976776050",
-            "_v": 1634091893745
+            "inode": "13229323905881405",
+            "_v": 1633549769454
         },
         {
             "id": "04b9142e-1157-4098-805c-355ffa747c52",
             "name": "Darkstone",
             "filename": "Darkstone.mod",
             "settings": {},
-            "inode": "281474976776051",
-            "_v": 1634091893745
+            "inode": "15199648742870180",
+            "_v": 1633549769454
         },
         {
             "id": "eb8b16ab-d3f8-41f0-af5e-49bfade6586f",
             "name": "Darkstone_Remix",
             "filename": "Darkstone_Remix.mod",
             "settings": {},
-            "inode": "281474976776052",
-            "_v": 1634091893745
+            "inode": "10696049115534732",
+            "_v": 1633549769454
         },
         {
             "id": "dcd73a3e-8911-4643-8715-62a69c94d5a2",
             "name": "Determined",
             "filename": "Determined.mod",
             "settings": {},
-            "inode": "281474976776053",
-            "_v": 1634091893745
+            "inode": "14918173766216140",
+            "_v": 1633549769454
         },
         {
             "id": "9f29c3ad-302c-4fc2-8076-3e50022e2b07",
             "name": "Free OST 1 - Backstreets (1)",
             "filename": "Free OST 1 - Backstreets (1).mod",
             "settings": {},
-            "inode": "281474976776054",
-            "_v": 1634091893745
+            "inode": "9007199255293250",
+            "_v": 1633549769454
         },
         {
             "id": "f33faa8f-b826-4d40-91b2-2c58facb80bb",
             "name": "Free OST 1 - Character Select",
             "filename": "Free OST 1 - Character Select.mod",
             "settings": {},
-            "inode": "281474976776055",
-            "_v": 1634091893745
+            "inode": "8444249301872052",
+            "_v": 1633549769454
         },
         {
             "id": "42cc6f45-0311-4b1e-bd4b-43d9bd368f7f",
             "name": "Free OST 1 - Ending Theme",
             "filename": "Free OST 1 - Ending Theme.mod",
             "settings": {},
-            "inode": "281474976776056",
-            "_v": 1634091893745
+            "inode": "10696049115569643",
+            "_v": 1633549769454
         },
         {
             "id": "6d3a7725-ef22-46b8-bdd3-9e4ee2c0f853",
             "name": "Free OST 1 - Fanfare (1)",
             "filename": "Free OST 1 - Fanfare (1).mod",
             "settings": {},
-            "inode": "281474976776057",
-            "_v": 1634091893745
+            "inode": "12384898975833980",
+            "_v": 1633549769454
         },
         {
             "id": "ef06ed6f-33f9-48d0-8a2e-ee09d5bd4973",
             "name": "ParkMusic",
             "filename": "ParkMusic.mod",
             "settings": {},
-            "inode": "281474976776059",
-            "_v": 1634091893745
+            "inode": "12947848929255310",
+            "_v": 1633549769454
         },
         {
             "id": "c6a4c1c1-a095-488d-85a4-05e6dd17f87e",
             "name": "Peppy Pop Song",
             "filename": "Peppy Pop Song.mod",
             "settings": {},
-            "inode": "281474976776060",
-            "_v": 1634091893745
+            "inode": "8444249301963917",
+            "_v": 1633549769454
         },
         {
             "id": "05ef4530-7c73-4949-9a26-c61ff0df5f16",
             "name": "Rulz_BattleTheme",
             "filename": "Rulz_BattleTheme.mod",
             "settings": {},
-            "inode": "281474976775980",
-            "_v": 1634091893745
+            "inode": "6473924464989326",
+            "_v": 1633549769454
         },
         {
             "id": "4653812c-82b6-44ce-93b8-eea1d4b6fa71",
             "name": "Rulz_FastPaceSpeedRace",
             "filename": "Rulz_FastPaceSpeedRace.mod",
             "settings": {},
-            "inode": "281474976775981",
-            "_v": 1634091893745
+            "inode": "6473924464989328",
+            "_v": 1633549769454
         },
         {
             "id": "e571be0d-bbaa-44ae-a411-c2b2e6c5ff24",
             "name": "Rulz_GonaSpace",
             "filename": "Rulz_GonaSpace.mod",
             "settings": {},
-            "inode": "281474976775982",
-            "_v": 1634091893746
+            "inode": "6192449488278674",
+            "_v": 1633549769454
         },
         {
             "id": "2e3e140a-ae8d-4970-8e8b-37b2119c7208",
             "name": "Rulz_Into the woods",
             "filename": "Rulz_Into the woods.mod",
             "settings": {},
-            "inode": "281474976775983",
-            "_v": 1634091893746
+            "inode": "6755399441699989",
+            "_v": 1633549769454
         },
         {
             "id": "83b79b0b-6af5-4a01-ac40-2f86fd36ece8",
             "name": "Rulz_Intro",
             "filename": "Rulz_Intro.mod",
             "settings": {},
-            "inode": "281474976775984",
-            "_v": 1634091893746
+            "inode": "10696049115649520",
+            "_v": 1633549769454
         },
         {
             "id": "0f78c331-7318-48ca-8a6c-a57c15ef423a",
             "name": "Rulz_LightMood",
             "filename": "Rulz_LightMood.mod",
             "settings": {},
-            "inode": "281474976775985",
-            "_v": 1634091893746
+            "inode": "6192449488279066",
+            "_v": 1633549769454
         },
         {
             "id": "180f6b13-2ccc-4af9-8ebf-3e3931f2e824",
             "name": "Rulz_Outside",
             "filename": "Rulz_Outside.mod",
             "settings": {},
-            "inode": "281474976775986",
-            "_v": 1634091893746
+            "inode": "5629499534857801",
+            "_v": 1633549769454
         },
         {
             "id": "a98fc4b6-810e-4fb7-93ee-ef17be6ce95a",
             "name": "Rulz_Pause_Underground",
             "filename": "Rulz_Pause_Underground.mod",
             "settings": {},
-            "inode": "281474976775987",
-            "_v": 1634091893746
+            "inode": "5629499534857822",
+            "_v": 1633549769454
         },
         {
             "id": "be5e3dd0-dc4f-46b3-aefe-9897de0775c3",
             "name": "Rulz_SpaceEmergency",
             "filename": "Rulz_SpaceEmergency.mod",
             "settings": {},
-            "inode": "281474976775988",
-            "_v": 1634091893746
+            "inode": "16044073673153579",
+            "_v": 1633549769454
         },
         {
             "id": "4f7446cc-f5b4-4749-8fd0-f587afe35747",
             "name": "Rulz_UndergroundCave",
             "filename": "Rulz_UndergroundCave.mod",
             "settings": {},
-            "inode": "281474976775989",
-            "_v": 1634091893746
+            "inode": "6192449488280956",
+            "_v": 1633549769454
         },
         {
             "id": "6c25a6eb-a3d9-44f8-b666-259ff1fdd17c",
             "name": "Sneaking Around",
             "filename": "Sneaking Around.mod",
             "settings": {},
-            "inode": "562949953486700",
-            "_v": 1634091893746
+            "inode": "9007199255387545",
+            "_v": 1633549769454
         },
         {
             "id": "4ccabe99-a4db-4dc6-b646-9d404acc63dc",
             "name": "The Gang's All Here",
             "filename": "The Gang's All Here.mod",
             "settings": {},
-            "inode": "281474976776045",
-            "_v": 1634091893746
+            "inode": "7036874418413012",
+            "_v": 1633549769454
         },
         {
             "id": "59ac5c9e-a549-4b60-a4e0-abe2e4bd6a32",
             "name": "Twilight Drive (1)",
             "filename": "Twilight Drive (1).mod",
             "settings": {},
-            "inode": "281474976776047",
-            "_v": 1634091893746
+            "inode": "10977524092362220",
+            "_v": 1633549769454
         },
         {
             "id": "61324568-74d9-46c0-a4bc-93f415b95e0f",
             "name": "Villains of Hiphop",
             "filename": "Villains of Hiphop.mod",
             "settings": {},
-            "inode": "281474976776048",
-            "_v": 1634091893746
+            "inode": "13229323906047472",
+            "_v": 1633549769454
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
             "settings": {},
-            "inode": "281474976775990",
-            "_v": 1634091893746
+            "inode": "6473924464991754",
+            "_v": 1633549769454
         },
         {
             "id": "c2cc1701-5303-4f8c-adf0-2e325a73f051",
             "name": "title screen",
             "filename": "title screen.mod",
             "settings": {},
-            "inode": "281474976776046",
-            "_v": 1634091893746
+            "inode": "9007199255387914",
+            "_v": 1633549769454
         }
     ],
     "variables": [
@@ -20998,9 +20555,9 @@
         "startY": 0,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 360,
-        "zoom": 123.6771903876056,
+        "worldScrollX": 446.3999938964844,
+        "worldScrollY": 400,
+        "zoom": 100,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
@@ -21019,7 +20576,6 @@
         "customColorsBlack": "202850",
         "startMapId": "cb5e225f-e996-4ca8-b068-09a12ec18b75",
         "startDirection": "right",
-        "playerSpriteSheetId": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
-        "playerPaletteId": "default-sprite"
+        "playerSpriteSheetId": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26"
     }
 }
