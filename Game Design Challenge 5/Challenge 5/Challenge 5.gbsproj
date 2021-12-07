@@ -3099,7 +3099,7 @@
             "y": 314,
             "actors": [
                 {
-                    "name": "",
+                    "name": "Dog_inGarden",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
@@ -3701,7 +3701,7 @@
                     "y": 16
                 },
                 {
-                    "name": "",
+                    "name": "Mike_inGarden",
                     "frame": 0,
                     "animate": false,
                     "spriteSheetId": "c475c713-9fd8-455a-b9bc-8c62b2b8fd5e",
@@ -3843,6 +3843,183 @@
                     "id": "80c6462a-1a77-4dd5-9d70-805f81669e79",
                     "x": 23,
                     "y": 17
+                },
+                {
+                    "name": "Sally_inGarden",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "2b18f935-85a3-4f38-9f52-e5c4ea20776a",
+                    "spriteType": "actor",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "48645f0a-6910-4033-9e8b-05e19bc02502",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "2",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "911a5e13-bb15-42c2-90ff-54ad714f0ed7",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "c65b1ef1-f0ec-4913-8919-5b747a119ab7",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "what are you\nlooking at?",
+                                                "The land..",
+                                                "What's wrong with\nthe land?"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "ca3367d2-22d9-41a4-b0c4-639ce0ade693",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Many kinds of\nsoils can be used\nfor gardenning.",
+                                                "Which one is\nbetter for\nenvironment?"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "4835a98a-56e8-43f2-b957-36c9a1fe4482",
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "trueText": "peat-free soil ",
+                                            "falseText": "conventional soil"
+                                        }
+                                    },
+                                    {
+                                        "id": "9add693e-8f05-424d-a20d-92d036f6daa7",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "39737fa2-35cd-4920-83d1-732453017eb2",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Yes.",
+                                                            "Peat extraction\nreleases ",
+                                                            "large\nquantities of of\nstored CO2. "
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "2ab25dc8-290d-47c9-aeab-a9cf3258ecca",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "b5a360b2-49e1-41f9-a930-de1e840770ce",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Emm maybe...",
+                                                            "It is easier to\nget\nand cheaper",
+                                                            "And it re-uses\nsome\nrecycle stuffs."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "69ecb285-e421-40bb-ad0a-5f2554441495",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "855bf7b8-24c7-495e-884b-7c40cc0bd99e",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "2"
+                                        }
+                                    },
+                                    {
+                                        "id": "76b82087-becb-4a28-acbd-507eac96d857",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "f5676d6c-6d67-4d4f-b8c7-93580a1b59ce",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Good garden should\nhave good soil."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "5c6d7270-585b-4928-800f-5c4525ba7910",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "30358494-7549-44b4-ac35-c631c5d26314",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "id": "fc348134-be5e-40d8-9d1d-63801511920b",
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "2"
+                            }
+                        },
+                        {
+                            "id": "50997825-8bdc-4741-977c-4573f6ca24bc",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "updateScript": [
+                        {
+                            "id": "a1d33f67-eb3d-4cd9-b5ea-c36244148aa7",
+                            "command": "EVENT_ACTOR_SET_DIRECTION",
+                            "args": {
+                                "actorId": "$self$",
+                                "direction": {
+                                    "type": "direction",
+                                    "value": "right"
+                                }
+                            }
+                        },
+                        {
+                            "id": "dbbb94ad-a273-4943-b8f7-5247fab71f10",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "c7b8ff37-78a0-469e-bf88-6939904c1273",
+                    "x": 16,
+                    "y": 3
                 }
             ],
             "triggers": []
@@ -5587,7 +5764,7 @@
         },
         {
             "id": "2",
-            "name": "Quest3"
+            "name": "Sally Talked to player?"
         },
         {
             "id": "3",
@@ -5692,6 +5869,14 @@
         {
             "id": "80c6462a-1a77-4dd5-9d70-805f81669e79__L0",
             "name": "Mike talked to player?"
+        },
+        {
+            "id": "c7b8ff37-78a0-469e-bf88-6939904c1273__L0",
+            "name": "right soil?"
+        },
+        {
+            "id": "c7b8ff37-78a0-469e-bf88-6939904c1273__L1",
+            "name": "correct reason for soil"
         }
     ],
     "settings": {
@@ -5701,7 +5886,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 2920,
-        "worldScrollY": 1198.4000244140625,
+        "worldScrollY": 1298.4000244140625,
         "zoom": 387.5,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [

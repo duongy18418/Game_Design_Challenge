@@ -3699,6 +3699,150 @@
                     "id": "1b58d2be-cb2a-4e42-b758-0385725a6a0e",
                     "x": 31,
                     "y": 16
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "c475c713-9fd8-455a-b9bc-8c62b2b8fd5e",
+                    "spriteType": "actor",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "a1b62a57-c500-4993-aa49-a70f3148dfeb",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "8b853764-9e0b-46e5-8ec5-34d6bd9e3031",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "5"
+                                        }
+                                    },
+                                    {
+                                        "id": "d55ded27-e4c0-4a12-81e4-3add07cf1234",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Do you know which\nis a better time\nto water graden?"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "4d3ce1e8-7bd0-44db-8124-6a92590260ca",
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "1",
+                                            "trueText": "Morning ",
+                                            "falseText": "Evening"
+                                        }
+                                    },
+                                    {
+                                        "id": "c1a76d4a-637f-4b83-b263-9ddc772ffcc0",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "1",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "40e7deca-75d6-4126-b59d-cf01838c78fa",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Watering in the\nmorning keeps the\nturf cooler"
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "52cee9f7-85f9-495f-916a-7e2e79c19d9c",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "65ac2176-166e-4887-9189-bec6c9e54c29",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Maybe.."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "20ccbdea-da39-4cbd-b959-d39edc9efea8",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "8fc76f06-b3be-4146-bedc-21386ccb92f2",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        }
+                                    },
+                                    {
+                                        "id": "2e9647bb-9ad7-43a0-90d6-53be393e0b11",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "c17e4246-a2f5-48fe-ab12-b13c4231bd34",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Save world\nstarts \nfrom saving water~"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "eb248c10-61b7-43e4-bfbd-c83ff5679116",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "cc519f18-e9fe-401b-bfd3-78effa1731c5",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [
+                        {
+                            "id": "eb2e2142-5647-4fe9-b6c3-d95aa69b7172",
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "L0"
+                            }
+                        },
+                        {
+                            "id": "9257a2e6-5dfa-473a-8585-357333768dfd",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "80c6462a-1a77-4dd5-9d70-805f81669e79",
+                    "x": 23,
+                    "y": 17
                 }
             ],
             "triggers": []
@@ -5439,7 +5583,7 @@
         },
         {
             "id": "1",
-            "name": "Quest2"
+            "name": "watering time right?"
         },
         {
             "id": "2",
@@ -5544,6 +5688,10 @@
         {
             "id": "18ad1f6a-0558-47d2-a341-aab9387e397e__L3",
             "name": "Local 3"
+        },
+        {
+            "id": "80c6462a-1a77-4dd5-9d70-805f81669e79__L0",
+            "name": "Mike talked to player?"
         }
     ],
     "settings": {
@@ -5552,9 +5700,9 @@
         "startY": 7,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 4668,
-        "worldScrollY": 2154.39990234375,
-        "zoom": 575,
+        "worldScrollX": 2920,
+        "worldScrollY": 1198.4000244140625,
+        "zoom": 387.5,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
