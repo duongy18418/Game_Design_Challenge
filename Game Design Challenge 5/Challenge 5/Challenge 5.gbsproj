@@ -3161,9 +3161,9 @@
                                         "id": "04c23857-2bfe-4629-9a5a-99c18eff37a9",
                                         "command": "EVENT_CHOICE",
                                         "args": {
-                                            "variable": "L1",
-                                            "trueText": "Just leave it.",
-                                            "falseText": "Clean up.",
+                                            "variable": "0",
+                                            "trueText": "Clean up.",
+                                            "falseText": "Just leave it.",
                                             "__collapse": false
                                         }
                                     },
@@ -3459,21 +3459,42 @@
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "49664b23-d881-47fd-9e8f-d2aa1b88a968",
-                            "command": "EVENT_ACTOR_EMOTE",
+                            "id": "bb610122-0613-462e-8895-7f3a3ecc88b3",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "actorId": "player",
-                                "emoteId": 0
-                            }
-                        },
-                        {
-                            "id": "1b731ef4-0c18-45b5-aad6-de9a72ae1b42",
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": [
-                                    "Let's clean up!"
+                                "variable": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "cb8926be-2ec9-4881-8196-be4964d009b7",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "3159f31b-9165-4d60-885e-215b872d0059",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
+                                "false": [
+                                    {
+                                        "id": "c4cdcad9-a4fb-41d3-ae34-507fd460c392",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "keep it for the\nlawn."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "5446df49-bf40-4ab2-a0df-afc465a1099c",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -3489,6 +3510,195 @@
                     "id": "8a91972e-5027-43b0-9250-a7c50d7dc24c",
                     "x": 22,
                     "y": 6
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "493bdd1e-7e97-4911-b89a-c0677dfdcaaa",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "1f21c189-5eb6-41ec-ac32-e9ee8bf87110",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "ad10141c-f4c1-4dbf-aff4-e5c7d4cc0513",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "93adfdf6-66a7-4490-897f-08f809e8dde6",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "3f4fd4ee-4bff-416a-8dc8-c66af1aabcf0",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "keep it for the\nlawn."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "674e723c-7a23-4dce-8a85-a97da47e4dc3",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "9667a981-3502-48c0-b917-2d7cf934fc18",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "1e6b6b4c-2d80-45b9-affa-f1f24f0767cc",
+                    "x": 15,
+                    "y": 17
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "493bdd1e-7e97-4911-b89a-c0677dfdcaaa",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "16d91f5b-244c-4367-a5c9-f657ec704640",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "e80a8876-f973-4cb8-abe7-fadeb9ea137c",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "4e0fcf3f-19a6-42c7-9916-6c614068bc3f",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "bcb81c31-fbeb-4c77-83e2-91ce16f15428",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "keep it for the\nlawn."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "36db57cc-8504-4d19-b83f-810c771171dc",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "1f0c9962-e677-4aa2-8eb5-5e799c4a0d27",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "8d340516-edf2-4a91-8540-7f57103a8200",
+                    "x": 6,
+                    "y": 4
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "493bdd1e-7e97-4911-b89a-c0677dfdcaaa",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "238bd22f-c776-473c-a5c4-568d400bf2e3",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "3ba80f8a-ebad-47d0-9512-4e46fe2fef6f",
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "$self$"
+                                        }
+                                    },
+                                    {
+                                        "id": "41ddbb74-d275-4be0-bae1-bae7942e83ed",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "2e352319-0aad-4e8e-9405-1e8acf055a41",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "keep it for the\nlawn."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "387cde12-c060-4d1c-9ee8-e48b1597e47c",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "6c4ce26c-c7c5-4e24-aa44-8a2527fb908f",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "1b58d2be-cb2a-4e42-b758-0385725a6a0e",
+                    "x": 31,
+                    "y": 16
                 }
             ],
             "triggers": []
@@ -5225,7 +5435,7 @@
     "variables": [
         {
             "id": "0",
-            "name": "Quest1"
+            "name": "clean poop?"
         },
         {
             "id": "1",
@@ -5342,8 +5552,8 @@
         "startY": 7,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 4266.39990234375,
-        "worldScrollY": 2054.39990234375,
+        "worldScrollX": 4668,
+        "worldScrollY": 2154.39990234375,
         "zoom": 575,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [

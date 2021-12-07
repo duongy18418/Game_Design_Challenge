@@ -3085,7 +3085,12 @@
                 1,
                 1
             ],
-            "script": [],
+            "script": [
+                {
+                    "id": "2570f627-c473-45b1-8ac2-1c0d0616c79d",
+                    "command": "EVENT_END"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -3100,23 +3105,104 @@
                     "spriteSheetId": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
                     "spriteType": "static",
                     "direction": "down",
-                    "moveSpeed": "1",
+                    "moveSpeed": "0",
                     "animSpeed": "3",
                     "script": [
                         {
-                            "id": "d1d4bfca-2d07-40b0-8a65-7cb709d1929a",
-                            "command": "EVENT_ACTOR_EMOTE",
+                            "id": "1d024360-ad10-4202-bc1d-c5bb443189b8",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "actorId": "player",
-                                "emoteId": "1"
-                            }
-                        },
-                        {
-                            "id": "36787ead-2419-4f80-8f6e-602c6ee42306",
-                            "command": "EVENT_ACTOR_EMOTE",
-                            "args": {
-                                "actorId": "player",
-                                "emoteId": "1"
+                                "variable": "L2",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "d1d4bfca-2d07-40b0-8a65-7cb709d1929a",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "player",
+                                            "emoteId": "1",
+                                            "__collapse": false
+                                        }
+                                    },
+                                    {
+                                        "id": "f4b8e70c-fd94-462c-864c-8811f213b0e7",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Where is your\nowner?"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "36787ead-2419-4f80-8f6e-602c6ee42306",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "18ad1f6a-0558-47d2-a341-aab9387e397e",
+                                            "emoteId": "2",
+                                            "__collapse": false
+                                        }
+                                    },
+                                    {
+                                        "id": "b83827fa-2c9f-44b0-ad7e-724ebc54d19c",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "The puppy left\nmany poops on the\nlawn.",
+                                                "Should we keep the\npoops?",
+                                                "Is it a good\nfertilizer?"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "04c23857-2bfe-4629-9a5a-99c18eff37a9",
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "L1",
+                                            "trueText": "Just leave it.",
+                                            "falseText": "Clean up.",
+                                            "__collapse": false
+                                        }
+                                    },
+                                    {
+                                        "id": "0752a66f-3316-4339-bae3-782c4a0008aa",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L2"
+                                        }
+                                    },
+                                    {
+                                        "id": "84a74fa8-1c7e-4fa3-96f1-d8e0037b3d49",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "d64f97f8-94a0-4129-a6e1-dd6279f19888",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "2"
+                                        }
+                                    },
+                                    {
+                                        "id": "97946810-877d-4399-afba-248804bd0f05",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Poor doggie, where\nis your parents?"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "869f9a73-4cdb-4126-8a5b-36a1c248ed14",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -3130,6 +3216,14 @@
                             "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
                             "args": {
                                 "actorId": "$self$"
+                            }
+                        },
+                        {
+                            "id": "35697bae-2743-472d-b518-8e78b4c1cd83",
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "L2",
+                                "__collapse": false
                             }
                         },
                         {
@@ -3353,6 +3447,48 @@
                     "x": 20,
                     "y": 9,
                     "paletteId": "default-sprite"
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "493bdd1e-7e97-4911-b89a-c0677dfdcaaa",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "49664b23-d881-47fd-9e8f-d2aa1b88a968",
+                            "command": "EVENT_ACTOR_EMOTE",
+                            "args": {
+                                "actorId": "player",
+                                "emoteId": 0
+                            }
+                        },
+                        {
+                            "id": "1b731ef4-0c18-45b5-aad6-de9a72ae1b42",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Let's clean up!"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "dfd79af4-9064-406e-b458-48c371179fea",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "8a91972e-5027-43b0-9250-a7c50d7dc24c",
+                    "x": 22,
+                    "y": 6
                 }
             ],
             "triggers": []
@@ -3368,7 +3504,7 @@
             "imageHeight": 144,
             "filename": "black.png",
             "inode": "6192449487716824",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
@@ -3379,7 +3515,7 @@
             "imageHeight": 144,
             "filename": "cave.png",
             "inode": "15199648742457907",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "de562cd6-7549-427f-865f-80332b29abb2",
@@ -3390,7 +3526,7 @@
             "imageHeight": 128,
             "filename": "dealer.png",
             "inode": "562949953970480",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "481e920a-10b8-4d5b-b6a2-dffa96b57bf0",
@@ -3401,7 +3537,7 @@
             "imageHeight": 144,
             "filename": "hidden_cave.png",
             "inode": "29273397577990972",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "5b192b93-3957-4b76-8c92-423eabbcd285",
@@ -3412,7 +3548,7 @@
             "imageHeight": 144,
             "filename": "house-wide.png",
             "inode": "5348024557585536",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
@@ -3423,7 +3559,7 @@
             "imageHeight": 176,
             "filename": "house.png",
             "inode": "20266198323251123",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "00e9b250-b602-4e5d-998c-fe0c8f23c91d",
@@ -3434,7 +3570,7 @@
             "imageHeight": 144,
             "filename": "launch_site.png",
             "inode": "19421773393119183",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "28a8b376-b6c5-4e6d-8d7d-2a409d73cd1b",
@@ -3445,7 +3581,7 @@
             "imageHeight": 144,
             "filename": "leaving_earth.png",
             "inode": "14355223812327615",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -3456,7 +3592,7 @@
             "imageHeight": 144,
             "filename": "logo.png",
             "inode": "16044073672592124",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "18bfc4e4-5126-4a0c-90f2-00fd8c9915ca",
@@ -3467,7 +3603,7 @@
             "imageHeight": 144,
             "filename": "map_mart.png",
             "inode": "562949953970481",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
@@ -3478,7 +3614,7 @@
             "imageHeight": 144,
             "filename": "menu.png",
             "inode": "29273397577993091",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "93d8839f-c19c-4eb2-a386-b0bb77068521",
@@ -3489,7 +3625,7 @@
             "imageHeight": 144,
             "filename": "menu_page1.png",
             "inode": "8444249301404592",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "816231e1-2147-462c-99c6-3f73e8535d25",
@@ -3500,7 +3636,7 @@
             "imageHeight": 144,
             "filename": "menu_page2.png",
             "inode": "15199648742460638",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "b22a319d-237e-40c6-8c7c-a6fb7362d818",
@@ -3511,7 +3647,7 @@
             "imageHeight": 176,
             "filename": "outside (1).png",
             "inode": "562949953970482",
-            "_v": 1638889960566
+            "_v": 1638890388770
         },
         {
             "id": "07016701-d5df-4983-8a5a-3930c7f45822",
@@ -3522,7 +3658,7 @@
             "imageHeight": 256,
             "filename": "outside.png",
             "inode": "6473924464430403",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "b50cefc6-72dc-44c0-947d-f5d4d533a97a",
@@ -3533,7 +3669,7 @@
             "imageHeight": 144,
             "filename": "platform_path.png",
             "inode": "3377699720613258",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "0af9ba31-7864-4664-9603-b211dc0f3793",
@@ -3544,7 +3680,7 @@
             "imageHeight": 144,
             "filename": "room.png",
             "inode": "2533274790481419",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "86961528-5182-4095-bb8c-97d16b544a6d",
@@ -3555,7 +3691,7 @@
             "imageHeight": 144,
             "filename": "sail.png",
             "inode": "562949953970483",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "053f83aa-a4e3-413b-98af-1bb0d0818ddc",
@@ -3566,7 +3702,7 @@
             "imageHeight": 448,
             "filename": "sample_town.png",
             "inode": "15762598695882287",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -3577,7 +3713,7 @@
             "imageHeight": 256,
             "filename": "stars.png",
             "inode": "17169973579435604",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "33ae580b-d809-4804-a558-71c08a3ac495",
@@ -3588,7 +3724,7 @@
             "imageHeight": 144,
             "filename": "stars_wide.png",
             "inode": "15481123719171795",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
@@ -3599,7 +3735,7 @@
             "imageHeight": 144,
             "filename": "titlescreen.png",
             "inode": "6192449487720245",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "f3102db4-2273-411d-b33f-4d6f65959c60",
@@ -3610,7 +3746,7 @@
             "imageHeight": 256,
             "filename": "underground.png",
             "inode": "8162774324694843",
-            "_v": 1638889960567
+            "_v": 1638890388770
         }
     ],
     "spriteSheets": [
@@ -3621,7 +3757,7 @@
             "type": "static",
             "filename": "bullet.png",
             "inode": "13510798882213605",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "32c48a4d-6ce6-4aca-a23a-a6300b5c9e3b",
@@ -3630,7 +3766,7 @@
             "type": "animated",
             "filename": "bullet_left.png",
             "inode": "28428972647879937",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "450a3571-cc76-41be-8c95-818d60b83c59",
@@ -3639,7 +3775,7 @@
             "type": "animated",
             "filename": "bullet_right.png",
             "inode": "3377699720631878",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "1e27bb8e-c805-435a-8b87-05b4f50da4f0",
@@ -3648,7 +3784,7 @@
             "type": "static",
             "filename": "cat.png",
             "inode": "25895697857484697",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "f0c3033d-e82a-407d-9fe2-3d5da4f59c09",
@@ -3657,7 +3793,7 @@
             "type": "animated",
             "filename": "checkbox.png",
             "inode": "2251799813789675",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "d4206af4-4d12-4cfd-a4a8-faa11d4aff34",
@@ -3666,7 +3802,7 @@
             "type": "animated",
             "filename": "chest.png",
             "inode": "9851624184978175",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "a827b612-578f-4cb9-a2bf-fd54b197b83f",
@@ -3675,7 +3811,7 @@
             "type": "animated",
             "filename": "cursor.png",
             "inode": "2251799813790978",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
@@ -3684,7 +3820,7 @@
             "type": "static",
             "filename": "dog.png",
             "inode": "2251799813791806",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
@@ -3693,7 +3829,7 @@
             "type": "animated",
             "filename": "duck.png",
             "inode": "4222124650766481",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "954ffda3-81b7-40ea-a338-3b11ad4b75fb",
@@ -3702,7 +3838,7 @@
             "type": "animated",
             "filename": "enemy_ship.png",
             "inode": "1688849860371322",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "493bdd1e-7e97-4911-b89a-c0677dfdcaaa",
@@ -3711,7 +3847,7 @@
             "type": "animated",
             "filename": "explode.png",
             "inode": "12384898975376622",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "f2610e3c-8ff9-42fa-a9bb-d1591031fa17",
@@ -3720,7 +3856,7 @@
             "type": "animated",
             "filename": "fire.png",
             "inode": "7881299348006752",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "81b14fe6-2235-480e-bc3b-a5899aa66afe",
@@ -3729,7 +3865,7 @@
             "type": "static",
             "filename": "hidden_stairs.png",
             "inode": "2533274790505007",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "09ad70c6-3ce5-4b97-9e96-466221418a45",
@@ -3738,7 +3874,7 @@
             "type": "static",
             "filename": "ice.png",
             "inode": "23643898043805969",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "8cb9c002-1abc-458c-9588-9b55af8efb08",
@@ -3747,7 +3883,7 @@
             "type": "animated",
             "filename": "machine.png",
             "inode": "9851624184983963",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "dfa75239-299d-41fe-a6cd-9e9438da1938",
@@ -3756,7 +3892,7 @@
             "type": "actor",
             "filename": "npc001.png",
             "inode": "26177172834202066",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "40dcd163-9f72-4861-8131-b01eb9baa000",
@@ -3765,7 +3901,7 @@
             "type": "actor",
             "filename": "npc002.png",
             "inode": "17451448556171814",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "52ad34df-f245-4b2a-b94c-a82af1002871",
@@ -3774,7 +3910,7 @@
             "type": "actor_animated",
             "filename": "npc003.png",
             "inode": "11258999068538197",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "46a3db76-878e-4896-892b-d1afa7d5e2f0",
@@ -3783,7 +3919,7 @@
             "type": "actor_animated",
             "filename": "npc004.png",
             "inode": "9570149208275154",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "7a27b229-5f3d-4eaa-b20c-07997673324d",
@@ -3792,7 +3928,7 @@
             "type": "actor_animated",
             "filename": "npc005.png",
             "inode": "33214047251973374",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "c475c713-9fd8-455a-b9bc-8c62b2b8fd5e",
@@ -3801,7 +3937,7 @@
             "type": "actor_animated",
             "filename": "npc006.png",
             "inode": "11821949021964878",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "2b18f935-85a3-4f38-9f52-e5c4ea20776a",
@@ -3810,7 +3946,7 @@
             "type": "actor",
             "filename": "npc007.png",
             "inode": "11540474045273339",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
@@ -3819,7 +3955,7 @@
             "type": "actor_animated",
             "filename": "player.png",
             "inode": "24488322973965544",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "2f2d492c-dba2-434c-93c9-d1301e88d5e9",
@@ -3828,7 +3964,7 @@
             "type": "actor_animated",
             "filename": "player_ship.png",
             "inode": "9007199254880407",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "058c0142-0c1e-4762-b5ac-e085d84fc734",
@@ -3837,7 +3973,7 @@
             "type": "actor",
             "filename": "pod_door.png",
             "inode": "10696049115144349",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "94eb6557-0cfc-453e-8e1f-ddb191ac8536",
@@ -3846,7 +3982,7 @@
             "type": "actor",
             "filename": "portal.png",
             "inode": "22236523160285376",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "a0442b6a-634f-44da-9962-77938e3ed839",
@@ -3855,7 +3991,7 @@
             "type": "static",
             "filename": "radio.png",
             "inode": "3096224743963619",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "3939e8d2-3987-4a22-953e-f1d82134eccf",
@@ -3864,7 +4000,7 @@
             "type": "static",
             "filename": "rock.png",
             "inode": "7318349394623463",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "e20ce140-53a5-4b1b-9964-138ba0c86925",
@@ -3873,7 +4009,7 @@
             "type": "static",
             "filename": "sage.png",
             "inode": "25895697857527155",
-            "_v": 1638889960567
+            "_v": 1638890388770
         },
         {
             "id": "000a6dde-cb60-436e-b357-30a529daa139",
@@ -3882,7 +4018,7 @@
             "type": "animated",
             "filename": "savepoint.png",
             "inode": "9570149208309244",
-            "_v": 1638889960567
+            "_v": 1638890388771
         },
         {
             "id": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
@@ -3891,7 +4027,7 @@
             "type": "static",
             "filename": "signpost.png",
             "inode": "3096224743964187",
-            "_v": 1638889960567
+            "_v": 1638890388771
         },
         {
             "id": "b4845aec-11e3-475b-8a9a-0a01b920c710",
@@ -3900,7 +4036,7 @@
             "type": "animated",
             "filename": "space_mine.png",
             "inode": "3096224743964189",
-            "_v": 1638889960567
+            "_v": 1638890388771
         },
         {
             "id": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
@@ -3909,7 +4045,7 @@
             "type": "static",
             "filename": "torch.png",
             "inode": "9288674231598674",
-            "_v": 1638889960567
+            "_v": 1638890388771
         },
         {
             "id": "f88eea80-c5b4-4e10-b49f-7a8aa8bd477e",
@@ -3918,7 +4054,7 @@
             "type": "animated",
             "filename": "turnip.png",
             "inode": "16044073672654421",
-            "_v": 1638889960567
+            "_v": 1638890388771
         },
         {
             "id": "6f1e5757-a472-4531-8a65-aee22751e917",
@@ -3927,7 +4063,7 @@
             "type": "static",
             "filename": "turnip_squash.png",
             "inode": "6192449487781471",
-            "_v": 1638889960567
+            "_v": 1638890388771
         },
         {
             "id": "735c26e5-eee4-43ad-a668-a2ab93f84bd8",
@@ -3936,7 +4072,7 @@
             "type": "static",
             "filename": "ui_weapon.png",
             "inode": "10414574138441348",
-            "_v": 1638889960567
+            "_v": 1638890388771
         }
     ],
     "palettes": [
@@ -5003,7 +5139,7 @@
             "filename": "Rulz_BattleTheme.mod",
             "settings": {},
             "inode": "8162774324695426",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "4653812c-82b6-44ce-93b8-eea1d4b6fa71",
@@ -5011,7 +5147,7 @@
             "filename": "Rulz_FastPaceSpeedRace.mod",
             "settings": {},
             "inode": "14073748835619259",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "e571be0d-bbaa-44ae-a411-c2b2e6c5ff24",
@@ -5019,7 +5155,7 @@
             "filename": "Rulz_GonaSpace.mod",
             "settings": {},
             "inode": "6473924464431558",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "2e3e140a-ae8d-4970-8e8b-37b2119c7208",
@@ -5027,7 +5163,7 @@
             "filename": "Rulz_Into the woods.mod",
             "settings": {},
             "inode": "2814749767193503",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "83b79b0b-6af5-4a01-ac40-2f86fd36ece8",
@@ -5035,7 +5171,7 @@
             "filename": "Rulz_Intro.mod",
             "settings": {},
             "inode": "24206847997204309",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "0f78c331-7318-48ca-8a6c-a57c15ef423a",
@@ -5043,7 +5179,7 @@
             "filename": "Rulz_LightMood.mod",
             "settings": {},
             "inode": "13792273858910162",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "180f6b13-2ccc-4af9-8ebf-3e3931f2e824",
@@ -5051,7 +5187,7 @@
             "filename": "Rulz_Outside.mod",
             "settings": {},
             "inode": "16325548649307329",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "a98fc4b6-810e-4fb7-93ee-ef17be6ce95a",
@@ -5059,7 +5195,7 @@
             "filename": "Rulz_Pause_Underground.mod",
             "settings": {},
             "inode": "7881299347987890",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "be5e3dd0-dc4f-46b3-aefe-9897de0775c3",
@@ -5067,7 +5203,7 @@
             "filename": "Rulz_SpaceEmergency.mod",
             "settings": {},
             "inode": "1970324837069482",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "4f7446cc-f5b4-4749-8fd0-f587afe35747",
@@ -5075,7 +5211,7 @@
             "filename": "Rulz_UndergroundCave.mod",
             "settings": {},
             "inode": "6755399441157051",
-            "_v": 1638889960522
+            "_v": 1638890388725
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
@@ -5083,7 +5219,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "10133099161684939",
-            "_v": 1638889960522
+            "_v": 1638890388725
         }
     ],
     "variables": [
@@ -5182,6 +5318,22 @@
         {
             "id": "18ad1f6a-0558-47d2-a341-aab9387e397e__L0",
             "name": "dog direction"
+        },
+        {
+            "id": "18ad1f6a-0558-47d2-a341-aab9387e397e__L1",
+            "name": "dog poop clean?"
+        },
+        {
+            "id": "18ad1f6a-0558-47d2-a341-aab9387e397e__L2",
+            "name": "meet the player?"
+        },
+        {
+            "id": "6925164f-f9e1-4abf-b6d2-3b108ef01b10__L0",
+            "name": "meet dog?"
+        },
+        {
+            "id": "18ad1f6a-0558-47d2-a341-aab9387e397e__L3",
+            "name": "Local 3"
         }
     ],
     "settings": {
@@ -5190,9 +5342,9 @@
         "startY": 7,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 931.2000122070312,
-        "worldScrollY": 0,
-        "zoom": 200,
+        "worldScrollX": 4266.39990234375,
+        "worldScrollY": 2054.39990234375,
+        "zoom": 575,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
