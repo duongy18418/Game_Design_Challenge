@@ -551,6 +551,82 @@
                     }
                 },
                 {
+                    "id": "c3eebefd-7f9c-4775-9a6f-da2dbc7f6fae",
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "$self$",
+                        "x": {
+                            "type": "number",
+                            "value": 15
+                        },
+                        "y": {
+                            "type": "number",
+                            "value": 7
+                        },
+                        "moveType": "diagonal",
+                        "useCollisions": false
+                    }
+                },
+                {
+                    "id": "3e187642-85a6-4aa8-b408-e748ecc47c30",
+                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                    "args": {
+                        "actorId": "$self$",
+                        "direction": {
+                            "type": "direction",
+                            "value": "right"
+                        }
+                    }
+                },
+                {
+                    "id": "d80b77f8-0d6d-4247-b817-64f8cb436467",
+                    "command": "EVENT_ACTOR_EMOTE",
+                    "args": {
+                        "actorId": "eedd1eb0-99d9-4024-94d0-36db9346ce30",
+                        "emoteId": 0,
+                        "__collapse": false
+                    }
+                },
+                {
+                    "id": "e4710bfc-4be7-4fc9-992b-0b6bfa625bd2",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "\"Hey! Did you have\ntrouble finding\nanything?\"",
+                            "No I got\neverything I\nneeded thank you!",
+                            "\"So will that be\npaper or plastic?\""
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "6d343f70-758d-4335-8178-f91b0b1103a0",
+                    "command": "EVENT_CHOICE",
+                    "args": {
+                        "variable": "L0",
+                        "trueText": "Paper",
+                        "falseText": "Plastic"
+                    }
+                },
+                {
+                    "id": "e011397b-a8e8-45f5-bc07-5c219dff770e",
+                    "command": "EVENT_FADE_OUT",
+                    "args": {
+                        "speed": "4"
+                    }
+                },
+                {
+                    "id": "03047057-8e34-4a17-9273-8b773282fcce",
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "f522cf69-c76d-4803-b8b4-d9115b3ffd16",
+                        "x": 0,
+                        "y": 0,
+                        "direction": "",
+                        "fadeSpeed": "2"
+                    }
+                },
+                {
                     "id": "bf176d2e-5a0e-4979-aeec-2b6d99b33403",
                     "command": "EVENT_END"
                 }
@@ -643,6 +719,45 @@
             "id": "36157ed7-28f2-4e00-95c0-53867a904fa1",
             "x": 375,
             "y": 354,
+            "actors": [],
+            "triggers": []
+        },
+        {
+            "name": "Black Screen 2",
+            "backgroundId": "1da35172-aea4-40b4-8215-7992d9245b34",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "tileColors": [],
+            "script": [
+                {
+                    "id": "140760fb-69db-4071-953c-560802012566",
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "$self$"
+                    }
+                },
+                {
+                    "id": "4ae9e0a1-ecb8-4e76-95ba-c4e462156090",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Your decision has\nbeen noted..."
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "61e101ad-fcaa-444e-b107-a2050a8a3369",
+                    "command": "EVENT_END"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": [],
+            "id": "f522cf69-c76d-4803-b8b4-d9115b3ffd16",
+            "x": 817,
+            "y": 45,
             "actors": [],
             "triggers": []
         }
