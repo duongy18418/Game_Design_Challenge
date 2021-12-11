@@ -3955,7 +3955,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "1e6b6b4c-2d80-45b9-affa-f1f24f0767cc",
-                    "x": 15,
+                    "x": 11,
                     "y": 17,
                     "paletteId": "6936c915-e573-42ab-829b-e414e66b43d6"
                 },
@@ -4173,6 +4173,17 @@
                                                     }
                                                 },
                                                 {
+                                                    "id": "6083fe7a-c527-4f7f-9f14-a0a7dae8db01",
+                                                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "x": 0,
+                                                        "y": -6,
+                                                        "moveType": "vertical",
+                                                        "useCollisions": true
+                                                    }
+                                                },
+                                                {
                                                     "id": "52cee9f7-85f9-495f-916a-7e2e79c19d9c",
                                                     "command": "EVENT_END"
                                                 }
@@ -4206,6 +4217,24 @@
                                                             "See you~"
                                                         ],
                                                         "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "99394662-cdcc-4027-aa98-33d5f66ca053",
+                                                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "x": -24,
+                                                        "y": -4,
+                                                        "moveType": "vertical",
+                                                        "useCollisions": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "372c7c22-a253-4728-b819-d4952405343a",
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "$self$"
                                                     }
                                                 },
                                                 {
@@ -4275,7 +4304,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "80c6462a-1a77-4dd5-9d70-805f81669e79",
-                    "x": 23,
+                    "x": 24,
                     "y": 16
                 },
                 {
@@ -9719,7 +9748,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 2245.60009765625,
-        "worldScrollY": 1408,
+        "worldScrollY": 1508,
         "zoom": 387.5,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [

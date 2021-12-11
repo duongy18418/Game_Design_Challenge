@@ -2012,17 +2012,9 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                0,
-                15,
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
-                15,
                 15,
                 0,
                 0,
@@ -2032,6 +2024,14 @@
                 0,
                 15,
                 15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
                 15,
                 0,
                 0,
@@ -2048,8 +2048,8 @@
                 0,
                 0,
                 0,
-                15,
-                15,
+                0,
+                0,
                 0,
                 0,
                 0,
@@ -4178,7 +4178,7 @@
                                                     "args": {
                                                         "actorId": "$self$",
                                                         "x": 0,
-                                                        "y": -6,
+                                                        "y": -4,
                                                         "moveType": "vertical",
                                                         "useCollisions": true
                                                     }
@@ -4225,7 +4225,7 @@
                                                     "args": {
                                                         "actorId": "$self$",
                                                         "x": -24,
-                                                        "y": -4,
+                                                        "y": -2,
                                                         "moveType": "vertical",
                                                         "useCollisions": false
                                                     }
@@ -4304,8 +4304,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "80c6462a-1a77-4dd5-9d70-805f81669e79",
-                    "x": 24,
-                    "y": 16
+                    "x": 27,
+                    "y": 13
                 },
                 {
                     "name": "Sally_inGarden",
@@ -4718,6 +4718,56 @@
                     "y": 11,
                     "width": 1,
                     "height": 2
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "806ea03a-a511-4a19-8a0a-280123ba1634",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "This is our well."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "af4ba35f-f389-4c29-a7e5-946e7fb87eb1",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "b42889bb-e416-4df8-8788-b772b3a4fb5c",
+                    "x": 27,
+                    "y": 9,
+                    "width": 1,
+                    "height": 1
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "763c402f-c710-4cb8-b81a-f4f1f9c0a24c",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "This is our well."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "146fd0e9-5956-4471-ab4d-65b2b8fa69c1",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "7a41ef20-207d-4160-a3d7-0d30deccb7fe",
+                    "x": 27,
+                    "y": 7,
+                    "width": 1,
+                    "height": 1
                 }
             ]
         },
@@ -9748,7 +9798,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 2245.60009765625,
-        "worldScrollY": 1508,
+        "worldScrollY": 1308,
         "zoom": 387.5,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
