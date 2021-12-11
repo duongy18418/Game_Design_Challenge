@@ -2012,17 +2012,9 @@
                 0,
                 0,
                 0,
-                15,
-                15,
-                0,
-                15,
                 0,
                 0,
                 0,
-                0,
-                0,
-                0,
-                15,
                 15,
                 0,
                 0,
@@ -2032,6 +2024,14 @@
                 0,
                 15,
                 15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
                 15,
                 0,
                 0,
@@ -2048,8 +2048,8 @@
                 0,
                 0,
                 0,
-                15,
-                15,
+                0,
+                0,
                 0,
                 0,
                 0,
@@ -3383,6 +3383,20 @@
                     }
                 },
                 {
+                    "id": "cfcb5498-22b8-4a16-9731-a824c35d0df1",
+                    "command": "EVENT_SET_FALSE",
+                    "args": {
+                        "variable": "6"
+                    }
+                },
+                {
+                    "id": "9653254c-df53-45c0-ac9d-5e1e6230306c",
+                    "command": "EVENT_SET_FALSE",
+                    "args": {
+                        "variable": "7"
+                    }
+                },
+                {
                     "id": "2570f627-c473-45b1-8ac2-1c0d0616c79d",
                     "command": "EVENT_END"
                 }
@@ -3861,7 +3875,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Keep it for the\nlawn."
+                                                "Be careful."
                                             ],
                                             "avatarId": ""
                                         }
@@ -3932,7 +3946,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Keep it for the\nlawn."
+                                                "Be careful."
                                             ],
                                             "avatarId": ""
                                         }
@@ -4003,7 +4017,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Keep it for the\nlawn."
+                                                "Be careful."
                                             ],
                                             "avatarId": ""
                                         }
@@ -4074,7 +4088,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Keep it for the\nlawn."
+                                                "Be careful."
                                             ],
                                             "avatarId": ""
                                         }
@@ -4178,7 +4192,7 @@
                                                     "args": {
                                                         "actorId": "$self$",
                                                         "x": 0,
-                                                        "y": -6,
+                                                        "y": -4,
                                                         "moveType": "vertical",
                                                         "useCollisions": true
                                                     }
@@ -4225,7 +4239,7 @@
                                                     "args": {
                                                         "actorId": "$self$",
                                                         "x": -24,
-                                                        "y": -4,
+                                                        "y": -2,
                                                         "moveType": "vertical",
                                                         "useCollisions": false
                                                     }
@@ -4304,8 +4318,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "80c6462a-1a77-4dd5-9d70-805f81669e79",
-                    "x": 24,
-                    "y": 16
+                    "x": 27,
+                    "y": 13
                 },
                 {
                     "name": "Sally_inGarden",
@@ -4322,7 +4336,8 @@
                             "command": "EVENT_IF_FALSE",
                             "args": {
                                 "variable": "2",
-                                "__collapseElse": false
+                                "__collapseElse": false,
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -4339,20 +4354,12 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "what are you\nlooking at?",
-                                                "The land..",
-                                                "What's wrong with\nthe land?"
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "ca3367d2-22d9-41a4-b0c4-639ce0ade693",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Many kinds of\nsoils can be used\nfor gardenning.",
-                                                "Which one is\nbetter for\nenvironment?"
+                                                "Jenny,what are you\nlooking at?",
+                                                "Mom asks to take\ncare of these\nseedings.",
+                                                "What's wrong with\nthem?",
+                                                "I dont know. They\nalready grow up.",
+                                                "Maybe they need\nmore soil?",
+                                                "Which soil do you\nthink is better?"
                                             ],
                                             "avatarId": ""
                                         }
@@ -4380,11 +4387,145 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Yes.",
+                                                            "I agree.Peat-free\nis\nbetter.",
+                                                            "It is not only\nrich in organic\nstuffs,",
+                                                            "and also good for\nenvironment.",
                                                             "Peat extraction\nreleases ",
-                                                            "large\nquantities of of\nstored CO2. "
+                                                            "large\nquantities of of\nstored CO2. ",
+                                                            "It will increases\nthe greenhouse\neffect."
                                                         ],
                                                         "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "08cc1df9-0281-42fd-901d-7df5362eeee1",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "caed8c4d-2899-4461-ac00-a6491c680b3d",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Can you get some\nfor me?",
+                                                            "The soil bag is at\nthe right corner.",
+                                                            "OK."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "3d73c7b0-95e6-4291-a7b1-068093ea4d1f",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b45e5509-c7ec-4d3c-95f4-e3888d26ff34",
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "6",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "511fca6b-ac93-4caa-837f-16b680e9311b",
+                                                                "command": "EVENT_IF_TRUE",
+                                                                "args": {
+                                                                    "variable": "8",
+                                                                    "__collapseElse": false,
+                                                                    "__collapse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "fab57161-8813-4aef-ae9e-d5593db551bd",
+                                                                            "command": "EVENT_ACTOR_EMOTE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "emoteId": "2"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "1cab3cc3-7def-41fd-a84b-c258de6da0d7",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Thank you so much."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "8675d374-295a-46c2-9e08-ce697d5857bf",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "id": "743fe079-ba1a-45cc-9768-c0911b8dc922",
+                                                                            "command": "EVENT_ACTOR_EMOTE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "emoteId": "0"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "6ba822b0-bf82-4eeb-834d-1baca4d26807",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "I have to get\nsome.",
+                                                                                    "See you later."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "0dd418ef-72ba-498a-9c75-07087709b200",
+                                                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "x": -10,
+                                                                                "y": 9,
+                                                                                "moveType": "vertical",
+                                                                                "useCollisions": false
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "14f59bbe-7b59-4661-83df-37ab6adb2d49",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "2336b62d-d59a-45c5-8b17-6bf876348717",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "9091940d-c716-4bdd-9d4f-a20deb5292b2",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Can you get some\nfor me?",
+                                                                        "The soil bag is at\nthe right corner."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "b7aac6a6-91a1-4fd9-ae3a-f8ab911f631b",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
@@ -4398,11 +4539,41 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Emm maybe...",
-                                                            "It is easier to\nget\nand cheaper",
-                                                            "And it re-uses\nsome\nrecycle stuffs."
+                                                            "Emm, probably...",
+                                                            "conventional soil\nusually made from\nsome trash",
+                                                            "It helps to reduce\nthe pollution",
+                                                            "And it is more\neconomic",
+                                                            "I need to go and\nget some.",
+                                                            "See you later."
                                                         ],
                                                         "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "d491897e-0223-4d7b-96d8-c0e52d7eb32f",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "player",
+                                                        "emoteId": "2",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "d9ce7193-feaf-4541-a22b-a5d2a190a2b9",
+                                                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "x": -10,
+                                                        "y": 9,
+                                                        "moveType": "vertical",
+                                                        "useCollisions": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "29feb98f-9ec3-45df-92a1-e9c85a6968f8",
+                                                    "command": "EVENT_ACTOR_HIDE",
+                                                    "args": {
+                                                        "actorId": "$self$"
                                                     }
                                                 },
                                                 {
@@ -4420,19 +4591,152 @@
                                         }
                                     },
                                     {
+                                        "id": "9da52fdd-54db-4644-bbf8-56307020acdc",
+                                        "command": "EVENT_DEC_VALUE",
+                                        "args": {
+                                            "variable": "4"
+                                        }
+                                    },
+                                    {
                                         "id": "76b82087-becb-4a28-acbd-507eac96d857",
                                         "command": "EVENT_END"
                                     }
                                 ],
                                 "false": [
                                     {
-                                        "id": "f5676d6c-6d67-4d4f-b8c7-93580a1b59ce",
-                                        "command": "EVENT_TEXT",
+                                        "id": "fde0d480-47c9-45d2-92c6-bb5664520fbf",
+                                        "command": "EVENT_IF_FALSE",
                                         "args": {
-                                            "text": [
-                                                "Good garden should\nhave good soil."
+                                            "variable": "7",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "f5676d6c-6d67-4d4f-b8c7-93580a1b59ce",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Good garden should\nuse good soil."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "45dacfc7-2f62-4386-a180-67d25ed1875b",
+                                                    "command": "EVENT_END"
+                                                }
                                             ],
-                                            "avatarId": ""
+                                            "false": [
+                                                {
+                                                    "id": "81876e0e-d9d5-4f95-9791-24cbb680267c",
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "6",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "1d9c376f-7d8e-43e0-83b4-2bafd9b44479",
+                                                                "command": "EVENT_IF_TRUE",
+                                                                "args": {
+                                                                    "variable": "8",
+                                                                    "__collapseElse": false,
+                                                                    "__collapse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "061951b1-5737-4581-8141-a28afa29cdb0",
+                                                                            "command": "EVENT_ACTOR_EMOTE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "emoteId": "2"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "bc23ce1e-fec1-44c9-b616-91e248bbc924",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Thank you so much."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "73d23612-43b9-4dfc-ac34-9c40a815e5cd",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "id": "304cf8fd-8fb2-4f96-bfeb-8d8dac09cd54",
+                                                                            "command": "EVENT_ACTOR_EMOTE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "emoteId": "0"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "b7e335b9-d8f7-4cbe-9975-a260000d323c",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "I have to get\nsome.",
+                                                                                    "See you later."
+                                                                                ],
+                                                                                "avatarId": ""
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "ad9469c5-affe-4c29-90ec-0c810d979476",
+                                                                            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "x": -10,
+                                                                                "y": 9,
+                                                                                "moveType": "vertical",
+                                                                                "useCollisions": false
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "60f7a845-e35b-4adc-b43f-e63022548da6",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "772baf71-9919-403e-8ea0-db78546a4f90",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "bd1b0b24-0431-4a59-b324-4ce827c06db9",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Can you get some\nfor me?",
+                                                                        "The soil bag is at\nthe right corner."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "9b1a8ace-c355-477b-afc4-2e2c9e0ed55d",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "1118feca-c959-46f4-8aa0-8ad7612cddcb",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
                                         }
                                     },
                                     {
@@ -4528,7 +4832,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Keep it for the\nlawn."
+                                                "Be careful."
                                             ],
                                             "avatarId": ""
                                         }
@@ -4551,8 +4855,8 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "996e9db2-019b-480e-8d61-5cbba60e6533",
-                    "x": 29,
-                    "y": 5,
+                    "x": 19,
+                    "y": 15,
                     "paletteId": "6936c915-e573-42ab-829b-e414e66b43d6"
                 }
             ],
@@ -4718,6 +5022,172 @@
                     "y": 11,
                     "width": 1,
                     "height": 2
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "806ea03a-a511-4a19-8a0a-280123ba1634",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "This is our well."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "af4ba35f-f389-4c29-a7e5-946e7fb87eb1",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "b42889bb-e416-4df8-8788-b772b3a4fb5c",
+                    "x": 27,
+                    "y": 9,
+                    "width": 1,
+                    "height": 1
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "763c402f-c710-4cb8-b81a-f4f1f9c0a24c",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "This is our well."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "146fd0e9-5956-4471-ab4d-65b2b8fa69c1",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "7a41ef20-207d-4160-a3d7-0d30deccb7fe",
+                    "x": 27,
+                    "y": 7,
+                    "width": 1,
+                    "height": 1
+                },
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "ea95bee8-3dd7-486c-a226-53f7fe62ce4d",
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "2",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "6cf78e7d-e8e7-4683-b4a2-a7b756bf1d51",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "7",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "9f6f56b5-7da5-4812-93a8-cbc8e943911a",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "6"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "79c36397-2fc7-48fa-85d9-7c7a70820e58",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "This is the soil\nbag.",
+                                                            "Get some soil for\nJenny?"
+                                                        ],
+                                                        "avatarId": "",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b12c535f-1126-4f4b-8ccc-fca28285f2c0",
+                                                    "command": "EVENT_CHOICE",
+                                                    "args": {
+                                                        "variable": "8",
+                                                        "trueText": "Sure.",
+                                                        "falseText": "No. It's empty."
+                                                    }
+                                                },
+                                                {
+                                                    "id": "89420311-5ab4-46bc-a464-084533f9f2cf",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "b3d9f500-90bb-4c2a-a8e8-75aa7dc21d90",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "7"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "494a48f4-7800-4035-ad6a-1c98b0e2574e",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "What is a dirty."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "dc81f604-b049-4bb1-b664-602e8bc54206",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "fd4b3fc7-baa3-4380-ad05-ba21237bc219",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "fb78b4aa-9437-4496-be3d-fd27c9afae0a",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "What's this?",
+                                                "Let me ask."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "9a897dc4-44b6-42f2-bbf5-64dc616be776",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "b2f8bb88-c0f8-454e-8afb-b7afbb31619c",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "d445b1f5-c379-4b5b-a6e3-f58ef1b6771d",
+                    "x": 30,
+                    "y": 4,
+                    "width": 1,
+                    "height": 1
                 }
             ]
         },
@@ -9578,7 +10048,7 @@
         },
         {
             "id": "2",
-            "name": "Sally Talked to player?"
+            "name": "Jenny Talked to player?"
         },
         {
             "id": "3",
@@ -9594,15 +10064,15 @@
         },
         {
             "id": "6",
-            "name": "Quest7"
+            "name": "check soil bag"
         },
         {
             "id": "7",
-            "name": "Quest8"
+            "name": "Help Jenny?"
         },
         {
             "id": "8",
-            "name": "Quest9"
+            "name": "enough soil?"
         },
         {
             "id": "9",
@@ -9739,6 +10209,10 @@
         {
             "id": "6925164f-f9e1-4abf-b6d2-3b108ef01b10__L2",
             "name": "tasks left"
+        },
+        {
+            "id": "d445b1f5-c379-4b5b-a6e3-f58ef1b6771d__L0",
+            "name": "enough soil?"
         }
     ],
     "settings": {
@@ -9748,7 +10222,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 2245.60009765625,
-        "worldScrollY": 1508,
+        "worldScrollY": 1108,
         "zoom": 387.5,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
