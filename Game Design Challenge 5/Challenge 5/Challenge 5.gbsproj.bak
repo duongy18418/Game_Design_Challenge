@@ -5007,7 +5007,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "I need to finish\nall\nthe four tasks."
+                                                            "I need to finish\nall\nthe tasks."
                                                         ],
                                                         "avatarId": ""
                                                     }

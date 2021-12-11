@@ -3353,7 +3353,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "You have three\ntasks in the\ngarden",
+                            "You have four\ntasks in the\ngarden",
                             "Finish all of them\nbefore leave."
                         ],
                         "avatarId": "",
@@ -3367,7 +3367,7 @@
                         "variable": "4",
                         "value": {
                             "type": "number",
-                            "value": 3
+                            "value": 4
                         }
                     }
                 },
@@ -3394,6 +3394,14 @@
                     "command": "EVENT_SET_FALSE",
                     "args": {
                         "variable": "7"
+                    }
+                },
+                {
+                    "id": "e0307719-adc9-4660-80f6-4cff30bad1ea",
+                    "command": "EVENT_SET_FALSE",
+                    "args": {
+                        "variable": "10",
+                        "__collapse": false
                     }
                 },
                 {
@@ -4872,6 +4880,224 @@
                     "x": 19,
                     "y": 15,
                     "paletteId": "6936c915-e573-42ab-829b-e414e66b43d6"
+                },
+                {
+                    "name": "Bob",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "dfa75239-299d-41fe-a6cd-9e9438da1938",
+                    "spriteType": "actor",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "script": [
+                        {
+                            "id": "19a0ee0b-ed0f-4120-91e4-89db2145b607",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "10",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "bd907096-10a3-4e27-8e7d-39f6fe3567e2",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "player",
+                                            "emoteId": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "2a3d739a-22e6-4210-ac35-f84bdc4809cf",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Who are you?"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "3029cdce-44cc-4331-83c3-e65eafebdfe7",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "5"
+                                        }
+                                    },
+                                    {
+                                        "id": "007dddb8-04bb-4751-acf1-80aa94a8e565",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I am Bob. I am a\nlawn fertilizer\nsupplier.",
+                                                "Great. Can I buy\nsome?",
+                                                "Sure. Which brand\ndo\nyou want?",
+                                                "Garden tone\nor\nScott Turf Builder"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "62a6d4c0-050e-4643-b52a-583f555c5f26",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "player",
+                                            "emoteId": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "f8c8850d-b182-4af5-9bde-1e0a860f7542",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "What's the\ndifference?",
+                                                "One is organic and\none is not."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "f16066ce-13e3-4bf8-af0c-d488923f15cc",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "player",
+                                            "emoteId": "0"
+                                        }
+                                    },
+                                    {
+                                        "id": "5786cf52-efe0-4802-b793-30fe33e6b29a",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "How can I know\nthat.",
+                                                "Do you give me a\nsuggestion?"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "efe69ec0-cd4c-4d9f-9907-c54edcdcb1e8",
+                                        "command": "EVENT_CHOICE",
+                                        "args": {
+                                            "variable": "11",
+                                            "trueText": "Garden tone ",
+                                            "falseText": "Scott Turf Builde"
+                                        }
+                                    },
+                                    {
+                                        "id": "46472622-3334-45fe-b43c-ebf9d1f05272",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "11",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "472da8ce-bc4d-4eaf-8566-3991e5a4b03b",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": 0
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b14aefb2-85cb-4cd2-b094-e2086fcd55e2",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "How do you know\nthat?",
+                                                            "You are so smart."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "05622b71-57b5-45e8-878e-86aac7d88923",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "41837b8f-da63-4a93-9dea-5482006623fe",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "6"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "60e509d3-0c44-4613-acd5-70c94db6cc1d",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Smart!!!",
+                                                            "This is the most\npopular brand",
+                                                            "You won't regret\nyour choice."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "fc5cf31b-536f-4ab4-996b-c0ab3366fa83",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "1eece4e3-7ac0-4a31-9498-3785496a2f7f",
+                                        "command": "EVENT_DEC_VALUE",
+                                        "args": {
+                                            "variable": "4"
+                                        }
+                                    },
+                                    {
+                                        "id": "71dfd85b-f1be-4c22-b3cb-07b4a7aeab67",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "10"
+                                        }
+                                    },
+                                    {
+                                        "id": "1ca90fbc-b2aa-4e14-abc4-8f3166eac954",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "d5567454-cc6e-4d7d-8fc3-b06284785e0a",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Right product give\nyou good lawn!"
+                                            ],
+                                            "avatarId": "",
+                                            "__collapse": false
+                                        }
+                                    },
+                                    {
+                                        "id": "ae59f567-3aa0-4318-a84c-eea10541624c",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "40304976-61a4-4ef9-80d4-bc392747a93d",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "eb4fbe3c-17b9-425f-ae7a-37d5e099cf71",
+                    "x": 10,
+                    "y": 13
                 }
             ],
             "triggers": [
@@ -10116,11 +10342,11 @@
         },
         {
             "id": "10",
-            "name": "Quest11"
+            "name": "Bob talked to player"
         },
         {
             "id": "11",
-            "name": "Quest12"
+            "name": "organic fertilizer?"
         },
         {
             "id": "12",
@@ -10258,7 +10484,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 2245.60009765625,
-        "worldScrollY": 1108,
+        "worldScrollY": 1408,
         "zoom": 387.5,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
