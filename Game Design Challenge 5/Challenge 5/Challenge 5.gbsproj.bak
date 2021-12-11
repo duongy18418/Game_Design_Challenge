@@ -3353,7 +3353,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "You have four\ntasks in the\ngarden",
+                            "You have three\ntasks in the\ngarden",
                             "Finish all of them\nbefore leave."
                         ],
                         "avatarId": "",
@@ -3367,7 +3367,7 @@
                         "variable": "4",
                         "value": {
                             "type": "number",
-                            "value": 4
+                            "value": 3
                         }
                     }
                 },
@@ -4368,7 +4368,7 @@
                                         "id": "4835a98a-56e8-43f2-b957-36c9a1fe4482",
                                         "command": "EVENT_CHOICE",
                                         "args": {
-                                            "variable": "L0",
+                                            "variable": "9",
                                             "trueText": "peat-free soil ",
                                             "falseText": "conventional soil"
                                         }
@@ -4377,7 +4377,7 @@
                                         "id": "9add693e-8f05-424d-a20d-92d036f6daa7",
                                         "command": "EVENT_IF_TRUE",
                                         "args": {
-                                            "variable": "L0",
+                                            "variable": "9",
                                             "__collapseElse": false
                                         },
                                         "children": {
@@ -4495,6 +4495,13 @@
                                                                                 "y": 9,
                                                                                 "moveType": "vertical",
                                                                                 "useCollisions": false
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "2e1d54ed-06e8-4ed9-b91a-36d9e863ee2b",
+                                                                            "command": "EVENT_ACTOR_HIDE",
+                                                                            "args": {
+                                                                                "actorId": "$self$"
                                                                             }
                                                                         },
                                                                         {
@@ -4699,6 +4706,13 @@
                                                                                 "y": 9,
                                                                                 "moveType": "vertical",
                                                                                 "useCollisions": false
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "1c89b4fe-e319-4bf5-b374-a67f0d233d2a",
+                                                                            "command": "EVENT_ACTOR_HIDE",
+                                                                            "args": {
+                                                                                "actorId": "$self$"
                                                                             }
                                                                         },
                                                                         {
@@ -5078,101 +5092,123 @@
                     "trigger": "walk",
                     "script": [
                         {
-                            "id": "ea95bee8-3dd7-486c-a226-53f7fe62ce4d",
-                            "command": "EVENT_IF_TRUE",
+                            "id": "03aaf493-fadc-457c-a910-86264186a76d",
+                            "command": "EVENT_IF_FALSE",
                             "args": {
-                                "variable": "2",
+                                "variable": "6",
                                 "__collapseElse": false
                             },
                             "children": {
                                 "true": [
                                     {
-                                        "id": "6cf78e7d-e8e7-4683-b4a2-a7b756bf1d51",
+                                        "id": "ea95bee8-3dd7-486c-a226-53f7fe62ce4d",
                                         "command": "EVENT_IF_TRUE",
                                         "args": {
-                                            "variable": "7",
+                                            "variable": "2",
                                             "__collapseElse": false
                                         },
                                         "children": {
                                             "true": [
                                                 {
-                                                    "id": "9f6f56b5-7da5-4812-93a8-cbc8e943911a",
-                                                    "command": "EVENT_SET_TRUE",
+                                                    "id": "6cf78e7d-e8e7-4683-b4a2-a7b756bf1d51",
+                                                    "command": "EVENT_IF_TRUE",
                                                     "args": {
-                                                        "variable": "6"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "79c36397-2fc7-48fa-85d9-7c7a70820e58",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "This is the soil\nbag.",
-                                                            "Get some soil for\nJenny?"
+                                                        "variable": "7",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "9f6f56b5-7da5-4812-93a8-cbc8e943911a",
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "6"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "79c36397-2fc7-48fa-85d9-7c7a70820e58",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "This is the soil\nbag.",
+                                                                        "Get some soil for\nJenny?"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": false
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "b12c535f-1126-4f4b-8ccc-fca28285f2c0",
+                                                                "command": "EVENT_CHOICE",
+                                                                "args": {
+                                                                    "variable": "8",
+                                                                    "trueText": "Sure.",
+                                                                    "falseText": "No. It's empty."
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "89420311-5ab4-46bc-a464-084533f9f2cf",
+                                                                "command": "EVENT_END"
+                                                            }
                                                         ],
-                                                        "avatarId": "",
-                                                        "__collapse": false
+                                                        "false": [
+                                                            {
+                                                                "id": "b3d9f500-90bb-4c2a-a8e8-75aa7dc21d90",
+                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "emoteId": "7"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "494a48f4-7800-4035-ad6a-1c98b0e2574e",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "What is a dirty."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "dc81f604-b049-4bb1-b664-602e8bc54206",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
                                                     }
                                                 },
                                                 {
-                                                    "id": "b12c535f-1126-4f4b-8ccc-fca28285f2c0",
-                                                    "command": "EVENT_CHOICE",
-                                                    "args": {
-                                                        "variable": "8",
-                                                        "trueText": "Sure.",
-                                                        "falseText": "No. It's empty."
-                                                    }
-                                                },
-                                                {
-                                                    "id": "89420311-5ab4-46bc-a464-084533f9f2cf",
+                                                    "id": "fd4b3fc7-baa3-4380-ad05-ba21237bc219",
                                                     "command": "EVENT_END"
                                                 }
                                             ],
                                             "false": [
                                                 {
-                                                    "id": "b3d9f500-90bb-4c2a-a8e8-75aa7dc21d90",
-                                                    "command": "EVENT_ACTOR_EMOTE",
-                                                    "args": {
-                                                        "actorId": "$self$",
-                                                        "emoteId": "7"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "494a48f4-7800-4035-ad6a-1c98b0e2574e",
+                                                    "id": "fb78b4aa-9437-4496-be3d-fd27c9afae0a",
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "What is a dirty."
+                                                            "What's this?",
+                                                            "Let me ask."
                                                         ],
                                                         "avatarId": ""
                                                     }
                                                 },
                                                 {
-                                                    "id": "dc81f604-b049-4bb1-b664-602e8bc54206",
+                                                    "id": "9a897dc4-44b6-42f2-bbf5-64dc616be776",
                                                     "command": "EVENT_END"
                                                 }
                                             ]
                                         }
                                     },
                                     {
-                                        "id": "fd4b3fc7-baa3-4380-ad05-ba21237bc219",
+                                        "id": "2b569a2c-322c-46b1-88a1-4b89f149c536",
                                         "command": "EVENT_END"
                                     }
                                 ],
                                 "false": [
                                     {
-                                        "id": "fb78b4aa-9437-4496-be3d-fd27c9afae0a",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "What's this?",
-                                                "Let me ask."
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "9a897dc4-44b6-42f2-bbf5-64dc616be776",
+                                        "id": "a5e12524-e9c0-43b6-b085-b2686042639e",
                                         "command": "EVENT_END"
                                     }
                                 ]
@@ -10076,7 +10112,7 @@
         },
         {
             "id": "9",
-            "name": "Quest10"
+            "name": "choose peat_free soil?"
         },
         {
             "id": "10",

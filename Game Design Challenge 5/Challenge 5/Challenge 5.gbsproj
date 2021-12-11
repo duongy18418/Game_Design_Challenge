@@ -3353,7 +3353,7 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "You have four\ntasks in the\ngarden",
+                            "You have three\ntasks in the\ngarden",
                             "Finish all of them\nbefore leave."
                         ],
                         "avatarId": "",
@@ -3367,7 +3367,7 @@
                         "variable": "4",
                         "value": {
                             "type": "number",
-                            "value": 4
+                            "value": 3
                         }
                     }
                 },
@@ -5007,7 +5007,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "I need to finish\nall\nthe four tasks."
+                                                            "I need to finish\nall\nthe tasks."
                                                         ],
                                                         "avatarId": ""
                                                     }
