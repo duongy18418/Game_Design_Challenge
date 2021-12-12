@@ -4908,7 +4908,7 @@
                             "args": {
                                 "variable": "34",
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -5796,7 +5796,7 @@
                             "args": {
                                 "variable": "23",
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -5844,9 +5844,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "I think morning is\nbetter.",
-                                                            "Watering in the\nmorning keeps the\nturf cooler.",
-                                                            "emm..That makes\nsense.",
+                                                            "That makes sense.",
                                                             "Be careful, I will\nstart my work now."
                                                         ],
                                                         "avatarId": ""
@@ -6079,10 +6077,7 @@
                                                         "text": [
                                                             "I agree.Peat-free\nis\nbetter.",
                                                             "It is not only\nrich in organic\nmaterials,",
-                                                            "and also good for\nenvironment.",
-                                                            "Peat extraction\nreleases ",
-                                                            "large\nquantities of\nstored CO2. ",
-                                                            "It will increase\nthe greenhouse\neffect."
+                                                            "and also good for\nenvironment."
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -6659,7 +6654,7 @@
                             "args": {
                                 "variable": "10",
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -6696,8 +6691,7 @@
                                             "text": [
                                                 "I am Bob. I am a\nlawn fertilizer\nsupplier.",
                                                 "Great. Can I buy\nsome?",
-                                                "Sure. Which brand\ndo\nyou want?",
-                                                "Garden tone\nor\nScott Turf Builder"
+                                                "Sure. What brand\ndo\nyou want?"
                                             ],
                                             "avatarId": ""
                                         }
@@ -6735,7 +6729,7 @@
                                         "args": {
                                             "text": [
                                                 "How can I know\nthat.",
-                                                "Can you give me a\nsuggestion?"
+                                                "What do you have?"
                                             ],
                                             "avatarId": ""
                                         }
@@ -6891,9 +6885,9 @@
                                         "id": "71af897d-d27d-4b84-be4d-4ec651b26ed0",
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
-                                            "sceneId": "f8326368-9e14-48dc-bd07-ae4a7d4d60a9",
-                                            "x": 3,
-                                            "y": 2,
+                                            "sceneId": "de496876-d90f-4b9e-ad28-238a822982a4",
+                                            "x": 0,
+                                            "y": 0,
                                             "direction": "",
                                             "fadeSpeed": "2"
                                         }
@@ -13477,6 +13471,240 @@
             "y": 357,
             "actors": [],
             "triggers": []
+        },
+        {
+            "name": "Epilogues  for Garden",
+            "backgroundId": "1da35172-aea4-40b4-8215-7992d9245b34",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "tileColors": [],
+            "script": [
+                {
+                    "id": "f6aaf4a7-8384-44ed-a96f-23bcf4c64233",
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "9",
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "2d608f8b-09c4-4e80-858c-8bd099707c58",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You chose\npeat-free soil.",
+                                        "ALthough it does\nnot free carbon to\nthe air",
+                                        "But it is hard to\nfind and expensive",
+                                        "Companies\nmight\nuse more energy",
+                                        "to make it or get\nit from primeval\nforests",
+                                        "Which could harm\nthe climate too."
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "0a135b2f-78a6-4cb9-acdb-a1fef616484c",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "034a91b8-1113-4835-87f9-dd5fea5385cd",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You chose\nconventional soil.",
+                                        "ALthough it can\nre-use some trash\nstuff",
+                                        "It contains 80%\npeat",
+                                        "The carbon in\npeat, ",
+                                        "when spread on a\nfield or garden,",
+                                        "quickly turns\ninto carbon\ndioxide,",
+                                        "adding to\ngreenhouse gas\nlevels"
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "a4ad7357-e745-4a2e-a9a3-3fd25dba7302",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "06668670-b781-403e-ad6e-b33da4639961",
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "1",
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "ec1d63dc-7ea8-4e69-b12a-f4eff37d177d",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You chose water\nthe garden in the\nmorning.",
+                                        "Watering in the\nmorning keeps the\nturf cooler.",
+                                        "But it might cost\nmore water than\nthe evenning",
+                                        "for with sun water\nevaporation is\nheavier."
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "d8bcbd79-d5b9-43df-a64c-4b5f5f97b214",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "f047b19e-62ec-42a9-b938-14f0becff1fc",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You chose water\nthe garden in the\nevening.",
+                                        "Water is less\nlikely to\nevaporate ",
+                                        "from the leaves in\nthe evening",
+                                        "due to the lower\ntemperatures",
+                                        "But frost on wet\nfoliage overnight\ncauses plant cell."
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "2a26867a-0655-41c8-8882-5d5a3e4a818a",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "778d9d08-c0ba-4d01-afb0-44792d977542",
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "0",
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "91fa763a-e3e4-451e-9575-b54b9e81ee40",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You chose to clean\nthe poops.",
+                                        "In most case that\nis correct.",
+                                        "But if your garden\nis lack of organic\nmatter",
+                                        "dog poop can be\nused after it is\nfully composted."
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "ed175380-1ec8-4500-b280-aa61507a9c14",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "d1e7c0bc-ae38-477d-80ed-71bcc9891c5d",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You chose to leave\nthe poops on the\ngrass.",
+                                        "Dog poop is NOT\ngood for grass\nbecause..",
+                                        "A dog's diet\nproduces a waste\nthat is highly",
+                                        "acidic which can\ncause soil acidity\nto spike,",
+                                        "killing your\nlawn."
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "57763434-5e6b-4126-85ea-509270736299",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "e6c4cafe-11c9-4a19-b588-dacb80aae8da",
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "11",
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "id": "084405a6-0b52-47f9-a4ee-344b4b4277b1",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You chose Garden\nTone fertilizer.",
+                                        "If is organic\nand good for the\nenvironment.",
+                                        "But it is hard to\nget ",
+                                        "And factories\nmight use much\nmore energy to ",
+                                        "product and\npackage\nit",
+                                        "as a merchandise."
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "94544190-1bb9-415e-870c-e19c61876128",
+                                "command": "EVENT_END"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "283e4505-ef2d-4891-8758-4940eebf65f9",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "You chose Scott\nTruf Builder\nfertilizer."
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "4d257c24-348f-44da-9485-e6d418905b4f",
+                                "command": "EVENT_TEXT",
+                                "args": {
+                                    "text": [
+                                        "It is the most\npopular brand.. ",
+                                        "It is economical\nand works great",
+                                        "But it is not\norganic ",
+                                        "It contains\nchemical\nmaterial",
+                                        "Which is keeping\npoluting our soil."
+                                    ],
+                                    "avatarId": ""
+                                }
+                            },
+                            {
+                                "id": "0add26cc-38f2-4107-a8eb-cefbc734f27d",
+                                "command": "EVENT_END"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "d17b0340-7db6-423f-9b95-6f67f9348cc2",
+                    "command": "EVENT_END"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": [],
+            "id": "de496876-d90f-4b9e-ad28-238a822982a4",
+            "x": 1089.371428353446,
+            "y": 586.7428588867188,
+            "actors": [],
+            "triggers": []
         }
     ],
     "backgrounds": [
@@ -13488,8 +13716,8 @@
             "imageWidth": 192,
             "imageHeight": 160,
             "filename": "NewDealer.png",
-            "inode": "6192449487694956",
-            "_v": 1639325497005
+            "inode": "844424930705210",
+            "_v": 1639334054355
         },
         {
             "id": "7823bbb0-9079-41d3-93eb-af46982454e7",
@@ -13499,8 +13727,8 @@
             "imageWidth": 192,
             "imageHeight": 192,
             "filename": "beach.png",
-            "inode": "1125899907477639",
-            "_v": 1639325497005
+            "inode": "562949953984229",
+            "_v": 1639334054354
         },
         {
             "id": "1da35172-aea4-40b4-8215-7992d9245b34",
@@ -13510,8 +13738,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "black.png",
-            "inode": "6473924464360065",
-            "_v": 1639325497005
+            "inode": "6192449487716824",
+            "_v": 1639334054354
         },
         {
             "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
@@ -13521,8 +13749,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "cave.png",
-            "inode": "16044073672522370",
-            "_v": 1639325497005
+            "inode": "15199648742457907",
+            "_v": 1639334054354
         },
         {
             "id": "de562cd6-7549-427f-865f-80332b29abb2",
@@ -13532,8 +13760,8 @@
             "imageWidth": 192,
             "imageHeight": 128,
             "filename": "dealer.png",
-            "inode": "14355223812258981",
-            "_v": 1639325497005
+            "inode": "562949953970480",
+            "_v": 1639334054354
         },
         {
             "id": "9b17f3d8-ae2c-4507-8194-a5e4543bef44",
@@ -13543,8 +13771,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "end screen sail.png",
-            "inode": "5629499534273976",
-            "_v": 1639325497005
+            "inode": "844424930705265",
+            "_v": 1639334054354
         },
         {
             "id": "481e920a-10b8-4d5b-b6a2-dffa96b57bf0",
@@ -13554,8 +13782,8 @@
             "imageWidth": 256,
             "imageHeight": 144,
             "filename": "hidden_cave.png",
-            "inode": "10133099161598596",
-            "_v": 1639325497005
+            "inode": "29273397577990972",
+            "_v": 1639334054354
         },
         {
             "id": "5b192b93-3957-4b76-8c92-423eabbcd285",
@@ -13565,8 +13793,8 @@
             "imageWidth": 256,
             "imageHeight": 144,
             "filename": "house-wide.png",
-            "inode": "9288674231466633",
-            "_v": 1639325497005
+            "inode": "5348024557585536",
+            "_v": 1639334054354
         },
         {
             "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
@@ -13576,8 +13804,8 @@
             "imageWidth": 176,
             "imageHeight": 176,
             "filename": "house.png",
-            "inode": "14073748835547610",
-            "_v": 1639325497005
+            "inode": "20266198323251123",
+            "_v": 1639334054355
         },
         {
             "id": "00e9b250-b602-4e5d-998c-fe0c8f23c91d",
@@ -13587,8 +13815,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "launch_site.png",
-            "inode": "10977524091730574",
-            "_v": 1639325497005
+            "inode": "19421773393119183",
+            "_v": 1639334054355
         },
         {
             "id": "28a8b376-b6c5-4e6d-8d7d-2a409d73cd1b",
@@ -13598,8 +13826,8 @@
             "imageWidth": 2040,
             "imageHeight": 144,
             "filename": "leaving_earth.png",
-            "inode": "12666373951994513",
-            "_v": 1639325497005
+            "inode": "14355223812327615",
+            "_v": 1639334054355
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -13609,8 +13837,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "inode": "7599824371202767",
-            "_v": 1639325497005
+            "inode": "16044073672592124",
+            "_v": 1639334054355
         },
         {
             "id": "18bfc4e4-5126-4a0c-90f2-00fd8c9915ca",
@@ -13620,8 +13848,8 @@
             "imageWidth": 200,
             "imageHeight": 144,
             "filename": "map_mart.png",
-            "inode": "12103423998573729",
-            "_v": 1639325497005
+            "inode": "562949953970481",
+            "_v": 1639334054355
         },
         {
             "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
@@ -13631,8 +13859,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
-            "inode": "9851624184888022",
-            "_v": 1639325497023
+            "inode": "29273397577993091",
+            "_v": 1639334054355
         },
         {
             "id": "93d8839f-c19c-4eb2-a386-b0bb77068521",
@@ -13642,8 +13870,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu_page1.png",
-            "inode": "6192449487649500",
-            "_v": 1639325497005
+            "inode": "8444249301404592",
+            "_v": 1639334054355
         },
         {
             "id": "816231e1-2147-462c-99c6-3f73e8535d25",
@@ -13653,8 +13881,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu_page2.png",
-            "inode": "9570149208177383",
-            "_v": 1639325497005
+            "inode": "15199648742460638",
+            "_v": 1639334054355
         },
         {
             "id": "b22a319d-237e-40c6-8c7c-a6fb7362d818",
@@ -13664,8 +13892,8 @@
             "imageWidth": 288,
             "imageHeight": 176,
             "filename": "outside (1).png",
-            "inode": "10133099161599129",
-            "_v": 1639325497005
+            "inode": "562949953970482",
+            "_v": 1639334054355
         },
         {
             "id": "07016701-d5df-4983-8a5a-3930c7f45822",
@@ -13675,8 +13903,8 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "outside.png",
-            "inode": "7881299347913448",
-            "_v": 1639325497023
+            "inode": "6473924464430403",
+            "_v": 1639334054355
         },
         {
             "id": "afaa5252-6293-4274-b394-f3eee927c5d4",
@@ -13686,8 +13914,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "pixil-frame-0 (3).png",
-            "inode": "23362423066997536",
-            "_v": 1639325497005
+            "inode": "1125899907354890",
+            "_v": 1639334054355
         },
         {
             "id": "d4fdec2c-0a41-432f-9883-1746b29f00fa",
@@ -13697,8 +13925,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "pixil-frame-0 (4).png",
-            "inode": "26458647810814973",
-            "_v": 1639325497005
+            "inode": "1125899907354891",
+            "_v": 1639334054355
         },
         {
             "id": "b50cefc6-72dc-44c0-947d-f5d4d533a97a",
@@ -13708,8 +13936,8 @@
             "imageWidth": 1288,
             "imageHeight": 144,
             "filename": "platform_path.png",
-            "inode": "8162774324624108",
-            "_v": 1639325497023
+            "inode": "3377699720613258",
+            "_v": 1639334054355
         },
         {
             "id": "0af9ba31-7864-4664-9603-b211dc0f3793",
@@ -13719,8 +13947,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "room.png",
-            "inode": "6192449487649522",
-            "_v": 1639325497023
+            "inode": "2533274790481419",
+            "_v": 1639334054355
         },
         {
             "id": "86961528-5182-4095-bb8c-97d16b544a6d",
@@ -13730,8 +13958,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "sail.png",
-            "inode": "8162774324624011",
-            "_v": 1639325497023
+            "inode": "562949953970483",
+            "_v": 1639334054355
         },
         {
             "id": "053f83aa-a4e3-413b-98af-1bb0d0818ddc",
@@ -13741,8 +13969,8 @@
             "imageWidth": 448,
             "imageHeight": 448,
             "filename": "sample_town.png",
-            "inode": "8162774324624116",
-            "_v": 1639325497023
+            "inode": "15762598695882287",
+            "_v": 1639334054355
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -13752,8 +13980,8 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
-            "inode": "9570149208177405",
-            "_v": 1639325497023
+            "inode": "17169973579435604",
+            "_v": 1639334054355
         },
         {
             "id": "33ae580b-d809-4804-a558-71c08a3ac495",
@@ -13763,8 +13991,8 @@
             "imageWidth": 2040,
             "imageHeight": 144,
             "filename": "stars_wide.png",
-            "inode": "50384020831222537",
-            "_v": 1639325497023
+            "inode": "15481123719171795",
+            "_v": 1639334054355
         },
         {
             "id": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
@@ -13774,8 +14002,8 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "inode": "8725724278045452",
-            "_v": 1639325497023
+            "inode": "6192449487720245",
+            "_v": 1639334054355
         },
         {
             "id": "f3102db4-2273-411d-b33f-4d6f65959c60",
@@ -13785,8 +14013,8 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "underground.png",
-            "inode": "9570149208177421",
-            "_v": 1639325497023
+            "inode": "8162774324694843",
+            "_v": 1639334054355
         }
     ],
     "spriteSheets": [
@@ -13796,8 +14024,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "04a.png",
-            "inode": "10414574138312160",
-            "_v": 1639325497023
+            "inode": "2251799814198125",
+            "_v": 1639334054355
         },
         {
             "id": "3c029083-741e-4b5e-85aa-2b9ba9868f9c",
@@ -13805,8 +14033,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Banana.png",
-            "inode": "11258999068433825",
-            "_v": 1639325497023
+            "inode": "1125899907418336",
+            "_v": 1639334054355
         },
         {
             "id": "0e2aded4-6e23-45b9-92a6-a09b1940614c",
@@ -13814,8 +14042,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Eggs.png",
-            "inode": "19984723346463587",
-            "_v": 1639325497023
+            "inode": "1407374884130036",
+            "_v": 1639334054355
         },
         {
             "id": "8b652ca7-27bf-40c7-ad8c-2fbeb8755fc9",
@@ -13823,8 +14051,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "apple.png",
-            "inode": "7318349394495638",
-            "_v": 1639325497023
+            "inode": "1125899907419544",
+            "_v": 1639334054355
         },
         {
             "id": "ec0f660e-c420-43ee-9d1e-6d8e9f320213",
@@ -13832,8 +14060,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "bullet.png",
-            "inode": "9570149208177472",
-            "_v": 1639325497023
+            "inode": "13510798882213605",
+            "_v": 1639334054355
         },
         {
             "id": "32c48a4d-6ce6-4aca-a23a-a6300b5c9e3b",
@@ -13841,8 +14069,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "bullet_left.png",
-            "inode": "4503599627385666",
-            "_v": 1639325497023
+            "inode": "28428972647879937",
+            "_v": 1639334054355
         },
         {
             "id": "450a3571-cc76-41be-8c95-818d60b83c59",
@@ -13850,8 +14078,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "bullet_right.png",
-            "inode": "8162774324624197",
-            "_v": 1639325497023
+            "inode": "3377699720631878",
+            "_v": 1639334054355
         },
         {
             "id": "1e27bb8e-c805-435a-8b87-05b4f50da4f0",
@@ -13859,8 +14087,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
-            "inode": "9570149208177478",
-            "_v": 1639325497023
+            "inode": "25895697857484697",
+            "_v": 1639334054355
         },
         {
             "id": "f0c3033d-e82a-407d-9fe2-3d5da4f59c09",
@@ -13868,8 +14096,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "checkbox.png",
-            "inode": "8444249301334858",
-            "_v": 1639325497023
+            "inode": "2251799813789675",
+            "_v": 1639334054355
         },
         {
             "id": "d4206af4-4d12-4cfd-a4a8-faa11d4aff34",
@@ -13877,8 +14105,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "chest.png",
-            "inode": "5066549580806990",
-            "_v": 1639325497023
+            "inode": "9851624184978175",
+            "_v": 1639334054355
         },
         {
             "id": "a827b612-578f-4cb9-a2bf-fd54b197b83f",
@@ -13886,8 +14114,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "cursor.png",
-            "inode": "8162774324624213",
-            "_v": 1639325497023
+            "inode": "2251799813790978",
+            "_v": 1639334054355
         },
         {
             "id": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
@@ -13895,8 +14123,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
-            "inode": "11821949021862743",
-            "_v": 1639325497023
+            "inode": "2251799813791806",
+            "_v": 1639334054355
         },
         {
             "id": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
@@ -13904,8 +14132,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
-            "inode": "4503599627385693",
-            "_v": 1639325497023
+            "inode": "4222124650766481",
+            "_v": 1639334054355
         },
         {
             "id": "954ffda3-81b7-40ea-a338-3b11ad4b75fb",
@@ -13913,8 +14141,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "enemy_ship.png",
-            "inode": "6192449487649638",
-            "_v": 1639325497023
+            "inode": "1688849860371322",
+            "_v": 1639334054355
         },
         {
             "id": "493bdd1e-7e97-4911-b89a-c0677dfdcaaa",
@@ -13922,8 +14150,8 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "explode.png",
-            "inode": "18858823439629161",
-            "_v": 1639325497023
+            "inode": "12384898975376622",
+            "_v": 1639334054355
         },
         {
             "id": "f2610e3c-8ff9-42fa-a9bb-d1591031fa17",
@@ -13931,8 +14159,8 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
-            "inode": "11540474045152111",
-            "_v": 1639325497023
+            "inode": "7881299348006752",
+            "_v": 1639334054355
         },
         {
             "id": "81b14fe6-2235-480e-bc3b-a5899aa66afe",
@@ -13940,8 +14168,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "hidden_stairs.png",
-            "inode": "10977524091730803",
-            "_v": 1639325497023
+            "inode": "2533274790505007",
+            "_v": 1639334054355
         },
         {
             "id": "09ad70c6-3ce5-4b97-9e96-466221418a45",
@@ -13949,8 +14177,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "inode": "14073748835548027",
-            "_v": 1639325497023
+            "inode": "23643898043805969",
+            "_v": 1639334054355
         },
         {
             "id": "8cb9c002-1abc-458c-9588-9b55af8efb08",
@@ -13958,8 +14186,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "machine.png",
-            "inode": "14636698788969341",
-            "_v": 1639325497023
+            "inode": "9851624184983963",
+            "_v": 1639334054355
         },
         {
             "id": "dfa75239-299d-41fe-a6cd-9e9438da1938",
@@ -13967,8 +14195,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
-            "inode": "12947848928705407",
-            "_v": 1639325497023
+            "inode": "26177172834202066",
+            "_v": 1639334054355
         },
         {
             "id": "40dcd163-9f72-4861-8131-b01eb9baa000",
@@ -13976,8 +14204,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
-            "inode": "4785074604096389",
-            "_v": 1639325497023
+            "inode": "17451448556171814",
+            "_v": 1639334054355
         },
         {
             "id": "52ad34df-f245-4b2a-b94c-a82af1002871",
@@ -13985,8 +14213,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc003.png",
-            "inode": "12103423998573453",
-            "_v": 1639325497023
+            "inode": "11258999068538197",
+            "_v": 1639334054355
         },
         {
             "id": "46a3db76-878e-4896-892b-d1afa7d5e2f0",
@@ -13994,8 +14222,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc004.png",
-            "inode": "7318349394492305",
-            "_v": 1639325497023
+            "inode": "9570149208275154",
+            "_v": 1639334054355
         },
         {
             "id": "7a27b229-5f3d-4eaa-b20c-07997673324d",
@@ -14003,8 +14231,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc005.png",
-            "inode": "7036874417781652",
-            "_v": 1639325497023
+            "inode": "33214047251973374",
+            "_v": 1639334054355
         },
         {
             "id": "c475c713-9fd8-455a-b9bc-8c62b2b8fd5e",
@@ -14012,8 +14240,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc006.png",
-            "inode": "10696049115020181",
-            "_v": 1639325497023
+            "inode": "11821949021964878",
+            "_v": 1639334054355
         },
         {
             "id": "2b18f935-85a3-4f38-9f52-e5c4ea20776a",
@@ -14021,8 +14249,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc007.png",
-            "inode": "7318349394492311",
-            "_v": 1639325497023
+            "inode": "11540474045273339",
+            "_v": 1639334054355
         },
         {
             "id": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
@@ -14030,8 +14258,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player.png",
-            "inode": "7599824371202969",
-            "_v": 1639325497024
+            "inode": "24488322973965544",
+            "_v": 1639334054355
         },
         {
             "id": "2f2d492c-dba2-434c-93c9-d1301e88d5e9",
@@ -14039,8 +14267,8 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player_ship.png",
-            "inode": "7599824371202972",
-            "_v": 1639325497023
+            "inode": "9007199254880407",
+            "_v": 1639334054355
         },
         {
             "id": "058c0142-0c1e-4762-b5ac-e085d84fc734",
@@ -14048,8 +14276,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "pod_door.png",
-            "inode": "7318349394492318",
-            "_v": 1639325497024
+            "inode": "10696049115144349",
+            "_v": 1639334054355
         },
         {
             "id": "94eb6557-0cfc-453e-8e1f-ddb191ac8536",
@@ -14057,8 +14285,8 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "portal.png",
-            "inode": "7036874417781665",
-            "_v": 1639325497024
+            "inode": "22236523160285376",
+            "_v": 1639334054355
         },
         {
             "id": "a0442b6a-634f-44da-9962-77938e3ed839",
@@ -14066,8 +14294,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "inode": "5066549580807077",
-            "_v": 1639325497024
+            "inode": "3096224743963619",
+            "_v": 1639334054355
         },
         {
             "id": "3939e8d2-3987-4a22-953e-f1d82134eccf",
@@ -14075,8 +14303,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "inode": "6755399441071017",
-            "_v": 1639325497024
+            "inode": "7318349394623463",
+            "_v": 1639334054355
         },
         {
             "id": "e20ce140-53a5-4b1b-9964-138ba0c86925",
@@ -14084,8 +14312,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
-            "inode": "6755399441071020",
-            "_v": 1639325497024
+            "inode": "25895697857527155",
+            "_v": 1639334054355
         },
         {
             "id": "000a6dde-cb60-436e-b357-30a529daa139",
@@ -14093,8 +14321,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
-            "inode": "14073748835548079",
-            "_v": 1639325497024
+            "inode": "9570149208309244",
+            "_v": 1639334054355
         },
         {
             "id": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
@@ -14102,8 +14330,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "inode": "5066549580807093",
-            "_v": 1639325497024
+            "inode": "3096224743964187",
+            "_v": 1639334054355
         },
         {
             "id": "b4845aec-11e3-475b-8a9a-0a01b920c710",
@@ -14111,8 +14339,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "space_mine.png",
-            "inode": "6192449487649719",
-            "_v": 1639325497024
+            "inode": "3096224743964189",
+            "_v": 1639334054355
         },
         {
             "id": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
@@ -14120,8 +14348,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
-            "inode": "7036874417781688",
-            "_v": 1639325497024
+            "inode": "9288674231598674",
+            "_v": 1639334054355
         },
         {
             "id": "f88eea80-c5b4-4e10-b49f-7a8aa8bd477e",
@@ -14129,8 +14357,8 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "turnip.png",
-            "inode": "8444249301334970",
-            "_v": 1639325497024
+            "inode": "16044073672654421",
+            "_v": 1639334054355
         },
         {
             "id": "6f1e5757-a472-4531-8a65-aee22751e917",
@@ -14138,8 +14366,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "turnip_squash.png",
-            "inode": "7318349394492358",
-            "_v": 1639325497024
+            "inode": "6192449487781471",
+            "_v": 1639334054355
         },
         {
             "id": "735c26e5-eee4-43ad-a668-a2ab93f84bd8",
@@ -14147,8 +14375,8 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ui_weapon.png",
-            "inode": "12384898975284186",
-            "_v": 1639325497024
+            "inode": "10414574138441348",
+            "_v": 1639334054355
         }
     ],
     "palettes": [
@@ -15304,216 +15532,216 @@
             "name": "Boss fight2",
             "filename": "Boss fight2.mod",
             "settings": {},
-            "inode": "34058472182003035",
-            "_v": 1639325496945
+            "inode": "844424930644237",
+            "_v": 1639334054309
         },
         {
             "id": "596e97ca-28e7-4fb2-a848-f63a7b847a6c",
             "name": "Dancing and Infiltrating",
             "filename": "Dancing and Infiltrating.mod",
             "settings": {},
-            "inode": "18577348462917061",
-            "_v": 1639325496945
+            "inode": "844424930644238",
+            "_v": 1639334054309
         },
         {
             "id": "7b172a6c-dc86-4d89-b7b9-adbc5e38330a",
             "name": "Darkstone",
             "filename": "Darkstone.mod",
             "settings": {},
-            "inode": "5629499534227340",
-            "_v": 1639325496945
+            "inode": "844424930644239",
+            "_v": 1639334054309
         },
         {
             "id": "570b1933-702c-4529-bf95-beaaf8a78fe3",
             "name": "Darkstone_Remix",
             "filename": "Darkstone_Remix.mod",
             "settings": {},
-            "inode": "28147497671079897",
-            "_v": 1639325496945
+            "inode": "844424930644240",
+            "_v": 1639334054309
         },
         {
             "id": "f3e34fe5-7a29-41b0-a322-2c3c1119af5f",
             "name": "Determined",
             "filename": "Determined.mod",
             "settings": {},
-            "inode": "9851624184887749",
-            "_v": 1639325496945
+            "inode": "844424930644241",
+            "_v": 1639334054309
         },
         {
             "id": "d70d5608-4a6f-419e-871e-0e60ef344cd7",
             "name": "Free OST 1 - Backstreets (1)",
             "filename": "Free OST 1 - Backstreets (1).mod",
             "settings": {},
-            "inode": "19703248369760710",
-            "_v": 1639325496945
+            "inode": "844424930644242",
+            "_v": 1639334054309
         },
         {
             "id": "0452ac23-9779-4000-9804-db2f7db5c2ae",
             "name": "Free OST 1 - Character Select",
             "filename": "Free OST 1 - Character Select.mod",
             "settings": {},
-            "inode": "13229323905415741",
-            "_v": 1639325496945
+            "inode": "844424930644243",
+            "_v": 1639334054309
         },
         {
             "id": "ff0c8854-5ba1-4a4f-9021-1bd847d7fb18",
             "name": "Free OST 1 - Ending Theme",
             "filename": "Free OST 1 - Ending Theme.mod",
             "settings": {},
-            "inode": "30680772461476519",
-            "_v": 1639325496945
+            "inode": "844424930644244",
+            "_v": 1639334054309
         },
         {
             "id": "d4ff766d-a3a9-430b-b7a7-d5c7aecf8322",
             "name": "Free OST 1 - Fanfare (1)",
             "filename": "Free OST 1 - Fanfare (1).mod",
             "settings": {},
-            "inode": "45880421203852024",
-            "_v": 1639325496945
+            "inode": "844424930644245",
+            "_v": 1639334054309
         },
         {
             "id": "d09496a7-8eca-49ce-9c6f-e9547338e98f",
             "name": "ParkMusic",
             "filename": "ParkMusic.mod",
             "settings": {},
-            "inode": "10133099161598716",
-            "_v": 1639325496945
+            "inode": "844424930644246",
+            "_v": 1639334054309
         },
         {
             "id": "bd9d02e1-fbba-4a70-8463-03213052890d",
             "name": "Peppy Pop Song",
             "filename": "Peppy Pop Song.mod",
             "settings": {},
-            "inode": "28991922601212675",
-            "_v": 1639325496945
+            "inode": "844424930644247",
+            "_v": 1639334054309
         },
         {
             "id": "05ef4530-7c73-4949-9a26-c61ff0df5f16",
             "name": "Rulz_BattleTheme",
             "filename": "Rulz_BattleTheme.mod",
             "settings": {},
-            "inode": "8444249301334803",
-            "_v": 1639325496945
+            "inode": "8162774324695426",
+            "_v": 1639334054309
         },
         {
             "id": "4653812c-82b6-44ce-93b8-eea1d4b6fa71",
             "name": "Rulz_FastPaceSpeedRace",
             "filename": "Rulz_FastPaceSpeedRace.mod",
             "settings": {},
-            "inode": "11258999068441367",
-            "_v": 1639325496945
+            "inode": "14073748835619259",
+            "_v": 1639334054309
         },
         {
             "id": "e571be0d-bbaa-44ae-a411-c2b2e6c5ff24",
             "name": "Rulz_GonaSpace",
             "filename": "Rulz_GonaSpace.mod",
             "settings": {},
-            "inode": "6473924464360217",
-            "_v": 1639325496945
+            "inode": "6473924464431558",
+            "_v": 1639334054309
         },
         {
             "id": "2e3e140a-ae8d-4970-8e8b-37b2119c7208",
             "name": "Rulz_Into the woods",
             "filename": "Rulz_Into the woods.mod",
             "settings": {},
-            "inode": "4503599627385640",
-            "_v": 1639325496945
+            "inode": "2814749767193503",
+            "_v": 1639334054309
         },
         {
             "id": "83b79b0b-6af5-4a01-ac40-2f86fd36ece8",
             "name": "Rulz_Intro",
             "filename": "Rulz_Intro.mod",
             "settings": {},
-            "inode": "5348024557517613",
-            "_v": 1639325496945
+            "inode": "24206847997204309",
+            "_v": 1639334054309
         },
         {
             "id": "0f78c331-7318-48ca-8a6c-a57c15ef423a",
             "name": "Rulz_LightMood",
             "filename": "Rulz_LightMood.mod",
             "settings": {},
-            "inode": "10696049115020078",
-            "_v": 1639325496945
+            "inode": "13792273858910162",
+            "_v": 1639334054309
         },
         {
             "id": "180f6b13-2ccc-4af9-8ebf-3e3931f2e824",
             "name": "Rulz_Outside",
             "filename": "Rulz_Outside.mod",
             "settings": {},
-            "inode": "12947848928705332",
-            "_v": 1639325496945
+            "inode": "16325548649307329",
+            "_v": 1639334054309
         },
         {
             "id": "a98fc4b6-810e-4fb7-93ee-ef17be6ce95a",
             "name": "Rulz_Pause_Underground",
             "filename": "Rulz_Pause_Underground.mod",
             "settings": {},
-            "inode": "9570149208177462",
-            "_v": 1639325496945
+            "inode": "7881299347987890",
+            "_v": 1639334054309
         },
         {
             "id": "be5e3dd0-dc4f-46b3-aefe-9897de0775c3",
             "name": "Rulz_SpaceEmergency",
             "filename": "Rulz_SpaceEmergency.mod",
             "settings": {},
-            "inode": "8444249301334840",
-            "_v": 1639325496945
+            "inode": "1970324837069482",
+            "_v": 1639334054309
         },
         {
             "id": "4f7446cc-f5b4-4749-8fd0-f587afe35747",
             "name": "Rulz_UndergroundCave",
             "filename": "Rulz_UndergroundCave.mod",
             "settings": {},
-            "inode": "9007199254756153",
-            "_v": 1639325496945
+            "inode": "6755399441157051",
+            "_v": 1639334054309
         },
         {
             "id": "17f26493-b252-49f3-bc63-d12b4ea1727d",
             "name": "Sneaking Around",
             "filename": "Sneaking Around.mod",
             "settings": {},
-            "inode": "17732923532786620",
-            "_v": 1639325496945
+            "inode": "844424930644248",
+            "_v": 1639334054309
         },
         {
             "id": "44bd57eb-fe04-445b-afd5-24bdcfd4abbd",
             "name": "The Gang's All Here",
             "filename": "The Gang's All Here.mod",
             "settings": {},
-            "inode": "11821949021862888",
-            "_v": 1639325496945
+            "inode": "844424930644249",
+            "_v": 1639334054309
         },
         {
             "id": "7ec38461-d27d-419e-b5db-ef57d5be9ccb",
             "name": "Twilight Drive (1)",
             "filename": "Twilight Drive (1).mod",
             "settings": {},
-            "inode": "31525197391608954",
-            "_v": 1639325496945
+            "inode": "844424930644251",
+            "_v": 1639334054310
         },
         {
             "id": "e0c87806-fb95-450d-aeef-f5805715c829",
             "name": "Villains of Hiphop",
             "filename": "Villains of Hiphop.mod",
             "settings": {},
-            "inode": "20829148276604281",
-            "_v": 1639325496945
+            "inode": "844424930644253",
+            "_v": 1639334054310
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
             "settings": {},
-            "inode": "10414574138309436",
-            "_v": 1639325496945
+            "inode": "10133099161684939",
+            "_v": 1639334054309
         },
         {
             "id": "e59f2c89-701d-4a8f-8f6a-dba7229cae39",
             "name": "title screen",
             "filename": "title screen.mod",
             "settings": {},
-            "inode": "27584547717660258",
-            "_v": 1639325496945
+            "inode": "844424930644256",
+            "_v": 1639334054310
         }
     ],
     "variables": [
@@ -15820,9 +16048,9 @@
         "startY": 0,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1020.6666870117188,
-        "worldScrollY": 404,
-        "zoom": 200,
+        "worldScrollX": 15.199999809265137,
+        "worldScrollY": 142.39999389648438,
+        "zoom": 87.5,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
