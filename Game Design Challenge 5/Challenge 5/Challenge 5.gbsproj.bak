@@ -6023,18 +6023,18 @@
                                                                 }
                                                             },
                                                             {
+                                                                "id": "855bf7b8-24c7-495e-884b-7c40cc0bd99e",
+                                                                "command": "EVENT_SET_TRUE",
+                                                                "args": {
+                                                                    "variable": "67"
+                                                                }
+                                                            },
+                                                            {
                                                                 "id": "9da52fdd-54db-4644-bbf8-56307020acdc",
                                                                 "command": "EVENT_DEC_VALUE",
                                                                 "args": {
                                                                     "variable": "26",
                                                                     "__collapse": false
-                                                                }
-                                                            },
-                                                            {
-                                                                "id": "855bf7b8-24c7-495e-884b-7c40cc0bd99e",
-                                                                "command": "EVENT_SET_TRUE",
-                                                                "args": {
-                                                                    "variable": "67"
                                                                 }
                                                             },
                                                             {
