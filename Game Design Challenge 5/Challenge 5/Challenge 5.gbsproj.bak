@@ -16837,14 +16837,14 @@
         }
     ],
     "settings": {
-        "startSceneId": "6925164f-f9e1-4abf-b6d2-3b108ef01b10",
-        "startX": 17,
-        "startY": 13,
+        "startSceneId": "a173902d-eed6-40c1-b09a-2917aa706309",
+        "startX": 9,
+        "startY": 8,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2217.60009765625,
-        "worldScrollY": 1040,
-        "zoom": 337.5,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 87.5,
         "customColorsEnabled": true,
         "defaultBackgroundPaletteIds": [
             "default-bg-1",
