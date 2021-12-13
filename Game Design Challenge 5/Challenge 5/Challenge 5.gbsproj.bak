@@ -5717,8 +5717,7 @@
                                         "command": "EVENT_IF_FALSE",
                                         "args": {
                                             "variable": "66",
-                                            "__collapseElse": false,
-                                            "__collapse": false
+                                            "__collapseElse": false
                                         },
                                         "children": {
                                             "true": [
@@ -5786,8 +5785,7 @@
                                                                             "command": "EVENT_ACTOR_EMOTE",
                                                                             "args": {
                                                                                 "actorId": "$self$",
-                                                                                "emoteId": "1",
-                                                                                "__collapse": true
+                                                                                "emoteId": "1"
                                                                             }
                                                                         },
                                                                         {
@@ -5800,6 +5798,13 @@
                                                                                     "and also good for\nenvironment."
                                                                                 ],
                                                                                 "avatarId": ""
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "9462c364-e6ea-49ca-8253-c6ffdb11be98",
+                                                                            "command": "EVENT_SET_TRUE",
+                                                                            "args": {
+                                                                                "variable": "65"
                                                                             }
                                                                         },
                                                                         {
@@ -5816,13 +5821,6 @@
                                                                             }
                                                                         },
                                                                         {
-                                                                            "id": "9462c364-e6ea-49ca-8253-c6ffdb11be98",
-                                                                            "command": "EVENT_SET_TRUE",
-                                                                            "args": {
-                                                                                "variable": "65"
-                                                                            }
-                                                                        },
-                                                                        {
                                                                             "id": "bf7784b9-a9b6-4631-ba3f-122d031f056b",
                                                                             "command": "EVENT_IF_FALSE",
                                                                             "args": {
@@ -5832,6 +5830,16 @@
                                                                             },
                                                                             "children": {
                                                                                 "true": [
+                                                                                    {
+                                                                                        "id": "07a9f82b-5c35-44a5-986e-4ac49b72d7e2",
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "please help."
+                                                                                            ],
+                                                                                            "avatarId": ""
+                                                                                        }
+                                                                                    },
                                                                                     {
                                                                                         "id": "fc0fdf93-97bf-4107-b497-305f163bc82b",
                                                                                         "command": "EVENT_END"
@@ -5959,147 +5967,6 @@
                                                                         }
                                                                     ],
                                                                     "false": [
-                                                                        {
-                                                                            "id": "7e4d77ce-16ca-492e-9183-5202190b340d",
-                                                                            "command": "EVENT_IF_FALSE",
-                                                                            "args": {
-                                                                                "variable": "6",
-                                                                                "__collapseElse": false,
-                                                                                "__collapse": false
-                                                                            },
-                                                                            "children": {
-                                                                                "true": [
-                                                                                    {
-                                                                                        "id": "3535f35a-988d-4b76-9433-9817199a27a9",
-                                                                                        "command": "EVENT_TEXT",
-                                                                                        "args": {
-                                                                                            "text": [
-                                                                                                "please help."
-                                                                                            ],
-                                                                                            "avatarId": ""
-                                                                                        }
-                                                                                    },
-                                                                                    {
-                                                                                        "id": "985572e2-2552-4a8e-804b-b9d5153793a5",
-                                                                                        "command": "EVENT_END"
-                                                                                    }
-                                                                                ],
-                                                                                "false": [
-                                                                                    {
-                                                                                        "id": "480458fb-0e60-40d1-aff4-cb603a831392",
-                                                                                        "command": "EVENT_IF_TRUE",
-                                                                                        "args": {
-                                                                                            "variable": "8",
-                                                                                            "__collapseElse": false,
-                                                                                            "__collapse": false
-                                                                                        },
-                                                                                        "children": {
-                                                                                            "true": [
-                                                                                                {
-                                                                                                    "id": "65dbe60d-5ecc-4bec-b0f0-ffe23d5d3883",
-                                                                                                    "command": "EVENT_ACTOR_EMOTE",
-                                                                                                    "args": {
-                                                                                                        "actorId": "$self$",
-                                                                                                        "emoteId": "2"
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "bdc3150e-6022-47cd-af3b-87450508ec99",
-                                                                                                    "command": "EVENT_TEXT",
-                                                                                                    "args": {
-                                                                                                        "text": [
-                                                                                                            "Thank you so much."
-                                                                                                        ],
-                                                                                                        "avatarId": ""
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "bb4ef9ac-26ec-410a-abfe-f1f5163a066b",
-                                                                                                    "command": "EVENT_DEC_VALUE",
-                                                                                                    "args": {
-                                                                                                        "variable": "26",
-                                                                                                        "__collapse": false
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "b6491d6e-8c07-4605-86c8-088638c877e1",
-                                                                                                    "command": "EVENT_SET_TRUE",
-                                                                                                    "args": {
-                                                                                                        "variable": "67"
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "d9460ac4-8581-4af5-b534-bfc216b94b86",
-                                                                                                    "command": "EVENT_END"
-                                                                                                }
-                                                                                            ],
-                                                                                            "false": [
-                                                                                                {
-                                                                                                    "id": "2cdafe30-fcf9-492a-b421-f5d0fb7044ae",
-                                                                                                    "command": "EVENT_ACTOR_EMOTE",
-                                                                                                    "args": {
-                                                                                                        "actorId": "$self$",
-                                                                                                        "emoteId": "0"
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "4530551a-e961-4af9-8cf3-d58ec5a92e1a",
-                                                                                                    "command": "EVENT_TEXT",
-                                                                                                    "args": {
-                                                                                                        "text": [
-                                                                                                            "I have to get\nsome.",
-                                                                                                            "See you later."
-                                                                                                        ],
-                                                                                                        "avatarId": ""
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "de0d5a9d-d3c0-4f9b-84d8-de879a38eaf1",
-                                                                                                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                                                                                                    "args": {
-                                                                                                        "actorId": "$self$",
-                                                                                                        "x": -10,
-                                                                                                        "y": 9,
-                                                                                                        "moveType": "vertical",
-                                                                                                        "useCollisions": false
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "7f64e9f9-bb28-4e06-a192-472340b1f3be",
-                                                                                                    "command": "EVENT_ACTOR_HIDE",
-                                                                                                    "args": {
-                                                                                                        "actorId": "$self$"
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "1d8d390b-6c00-4386-a377-201820481761",
-                                                                                                    "command": "EVENT_DEC_VALUE",
-                                                                                                    "args": {
-                                                                                                        "variable": "26",
-                                                                                                        "__collapse": false
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "4a8bd0ed-9a93-4fa7-821d-ccf8df4930ba",
-                                                                                                    "command": "EVENT_SET_TRUE",
-                                                                                                    "args": {
-                                                                                                        "variable": "67"
-                                                                                                    }
-                                                                                                },
-                                                                                                {
-                                                                                                    "id": "c2d4a723-f19e-476c-8545-0f5b6f857c2f",
-                                                                                                    "command": "EVENT_END"
-                                                                                                }
-                                                                                            ]
-                                                                                        }
-                                                                                    },
-                                                                                    {
-                                                                                        "id": "63b7f6ef-fb5b-479d-9a4f-a54b620eac85",
-                                                                                        "command": "EVENT_END"
-                                                                                    }
-                                                                                ]
-                                                                            }
-                                                                        },
                                                                         {
                                                                             "id": "0d683dbf-eaea-4b96-a6c0-f8c32df98624",
                                                                             "command": "EVENT_END"
@@ -6551,6 +6418,13 @@
                             "command": "EVENT_SET_FALSE",
                             "args": {
                                 "variable": "65"
+                            }
+                        },
+                        {
+                            "id": "fb9d38dd-b16b-4663-b6c7-b24e2bf4d0ff",
+                            "command": "EVENT_SET_FALSE",
+                            "args": {
+                                "variable": "2"
                             }
                         },
                         {
@@ -16558,7 +16432,7 @@
         "startY": 10,
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1947.199951171875,
+        "worldScrollX": 2096,
         "worldScrollY": 1032,
         "zoom": 337.5,
         "customColorsEnabled": true,
